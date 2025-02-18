@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DictionaryApp.MainPage">
+
+    <ContentPage.Resources>
+        <Style x:Key="PrimaryButton" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#4CAF50"/>
+            <!-- Green background -->
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Padding" Value="12, 8"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="WidthRequest" Value="250"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="HeightRequest" Value="50"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <VerticalStackLayout Padding="20">
+        <Label Text="Welcome to Dictionary App!"
+               FontSize="24"
+               HorizontalOptions="Center"/>
+
+        <Button Text="Go to Dictionary Page"
+                Clicked="OnNavigateToDictionary"
+                Style="{StaticResource PrimaryButton}" />
+    </VerticalStackLayout>
+</ContentPage>
