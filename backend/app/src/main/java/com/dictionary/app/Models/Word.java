@@ -17,7 +17,7 @@ public class Word {
     private Integer id;
 
     @Column(nullable = false)
-    private String word;
+    private String wordName;
 
     @Column
     private String definition;

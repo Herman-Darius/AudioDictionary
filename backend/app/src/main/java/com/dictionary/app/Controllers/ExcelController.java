@@ -19,13 +19,11 @@ public class ExcelController {
     private ExcelService excelService;
 
     @PostMapping("/upload")
-    public ResponseEntity<String> uploadExcelFile(@RequestParam("file") MultipartFile file) {
+    public ResponseEntity<?> uploadExcelFile(@RequestParam("file") MultipartFile file) {
         System.out.println("I accesed the endpoint /upload");
-        try {
-            excelService.importFromExcel(file);
-            return ResponseEntity.ok("File content uploaded successfully!");
-        } catch (IOException e) {
-            return ResponseEntity.status(500).body("Error processing file: " + e.getMessage());
-        }
+
+        excelService.importFromExcel(file);
+        return ResponseEntity.ok("File content uploaded successfully!");
+
     }
 }

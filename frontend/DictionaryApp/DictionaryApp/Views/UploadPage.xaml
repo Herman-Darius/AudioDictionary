@@ -24,6 +24,11 @@
                 Style="{StaticResource PrimaryButton}" />
 
         <!-- Label to display the file status -->
-        <Label x:Name="StatusLabel" Text="No file selected" />
+        <Label x:Name="UploadStatusLabel" 
+               Text="No file selected" />
+        <Button Text="Select Audio Files"
+                Clicked="OnSelectAudioFilesClicked"/>
+        
+
     </StackLayout>
 </ContentPage>

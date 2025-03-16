@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/audiobook
+    url: jdbc:mysql://localhost/audiobook
     username: root
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -13,3 +13,7 @@ spring:
         format_sql: true
     database: mysql
     database-platform: org.hibernate.dialect.MySQL8Dialect
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB

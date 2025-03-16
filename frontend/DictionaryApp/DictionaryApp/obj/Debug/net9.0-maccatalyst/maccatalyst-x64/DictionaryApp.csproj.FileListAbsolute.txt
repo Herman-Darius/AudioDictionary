@@ -1,0 +1,615 @@
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.runtimeconfig.json
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.pdb
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.Core.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.MediaElement.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Diagnostics.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Http.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Options.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Primitives.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.Xaml.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Essentials.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Graphics.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Newtonsoft.Json.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Plugin.Maui.Audio.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ar\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ca\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\cs\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\da\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\de\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\el\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\es\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\fi\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\fr\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\he\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\hi\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\hr\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\hu\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\id\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\it\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ja\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ko\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ms\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\nb\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\nl\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\pl\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\pt-BR\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\pt\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ro\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ru\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\sk\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\sv\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\th\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\tr\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\uk\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\vi\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\zh-HK\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\zh-Hans\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\zh-Hant\Microsoft.Maui.Controls.resources.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.CSharp.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.Core.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Primitives.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Registry.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.AppContext.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Buffers.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Collections.Concurrent.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Collections.Immutable.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Collections.NonGeneric.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Collections.Specialized.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Collections.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Annotations.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ComponentModel.DataAnnotations.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ComponentModel.EventBasedAsync.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Primitives.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ComponentModel.TypeConverter.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ComponentModel.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Configuration.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Console.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Core.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Data.Common.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Data.DataSetExtensions.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Data.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Contracts.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Debug.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Process.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.StackTrace.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tools.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TraceSource.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tracing.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Drawing.Primitives.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Drawing.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Dynamic.Runtime.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Formats.Asn1.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Formats.Tar.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Globalization.Calendars.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Globalization.Extensions.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Globalization.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.Compression.Brotli.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.Compression.FileSystem.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.Compression.ZipFile.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.Compression.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.AccessControl.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Primitives.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Watcher.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.IsolatedStorage.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.MemoryMappedFiles.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.Pipelines.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.AccessControl.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.UnmanagedMemoryStream.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Linq.Expressions.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Linq.Parallel.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Linq.Queryable.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Linq.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Memory.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Http.Json.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Http.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.HttpListener.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Mail.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.NameResolution.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.NetworkInformation.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Ping.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Primitives.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Quic.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Requests.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Security.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.ServicePoint.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Sockets.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.WebClient.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.WebHeaderCollection.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.WebProxy.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.Client.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Numerics.Vectors.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Numerics.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ObjectModel.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Private.DataContractSerialization.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Private.Uri.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Private.Xml.Linq.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Private.Xml.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.DispatchProxy.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.ILGeneration.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.Lightweight.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.Extensions.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.Metadata.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.Primitives.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.TypeExtensions.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Resources.Reader.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Resources.ResourceManager.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Resources.Writer.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Extensions.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Handles.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.JavaScript.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Intrinsics.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Loader.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Numerics.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Formatters.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Json.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Primitives.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Xml.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.AccessControl.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Claims.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Algorithms.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Cng.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Csp.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Encoding.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.OpenSsl.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Primitives.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Principal.Windows.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Principal.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.SecureString.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ServiceModel.Web.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ServiceProcess.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.CodePages.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.Extensions.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Text.Encodings.Web.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Text.Json.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Text.RegularExpressions.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Channels.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Overlapped.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Dataflow.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Extensions.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Parallel.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Thread.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.ThreadPool.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Timer.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Transactions.Local.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Transactions.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ValueTuple.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Web.HttpUtility.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Web.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Windows.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.Linq.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.ReaderWriter.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.Serialization.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.XDocument.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.XDocument.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.XmlDocument.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.XmlSerializer.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\WindowsBase.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\mscorlib.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\netstandard.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Private.CoreLib.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Globalization.Native.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Globalization.Native.dylib
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.dylib
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Native.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Native.dylib
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.dylib
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.dylib
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-static.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-stub-static.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-static.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-stub-static.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-static.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-stub-static.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-marshal-ilgen-static.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-marshal-ilgen-stub-static.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.dylib
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.registrar.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.dylib
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-nativeaot-debug.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-nativeaot.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.a
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.dylib
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauifont.inputs
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@3x.png
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@2x.png
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@3x.png
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@2x.png
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@3x.png
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@2x.png
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@3x.png
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@2x.png
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot.png
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauiimage.outputs
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauifont.stamp
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\FluentUI.cs
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ibtool\_ProcessedInterfaceDefinitionsPath.items
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\copySceneKitAssets\_ProcessedSceneKitAssetsPath.items
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\collada\_ProcessedColladaAssetsPath.items
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\atlas\_ProcessedTextureAtlasesPath.items
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\coremlc\_PartialAppManifest.items
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.csproj.AssemblyReference.cache
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.AssemblyInfoInputs.cache
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.AssemblyInfo.cs
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.csproj.CoreCompileInputs.cache
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.sourcelink.json
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\XamlC.stamp
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Dictiona.A174A881.Up2Date
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\refint\DictionaryApp.dll
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.pdb
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.genruntimeconfig.cache
+C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryApp\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ref\DictionaryApp.dll
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauifont.inputs
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauiimage.outputs
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauifont.stamp
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ibtool\_ProcessedInterfaceDefinitionsPath.items
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\copySceneKitAssets\_ProcessedSceneKitAssetsPath.items
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\collada\_ProcessedColladaAssetsPath.items
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\atlas\_ProcessedTextureAtlasesPath.items
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\coremlc\_PartialAppManifest.items
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.csproj.AssemblyReference.cache
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.AssemblyInfoInputs.cache
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.AssemblyInfo.cs
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.csproj.CoreCompileInputs.cache
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.dll
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\refint\DictionaryApp.dll
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.pdb
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@3x.png
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@2x.png
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@3x.png
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@2x.png
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@3x.png
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@2x.png
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@3x.png
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@2x.png
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot.png
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\FluentUI.cs
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.runtimeconfig.json
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.pdb
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.Core.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.MediaElement.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.Binder.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Diagnostics.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Http.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Abstractions.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Debug.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Options.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Primitives.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.Xaml.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Essentials.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Graphics.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Newtonsoft.Json.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Plugin.Maui.Audio.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ar\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ca\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\cs\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\da\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\de\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\el\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\es\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\fi\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\fr\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\he\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\hi\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\hr\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\hu\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\id\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\it\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ja\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ko\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ms\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\nb\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\nl\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\pl\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\pt-BR\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\pt\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ro\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ru\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\sk\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\sv\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\th\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\tr\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\uk\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\vi\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\zh-HK\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\zh-Hans\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\zh-Hant\Microsoft.Maui.Controls.resources.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.CSharp.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.Core.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Primitives.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Registry.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.AppContext.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Buffers.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Collections.Concurrent.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Collections.Immutable.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Collections.NonGeneric.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Collections.Specialized.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Collections.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Annotations.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ComponentModel.DataAnnotations.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ComponentModel.EventBasedAsync.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Primitives.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ComponentModel.TypeConverter.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ComponentModel.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Configuration.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Console.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Core.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Data.Common.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Data.DataSetExtensions.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Data.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Contracts.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Debug.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.DiagnosticSource.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.FileVersionInfo.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Process.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.StackTrace.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TextWriterTraceListener.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tools.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TraceSource.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tracing.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Drawing.Primitives.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Drawing.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Dynamic.Runtime.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Formats.Asn1.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Formats.Tar.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Globalization.Calendars.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Globalization.Extensions.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Globalization.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.Compression.Brotli.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.Compression.FileSystem.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.Compression.ZipFile.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.Compression.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.AccessControl.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.DriveInfo.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Primitives.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Watcher.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.IsolatedStorage.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.MemoryMappedFiles.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.Pipelines.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.AccessControl.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.UnmanagedMemoryStream.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Linq.Expressions.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Linq.Parallel.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Linq.Queryable.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Linq.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Memory.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Http.Json.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Http.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.HttpListener.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Mail.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.NameResolution.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.NetworkInformation.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Ping.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Primitives.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Quic.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Requests.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Security.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.ServicePoint.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.Sockets.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.WebClient.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.WebHeaderCollection.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.WebProxy.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.Client.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Net.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Numerics.Vectors.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Numerics.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ObjectModel.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Private.DataContractSerialization.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Private.Uri.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Private.Xml.Linq.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Private.Xml.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.DispatchProxy.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.ILGeneration.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.Lightweight.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.Extensions.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.Metadata.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.Primitives.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.TypeExtensions.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Reflection.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Resources.Reader.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Resources.ResourceManager.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Resources.Writer.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.Unsafe.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.VisualC.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Extensions.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Handles.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.JavaScript.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Intrinsics.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Loader.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Numerics.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Formatters.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Json.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Primitives.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Xml.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Runtime.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.AccessControl.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Claims.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Algorithms.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Cng.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Csp.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Encoding.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.OpenSsl.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Primitives.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.X509Certificates.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Principal.Windows.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.Principal.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.SecureString.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Security.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ServiceModel.Web.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ServiceProcess.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.CodePages.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.Extensions.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Text.Encodings.Web.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Text.Json.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Text.RegularExpressions.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Channels.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Overlapped.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Dataflow.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Extensions.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Parallel.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Thread.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.ThreadPool.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.Timer.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Threading.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Transactions.Local.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Transactions.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ValueTuple.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Web.HttpUtility.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Web.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Windows.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.Linq.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.ReaderWriter.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.Serialization.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.XDocument.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.XDocument.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.XmlDocument.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.XmlSerializer.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Xml.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\WindowsBase.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\mscorlib.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\netstandard.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Private.CoreLib.dll
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Globalization.Native.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Globalization.Native.dylib
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.dylib
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Native.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Native.dylib
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.dylib
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.dylib
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-static.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-stub-static.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-static.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-stub-static.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-static.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-stub-static.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-marshal-ilgen-static.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmono-component-marshal-ilgen-stub-static.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.dylib
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.registrar.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.dylib
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-nativeaot-debug.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-nativeaot.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.a
+D:\DictionaryApp_production\DictionaryApp\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.dylib
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\XamlC.stamp
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Dictiona.A174A881.Up2Date
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\DictionaryApp.genruntimeconfig.cache
+D:\DictionaryApp_production\DictionaryApp\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ref\DictionaryApp.dll

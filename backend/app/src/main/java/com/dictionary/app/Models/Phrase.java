@@ -12,15 +12,18 @@ import lombok.NoArgsConstructor;
 @Table(name = "phrases")
 public class Phrase {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column
-    private String phrase;
+    @Column(nullable = false, name = "content")
+    private String content;
 
     @ManyToOne
     @JoinColumn(name = "word_id", nullable = false)
     private Word word;
+
+    @Column
+    private String audioFile;
 
 
 }

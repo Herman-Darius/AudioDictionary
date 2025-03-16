@@ -1,7 +1,9 @@
 package com.dictionary.app.Services;
 
+import com.dictionary.app.Models.Phrase;
 import com.dictionary.app.Models.Word;
 import com.dictionary.app.Models.WordRoot;
+import com.dictionary.app.Repositories.PhraseRepository;
 import com.dictionary.app.Repositories.RootRepository;
 import com.dictionary.app.Repositories.WordRepository;
 import jakarta.transaction.Transactional;
@@ -22,57 +24,82 @@ import java.util.Optional;
 @Data
 public class ExcelService {
     @Autowired
-    private RootRepository rootRepository;
+    private final RootRepository rootRepository;
 
     @Autowired
-    private WordRepository wordRepository;
+    private final WordRepository wordRepository;
+
+    @Autowired
+    private final PhraseRepository phraseRepository;
 
 
     @Transactional
-    public void importFromExcel(MultipartFile file) throws IOException {
-        Workbook workbook = new XSSFWorkbook(file.getInputStream());
+    public ResponseEntity<?> importFromExcel(MultipartFile file) {
+        try {
+            Workbook workbook = new XSSFWorkbook(file.getInputStream());
 
-        // Import roots
-        Sheet rootSheet = workbook.getSheet("Roots");
-        for (Row row : rootSheet) {
-            if(row.getRowNum() == 0) continue; // Skip header row
+            // Import roots
+            Sheet rootSheet = workbook.getSheet("Roots");
+            for (Row row : rootSheet) {
+                if (row.getRowNum() == 0) continue; // Skip header row
 
-            String rootName = row.getCell(0).getStringCellValue();
+                String rootName = row.getCell(0).getStringCellValue().trim();
+                if (rootName.isEmpty()) continue;
 
-            // Check if the root exists in the database, if not, create it
-            Optional<WordRoot> existingRoot = rootRepository.findByName(rootName);
-            if (!existingRoot.isPresent()) {
-                WordRoot root = new WordRoot();
-                root.setName(rootName);
-                rootRepository.save(root); // Save new root
-            }
-        }
-
-        // Import words
-        Sheet wordSheet = workbook.getSheet("Words");
-        for (Row row : wordSheet) {
-            if (row.getRowNum() == 0) continue; // Skip header row
-
-            String wordName = row.getCell(0).getStringCellValue();
-            String audioFile = row.getCell(1).getStringCellValue();
-            String rootName = row.getCell(2).getStringCellValue();
-
-            if (wordName == null || wordName.isEmpty() || rootName == null || rootName.isEmpty()) {
-                continue; // Skip if required values are missing
+                // Check if the root exists in the database, if not, create it
+                if (!rootRepository.findByName(rootName).isPresent()) {
+                    WordRoot root = new WordRoot();
+                    root.setName(rootName);
+                    rootRepository.save(root);
+                }
             }
 
-            // Retrieve the corresponding root from the database
-            Optional<WordRoot> optionalRoot = rootRepository.findByName(rootName);
-            if (optionalRoot.isPresent()) {
+            // Import words and their phrases
+            Sheet wordSheet = workbook.getSheet("Words");
+            for (Row row : wordSheet) {
+                if (row.getRowNum() == 0) continue; // Skip header row
+
+                String wordName = row.getCell(0).getStringCellValue().trim();
+                String audioFile = row.getCell(1).getStringCellValue().trim();
+                String rootName = row.getCell(2).getStringCellValue().trim();
+                String phrases = row.getCell(3) != null ? row.getCell(3).getStringCellValue().trim() : "";
+
+                if (wordName.isEmpty() || rootName.isEmpty()) {
+                    return ResponseEntity.badRequest().body("Word or Root cannot be empty!");
+                }
+
+                // Retrieve the corresponding root from the database
+                Optional<WordRoot> optionalRoot = rootRepository.findByName(rootName);
+                if (!optionalRoot.isPresent()) {
+                    return ResponseEntity.badRequest().body("Root not found: " + rootName);
+                }
+
                 WordRoot root = optionalRoot.get();
                 Word word = new Word();
-                word.setWord(wordName);
+                word.setWordName(wordName);
                 word.setAudioFile(audioFile);
                 word.setRoot(root); // Associate the word with the existing root
-                wordRepository.save(word); // Save the word
-            }
-        }
+                wordRepository.save(word);
 
-        workbook.close(); // Close the workbook to avoid memory leak
+                // Handle phrases for this word
+                if (!phrases.isEmpty()) {
+                    String[] phraseArray = phrases.split(",");
+                    for (String phraseText : phraseArray) {
+                        Phrase phrase = new Phrase();
+                        phrase.setContent(phraseText.trim()); // Trim spaces and save the phrase
+                        phrase.setWord(word); // Associate the phrase with the word
+                        phraseRepository.save(phrase);
+                    }
+                }
+            }
+
+            workbook.close();
+            return ResponseEntity.ok("Excel file imported successfully!");
+
+        } catch (IOException e) {
+            return ResponseEntity.status(500).body("Error reading Excel file: " + e.getMessage());
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("Unexpected error: " + e.getMessage());
+        }
     }
 }
