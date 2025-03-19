@@ -1,5 +1,9 @@
 package com.dictionary.app.Controllers;
 
+import com.dictionary.app.Models.Word;
+import com.dictionary.app.Repositories.WordRepository;
+import com.dictionary.app.Services.AudioService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
@@ -8,12 +12,18 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/audio")
 public class AudioController {
     private final String uploadDir = "C:/Users/Herman Darius-Razvan/Desktop/Licenta-Aplicatie-Mobile/backend/uploads/audio_files/";
 
+    private final AudioService audioService;
+
+    public AudioController(AudioService audioService) {
+        this.audioService = audioService;
+    }
 
     @PostMapping("/upload")
     public ResponseEntity<String> uploadAudioFiles(@RequestParam("files") MultipartFile[] files) {
@@ -41,40 +51,20 @@ public class AudioController {
 
     @GetMapping("/play")
     public ResponseEntity<FileSystemResource> getAudioFile(@RequestParam("word") String wordName) {
-        try {
-            // Construct the file path based on the word
-            File audioFile = new File(uploadDir + wordName + ".mp3");
-
-            if (!audioFile.exists()) {
-                return ResponseEntity.notFound().build(); // Return 404 if file doesn't exist
-            }
-
-            // Serve the file with proper content type and headers
-            return ResponseEntity.ok()
-                    .header(HttpHeaders.CONTENT_TYPE, "audio/mpeg") // Specify the audio MIME type
-                    .body(new FileSystemResource(audioFile));
-
-        } catch (Exception e) {
-            // Handle any errors (e.g., file not found)
-            return ResponseEntity.internalServerError().body(null);
-        }
+        return audioService.getAudioForWord(wordName);
     }
 
-    @GetMapping("/phrases/{audioFileName}")
-    public ResponseEntity<FileSystemResource> getPhraseAudio(@PathVariable String audioFileName) {
-        try {
-            File audioFile = new File(uploadDir + audioFileName);
+    // Endpoint to check if the audio file for a phrase exists
+    @GetMapping("/checkPhraseAudio/{phraseId}")
+    public ResponseEntity<Boolean> checkIfPhraseAudioExists(@PathVariable int phraseId) {
+        boolean audioExists = audioService.checkIfAudioFileExists(phraseId);
+        return ResponseEntity.ok(audioExists);
+    }
 
-            if (!audioFile.exists()) {
-                return ResponseEntity.notFound().build(); // Return 404 if file doesn't exist
-            }
-
-            return ResponseEntity.ok()
-                    .header(HttpHeaders.CONTENT_TYPE, "audio/mpeg")
-                    .body(new FileSystemResource(audioFile));
-        } catch (Exception e) {
-            return ResponseEntity.internalServerError().body(null);
-        }
+    // Endpoint to play the phrase audio
+    @GetMapping("/phrases/{phraseId}")
+    public ResponseEntity<FileSystemResource> getPhraseAudio(@PathVariable int phraseId) {
+        return audioService.getAudioForPhrase(phraseId);
     }
 
 

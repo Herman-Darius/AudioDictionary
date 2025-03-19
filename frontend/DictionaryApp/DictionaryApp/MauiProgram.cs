@@ -37,19 +37,21 @@ namespace DictionaryApp
             //Services
             builder.Services.AddSingleton<WordService>();
             builder.Services.AddSingleton<PhraseService>();
-            
+            builder.Services.AddSingleton<AudioService>();
+            builder.Services.AddSingleton<IAudioManager>(AudioManager.Current);
 
+            /*
             builder.Services.AddHttpClient<AudioService>(client =>
             {
                 client.BaseAddress = new Uri(baseAddress);
-            });
+            });*/
 
-            builder.Services.AddHttpClient<FileUploadService>(client =>
+            /*builder.Services.AddHttpClient<FileUploadService>(client =>
             {
                 client.BaseAddress = new Uri(baseAddress);
-            });
+            });*/
 
-            builder.Services.AddSingleton<IAudioManager>(AudioManager.Current);
+            builder.Services.AddSingleton<FileUploadService>();
 
 
             //Pages

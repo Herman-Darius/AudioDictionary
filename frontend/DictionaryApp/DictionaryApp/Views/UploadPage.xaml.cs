@@ -68,33 +68,32 @@ public partial class UploadPage : ContentPage
             var filePickerResult = await FilePicker.PickMultipleAsync(new PickOptions
             {
                 FileTypes = new FilePickerFileType(new Dictionary<DevicePlatform, IEnumerable<string>>
-            {
-                { DevicePlatform.Android, new[] { "audio/*" } },
-                { DevicePlatform.iOS, new[] { "public.audio" } },
-                { DevicePlatform.MacCatalyst, new[] { "public.audio" } },
-                { DevicePlatform.WinUI, new[] { ".mp3", ".wav", ".ogg", ".m4a" } }
-            }),
+                {
+                    { DevicePlatform.Android, new[] { "audio/*" } },
+                    { DevicePlatform.iOS, new[] { "public.audio" } },
+                    { DevicePlatform.MacCatalyst, new[] { "public.audio" } },
+                    { DevicePlatform.WinUI, new[] { ".mp3", ".wav", ".ogg", ".m4a" } }
+                }),
                 PickerTitle = "Select Audio Files"
             });
 
             if (filePickerResult != null && filePickerResult.Any())
             {
-                foreach (var file in filePickerResult)
-                {
-                    UploadStatusLabel.Text = $"Uploading {file.FileName}...";
-                    UploadStatusLabel.TextColor = Colors.Blue;
+                UploadStatusLabel.Text = "Uploading audio files...";
+                UploadStatusLabel.TextColor = Colors.Blue;
 
-                    // Use the FileUploadService to upload the audio file
-                    string uploadStatus = await _fileUploadService.UploadFileAsync(file);
+                // Implement this in the service to handle multiple files
+                string uploadStatus = await _fileUploadService.UploadAudioFilesAsync(filePickerResult);
 
-                    // Update status based on upload result
-                    UploadStatusLabel.Text = uploadStatus.Contains("successfully") ? $"Uploaded {file.FileName}" : $"Failed to upload {file.FileName}";
-                    UploadStatusLabel.TextColor = uploadStatus.Contains("successfully") ? Colors.Green : Colors.Red;
-                }
+                UploadStatusLabel.Text = uploadStatus.Contains("successfully")
+                    ? "Audio files uploaded successfully!"
+                    : "Audio file upload failed.";
+
+                UploadStatusLabel.TextColor = uploadStatus.Contains("successfully") ? Colors.Green : Colors.Red;
             }
             else
             {
-                UploadStatusLabel.Text = "No files selected.";
+                UploadStatusLabel.Text = "No audio files selected.";
                 UploadStatusLabel.TextColor = Colors.Red;
             }
         }
@@ -103,11 +102,5 @@ public partial class UploadPage : ContentPage
             UploadStatusLabel.Text = "Error selecting audio files: " + ex.Message;
             UploadStatusLabel.TextColor = Colors.Red;
         }
-
-
     }
-
-
-
-
 }

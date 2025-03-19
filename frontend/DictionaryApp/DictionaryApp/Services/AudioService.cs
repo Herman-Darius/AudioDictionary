@@ -1,4 +1,5 @@
-﻿using Plugin.Maui.Audio;
+﻿using Newtonsoft.Json;
+using Plugin.Maui.Audio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,18 +14,28 @@ namespace DictionaryApp.Services
         private readonly HttpClient _httpClient;
         private readonly IAudioManager _audioManager;
 
-        public AudioService(HttpClient httpClient, IAudioManager audioManager)
+        public AudioService(IHttpClientFactory httpClientFactory, IAudioManager audioManager)
         {
-            _httpClient = httpClient;
+            _httpClient = httpClientFactory.CreateClient("custom-httpclient");
             _audioManager = audioManager;
         }
         public async Task PlayWordAudioAsync(string wordName)
         {
             try
             {
-                var audioUrl = $"api/audio/play?word={wordName}";
-                var responseStream = await _httpClient.GetStreamAsync(audioUrl);
+                // 🔹 Request audio file from backend
+                var response = await _httpClient.GetAsync($"api/audio/play?word={wordName}");
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine($"Error fetching audio: {response.StatusCode}");
+                    return;
+                }
+
+                // 🔹 Stream audio directly from the server
+                var responseStream = await response.Content.ReadAsStreamAsync();
                 var player = _audioManager.CreatePlayer(responseStream);
+
                 player.Play();
             }
             catch (Exception ex)
@@ -59,6 +70,60 @@ namespace DictionaryApp.Services
             catch (Exception ex)
             {
                 return $"Error uploading file: {ex.Message}";
+            }
+        }
+        public async Task<bool> CheckIfAudioFileExistsAsync(int phraseId)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"api/audio/checkPhraseAudio/{phraseId}");
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    bool audioExists = JsonConvert.DeserializeObject<bool>(content);
+                    return audioExists;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error checking audio file: {ex.Message}");
+            }
+            return false;
+        }
+
+
+        public async Task PlayPhraseAudioAsync(int phraseId)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"api/audio/phrases/{phraseId}");
+                if (!response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine($"Error: Received status code {response.StatusCode}");
+                    return;
+                }
+                var responseStream = await response.Content.ReadAsStreamAsync();
+
+                if (responseStream == null || responseStream.Length == 0)
+                {
+                    Console.WriteLine("Error: Audio stream is null or empty.");
+                    return;
+                }
+
+                Console.WriteLine($"Audio stream successfully retrieved with length: {responseStream.Length} bytes.");
+
+                var player = _audioManager.CreatePlayer(responseStream);
+
+                if (player == null)
+                {
+                    Console.WriteLine("Error: Unable to create player.");
+                    return;
+                }
+                player.Play();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error playing phrase audio: {ex.Message}");
             }
         }
     }

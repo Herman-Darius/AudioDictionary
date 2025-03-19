@@ -11,4 +11,6 @@ public interface WordRepository extends JpaRepository<Word, Integer> {
     List<Word> findByWordNameStartingWithIgnoreCase(String word);
 
     Word findByWordNameIgnoreCase(String wordName);
+
+    Optional<Word> findByWordName(String wordName);
 }

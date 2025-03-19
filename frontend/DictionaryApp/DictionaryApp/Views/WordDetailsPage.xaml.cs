@@ -38,11 +38,36 @@ public partial class WordDetailsPage : ContentPage
             {
                 foreach (var phrase in directPhrases)
                 {
-                    DirectPhrasesStackLayoutInstance.Children.Add(new Label
+                    var phraseLayout = new HorizontalStackLayout
+                    {
+                        Spacing = 10,
+                        HorizontalOptions = LayoutOptions.FillAndExpand
+                    };
+
+                    var phraseLabel = new Label
                     {
                         Text = phrase.content,
                         Style = (Style)Resources["PhraseLabel"]
-                    });
+                    };
+
+                    // Check if the audio file exists for the phrase before enabling the play button
+                    bool audioExists = await _audioService.CheckIfAudioFileExistsAsync(phrase.id);
+
+                    var playButton = new Button
+                    {
+                        Text = "Play",
+                        Style = (Style)Resources["SmallButton"],
+                        IsEnabled = audioExists, // Disable if audio does not exist
+                        Command = new Command(async () =>
+                        {
+                            await _audioService.PlayPhraseAudioAsync(phrase.id);
+                        })
+                    };
+
+                    phraseLayout.Children.Add(phraseLabel);
+                    phraseLayout.Children.Add(playButton);
+
+                    DirectPhrasesStackLayoutInstance.Children.Add(phraseLayout);
                 }
             }
             else
@@ -57,13 +82,37 @@ public partial class WordDetailsPage : ContentPage
                 {
                     string processedPhrase = await _phraseService.ProcessPhrasesWithHyperlinks(phrase.content);
 
-                    // Add the processed phrase with hyperlinks
-                    RelatedPhrasesStackLayoutInstance.Children.Add(new Label
+                    var relatedPhraseLayout = new HorizontalStackLayout
+                    {
+                        Spacing = 10,
+                        HorizontalOptions = LayoutOptions.FillAndExpand
+                    };
+
+                    var relatedPhraseLabel = new Label
                     {
                         Text = processedPhrase,
                         Style = (Style)Resources["PhraseLabel"],
                         TextDecorations = TextDecorations.Underline
-                    });
+                    };
+
+                    // Check if the audio file exists for the related phrase
+                    bool audioExists = await _audioService.CheckIfAudioFileExistsAsync(phrase.id);
+
+                    var relatedPlayButton = new Button
+                    {
+                        Text = "Play",
+                        Style = (Style)Resources["SmallButton"],
+                        IsEnabled = audioExists, // Disable if audio does not exist
+                        Command = new Command(async () =>
+                        {
+                            await _audioService.PlayPhraseAudioAsync(phrase.id);
+                        })
+                    };
+
+                    relatedPhraseLayout.Children.Add(relatedPhraseLabel);
+                    relatedPhraseLayout.Children.Add(relatedPlayButton);
+
+                    RelatedPhrasesStackLayoutInstance.Children.Add(relatedPhraseLayout);
                 }
             }
             else
@@ -78,8 +127,17 @@ public partial class WordDetailsPage : ContentPage
         }
     }
 
+
+
+
     private async void OnPlayAudioClicked(object sender, EventArgs e)
     {
+        if (_selectedWord == null || string.IsNullOrEmpty(_selectedWord.wordName))
+        {
+            Console.WriteLine("Error: No word selected for audio playback.");
+            return;
+        }
+
         try
         {
             await _audioService.PlayWordAudioAsync(_selectedWord.wordName);

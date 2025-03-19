@@ -71,5 +71,87 @@ namespace DictionaryApp.Services
                 return $"Error uploading file: {ex.Message}";
             }
         }
+
+        public async Task<FileResult> SelectAudioFileAsync()
+        {
+            try
+            {
+                var fileTypes = new FilePickerFileType(new Dictionary<DevicePlatform, IEnumerable<string>>
+            {
+                { DevicePlatform.iOS, new[] { "public.audio" } },  // iOS
+                { DevicePlatform.Android, new[] { "audio/*" } },    // Android
+                { DevicePlatform.WinUI, new[] { ".mp3", ".wav" } } // Windows
+            });
+
+                var fileResult = await FilePicker.Default.PickAsync(new PickOptions
+                {
+                    FileTypes = fileTypes,
+                    PickerTitle = "Select an audio file"
+                });
+
+                return fileResult;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error selecting audio file: {ex.Message}");
+                return null;
+            }
+        }
+
+        public async Task<string> UploadAudioFileAsync(FileResult audioFile)
+        {
+            if (audioFile == null)
+                return "No file selected.";
+
+            try
+            {
+                using (var stream = await audioFile.OpenReadAsync())
+                {
+                    using (var content = new MultipartFormDataContent())
+                    {
+                        var fileContent = new StreamContent(stream);
+                        fileContent.Headers.ContentType = new MediaTypeHeaderValue("audio/mpeg");
+
+                        content.Add(fileContent, "files", audioFile.FileName);
+
+                        var response = await _httpClient.PostAsync("http://localhost:8080/api/audio/upload", content);
+
+                        return response.IsSuccessStatusCode
+                            ? "Audio file uploaded successfully!"
+                            : $"Audio file upload failed: {response.ReasonPhrase}";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return $"Error uploading audio file: {ex.Message}";
+            }
+        }
+
+        // Method for uploading multiple audio files
+        public async Task<string> UploadAudioFilesAsync(IEnumerable<FileResult> audioFiles)
+        {
+            try
+            {
+                var content = new MultipartFormDataContent();
+
+                foreach (var audioFile in audioFiles)
+                {
+                    var fileContent = new StreamContent(await audioFile.OpenReadAsync());
+                    fileContent.Headers.ContentType = new MediaTypeHeaderValue("audio/mpeg");
+
+                    content.Add(fileContent, "files", audioFile.FileName);
+                }
+
+                var response = await _httpClient.PostAsync("http://localhost:8080/api/audio/upload", content);
+
+                return response.IsSuccessStatusCode ? "Audio files uploaded successfully!" : $"Audio file upload failed: {response.ReasonPhrase}";
+            }
+            catch (Exception ex)
+            {
+                return $"Error uploading audio files: {ex.Message}";
+            }
+        }
+
     }
 }
