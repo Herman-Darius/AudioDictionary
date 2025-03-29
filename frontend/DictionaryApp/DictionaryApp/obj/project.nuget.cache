@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F76ONschwUE=",
+  "dgSpecHash": "7hPR2wb2mv8=",
   "success": true,
-  "projectFilePath": "D:\\DictionaryApp_production\\DictionaryApp\\DictionaryApp.csproj",
+  "projectFilePath": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\DictionaryApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui\\11.1.0\\communitytoolkit.maui.11.1.0.nupkg.sha512",
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui.core\\11.1.0\\communitytoolkit.maui.core.11.1.0.nupkg.sha512",

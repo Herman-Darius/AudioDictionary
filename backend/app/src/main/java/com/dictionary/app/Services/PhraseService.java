@@ -45,4 +45,23 @@ public class PhraseService {
                 .filter(relatedPhrase -> !directPhraseIds.contains(relatedPhrase.getId()))
                 .collect(Collectors.toList());
     }
+
+    public List<Phrase> processPhrasesWithHyperlinks(List<Phrase> phrases) {
+        List<Word> allWords = wordRepository.findAll(); // Get all words from the DB
+
+        for (Phrase phrase : phrases) {
+            String content = phrase.getContent();
+
+            for (Word word : allWords) {
+                if (content.contains(word.getWordName())) {
+                    String hyperlink = "<a href='/word/" + word.getId() + "'>" + word.getWordName() + "</a>";
+                    content = content.replaceAll("(?i)\\b" + word.getWordName() + "\\b", hyperlink); // Case-insensitive replacement
+                }
+            }
+
+            phrase.setContent(content);
+        }
+        return phrases;
+    }
+
 }

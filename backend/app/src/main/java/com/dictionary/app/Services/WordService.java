@@ -25,23 +25,16 @@ public class WordService {
     private final PhraseRepository phraseRepository;
 
     public ResponseEntity<?> searchWords(String query) {
-        // Handle empty query
         if (query == null || query.trim().isEmpty()) {
             return ResponseEntity.badRequest().body(Map.of("error", "Search query cannot be empty."));
         }
-
-        // Search for words
         List<Word> words = wordRepository.findByWordNameContainingIgnoreCase(query);
-
-        // If no words found, return a message with 200 OK status
         if (words.isEmpty()) {
             return ResponseEntity.ok(Map.of("message", "No words found containing: " + query));
         }
-
-        // Return the list of words
         return ResponseEntity.ok(words);
     }
-
+    
     public ResponseEntity<?> getWordsByLetter(char letter) {
         if (!Character.isLetter(letter)) {
             return ResponseEntity.badRequest().body(Map.of("error", "Invalid letter format."));
@@ -114,5 +107,16 @@ public class WordService {
 
         // Return the word if found
         return ResponseEntity.ok(word);
+    }
+
+    public List<Word> searchWordsByRoot(String query) {
+        List<Word> words = wordRepository.findByWordNameContainingIgnoreCase(query);
+
+        for (Word word : words) {
+            List<Word> relatedWords = wordRepository.findByRoot(word.getRoot());
+            word.setRelatedWords(relatedWords);
+        }
+
+        return words;
     }
 }

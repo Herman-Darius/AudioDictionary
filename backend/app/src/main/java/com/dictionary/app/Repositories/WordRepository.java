@@ -1,6 +1,7 @@
 package com.dictionary.app.Repositories;
 
 import com.dictionary.app.Models.Word;
+import com.dictionary.app.Models.WordRoot;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
@@ -11,6 +12,6 @@ public interface WordRepository extends JpaRepository<Word, Integer> {
     List<Word> findByWordNameStartingWithIgnoreCase(String word);
 
     Word findByWordNameIgnoreCase(String wordName);
-
+    List<Word> findByRoot(WordRoot root);
     Optional<Word> findByWordName(String wordName);
 }

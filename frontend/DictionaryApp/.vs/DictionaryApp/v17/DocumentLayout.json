@@ -1,73 +1,81 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\DictionaryApp_production\\",
+  "WorkspaceRootPath": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\services\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\services\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\views\\worddetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\worddetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\services\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\services\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\views\\uploadpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\uploadpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\services\\phraseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\services\\phraseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\services\\phraseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\services\\wordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\services\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\services\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\views\\worddetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\worddetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\services\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\services\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\views\\uploadpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\uploadpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\services\\wordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\services\\wordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\models\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\models\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DictionaryApp_production\\DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\views\\worddetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\views\\worddetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\worddetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\models\\phraseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\models\\phraseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\phraseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\models\\phrase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\models\\phrase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\phrase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\models\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\models\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\models\\wordroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\models\\wordroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\wordroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -77,7 +85,7 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Herman Darius-Razvan\\AppData\\Local\\Temp\\.vsdbgsrc\\6f92567b6ba3ee0a8a34f48c6ebbcbf8e539e35e\\MainPage.xaml.sg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\views\\dictionarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\views\\dictionarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\dictionarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -87,52 +95,52 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Javac.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\views\\uploadpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\views\\uploadpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\uploadpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui.core\\11.1.0\\ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\views\\newpage1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\views\\newpage1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\newpage1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui.mediaelement\\6.0.1\\ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\dictionaryapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\dictionaryapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\dictionaryapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\views\\dictionarypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\views\\dictionarypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\dictionarypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\views\\newpage1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\views\\newpage1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\newpage1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui\\11.1.0\\ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\dictionaryapp_production\\dictionaryapp\\dictionaryapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|c:\\users\\herman darius-razvan\\desktop\\licenta-aplicatie-mobile\\frontend\\dictionaryapp\\dictionaryapp\\dictionaryapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\dictionaryapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
@@ -143,15 +151,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "MainActivity.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\MainActivity.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Platforms\\Android\\MainActivity.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\MainActivity.cs",
+              "RelativeToolTip": "DictionaryApp\\Platforms\\Android\\MainActivity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T11:49:56.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainApplication.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\MainApplication.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Platforms\\Android\\MainApplication.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\MainApplication.cs",
+              "RelativeToolTip": "DictionaryApp\\Platforms\\Android\\MainApplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T11:49:55.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ServiceResponse.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Models\\ServiceResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Models\\ServiceResponse.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Models\\ServiceResponse.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Models\\ServiceResponse.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Models\\ServiceResponse.cs",
               "RelativeToolTip": "DictionaryApp\\Models\\ServiceResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -159,23 +193,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "PhraseService.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Services\\PhraseService.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Services\\PhraseService.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Services\\PhraseService.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Services\\PhraseService.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Services\\PhraseService.cs",
               "RelativeToolTip": "DictionaryApp\\Services\\PhraseService.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAuwHQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAmwGkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T10:56:34.887Z"
+              "WhenOpened": "2025-02-27T10:56:34.887Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "WordDetailsPage.xaml.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\WordDetailsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\WordDetailsPage.xaml.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Views\\WordDetailsPage.xaml.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\WordDetailsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\WordDetailsPage.xaml.cs",
               "RelativeToolTip": "DictionaryApp\\Views\\WordDetailsPage.xaml.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAwwIcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -183,11 +218,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Phrase.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Models\\Phrase.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Models\\Phrase.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Models\\Phrase.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Models\\Phrase.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Models\\Phrase.cs",
               "RelativeToolTip": "DictionaryApp\\Models\\Phrase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -195,11 +230,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "PhraseResponse.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Models\\PhraseResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Models\\PhraseResponse.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Models\\PhraseResponse.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Models\\PhraseResponse.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Models\\PhraseResponse.cs",
               "RelativeToolTip": "DictionaryApp\\Models\\PhraseResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -207,11 +242,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "UploadPage.xaml.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\UploadPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\UploadPage.xaml.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Views\\UploadPage.xaml.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\UploadPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\UploadPage.xaml.cs",
               "RelativeToolTip": "DictionaryApp\\Views\\UploadPage.xaml.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAmwEsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -219,11 +254,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "FileUploadService.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Services\\FileUploadService.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Services\\FileUploadService.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Services\\FileUploadService.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Services\\FileUploadService.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Services\\FileUploadService.cs",
               "RelativeToolTip": "DictionaryApp\\Services\\FileUploadService.cs",
               "ViewState": "AgIAAIUAAAAAAAAAAAAAwJkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -231,11 +266,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "App.g.i.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "RelativeToolTip": "DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAkwEQAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -243,11 +278,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "MauiProgram.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\MauiProgram.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\MauiProgram.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\MauiProgram.cs",
               "RelativeToolTip": "DictionaryApp\\MauiProgram.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAA9wC4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -255,11 +290,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "MainPage.xaml",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\MainPage.xaml",
               "RelativeDocumentMoniker": "DictionaryApp\\MainPage.xaml",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\MainPage.xaml",
               "RelativeToolTip": "DictionaryApp\\MainPage.xaml",
               "ViewState": "AgIAADwAAAAAAAAAAAAiwGIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -267,13 +302,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AudioService.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Services\\AudioService.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Services\\AudioService.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Services\\AudioService.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Services\\AudioService.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Services\\AudioService.cs",
               "RelativeToolTip": "DictionaryApp\\Services\\AudioService.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAowGoAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAwwGkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T10:56:47.201Z",
               "EditorCaption": ""
@@ -284,11 +319,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "WordService.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Services\\WordService.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Services\\WordService.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Services\\WordService.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Services\\WordService.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Services\\WordService.cs",
               "RelativeToolTip": "DictionaryApp\\Services\\WordService.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAA5wGYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -296,11 +331,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Word.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Models\\Word.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Models\\Word.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Models\\Word.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Models\\Word.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Models\\Word.cs",
               "RelativeToolTip": "DictionaryApp\\Models\\Word.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -308,11 +343,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\MainPage.xaml.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\MainPage.xaml.cs",
               "RelativeToolTip": "DictionaryApp\\MainPage.xaml.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -320,11 +355,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "WordRoot.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Models\\WordRoot.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Models\\WordRoot.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Models\\WordRoot.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Models\\WordRoot.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Models\\WordRoot.cs",
               "RelativeToolTip": "DictionaryApp\\Models\\WordRoot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -332,11 +367,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "WordDetailsPage.xaml",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\WordDetailsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\WordDetailsPage.xaml",
               "RelativeDocumentMoniker": "DictionaryApp\\Views\\WordDetailsPage.xaml",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\WordDetailsPage.xaml",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\WordDetailsPage.xaml",
               "RelativeToolTip": "DictionaryApp\\Views\\WordDetailsPage.xaml",
               "ViewState": "AgIAACcAAAAAAAAAAAAowFMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -344,21 +379,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Xamarin.Android.Common.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Common.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Common.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Common.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Common.targets",
               "ViewState": "AgIAAHQFAAAAAAAAAAAAwJ8FAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2025-02-18T14:16:00.331Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\App.xaml.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\App.xaml.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\App.xaml.cs",
               "RelativeToolTip": "DictionaryApp\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -366,21 +403,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "AndroidManifest.xml",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
               "RelativeDocumentMoniker": "DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
               "RelativeToolTip": "DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2025-02-27T12:29:30.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "MainPage.xaml.sg.cs",
               "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\AppData\\Local\\Temp\\.vsdbgsrc\\ac4007249d757b47417176141ecdbb6b99469e24\\MainPage.xaml.sg.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\ac4007249d757b47417176141ecdbb6b99469e24\\MainPage.xaml.sg.cs",
               "ToolTip": "C:\\Users\\Herman Darius-Razvan\\AppData\\Local\\Temp\\.vsdbgsrc\\ac4007249d757b47417176141ecdbb6b99469e24\\MainPage.xaml.sg.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\ac4007249d757b47417176141ecdbb6b99469e24\\MainPage.xaml.sg.cs [Read Only]",
               "ViewState": "AgIAAA0AAAAAAAAAAAAkwCIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T18:17:54.217Z",
@@ -388,10 +427,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "MainPage.xaml.sg.cs",
               "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\AppData\\Local\\Temp\\.vsdbgsrc\\6f92567b6ba3ee0a8a34f48c6ebbcbf8e539e35e\\MainPage.xaml.sg.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6f92567b6ba3ee0a8a34f48c6ebbcbf8e539e35e\\MainPage.xaml.sg.cs",
               "ToolTip": "C:\\Users\\Herman Darius-Razvan\\AppData\\Local\\Temp\\.vsdbgsrc\\6f92567b6ba3ee0a8a34f48c6ebbcbf8e539e35e\\MainPage.xaml.sg.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6f92567b6ba3ee0a8a34f48c6ebbcbf8e539e35e\\MainPage.xaml.sg.cs [Read Only]",
               "ViewState": "AgIAAAkAAAAAAAAAAAAkwB4AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T18:14:16.697Z",
@@ -399,11 +440,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "DictionaryPage.xaml.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\DictionaryPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\DictionaryPage.xaml.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Views\\DictionaryPage.xaml.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\DictionaryPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\DictionaryPage.xaml.cs",
               "RelativeToolTip": "DictionaryApp\\Views\\DictionaryPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -411,11 +452,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "UploadPage.xaml",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\UploadPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\UploadPage.xaml",
               "RelativeDocumentMoniker": "DictionaryApp\\Views\\UploadPage.xaml",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\UploadPage.xaml",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\UploadPage.xaml",
               "RelativeToolTip": "DictionaryApp\\Views\\UploadPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -423,31 +464,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Xamarin.Android.Javac.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Javac.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Javac.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Javac.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Javac.targets",
               "ViewState": "AgIAAIQAAAAAAAAAAAAAwJsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2025-02-27T12:14:27.439Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "ReadMe.txt",
               "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui.core\\11.1.0\\ReadMe.txt",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\.nuget\\packages\\communitytoolkit.maui.core\\11.1.0\\ReadMe.txt",
               "ToolTip": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui.core\\11.1.0\\ReadMe.txt",
+              "RelativeToolTip": "..\\..\\..\\..\\.nuget\\packages\\communitytoolkit.maui.core\\11.1.0\\ReadMe.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-02-27T12:13:24.209Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "NewPage1.xaml.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\NewPage1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\NewPage1.xaml.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Views\\NewPage1.xaml.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\NewPage1.xaml.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\NewPage1.xaml.cs",
               "RelativeToolTip": "DictionaryApp\\Views\\NewPage1.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -455,21 +500,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "ReadMe.txt",
               "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui.mediaelement\\6.0.1\\ReadMe.txt",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\.nuget\\packages\\communitytoolkit.maui.mediaelement\\6.0.1\\ReadMe.txt",
               "ToolTip": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui.mediaelement\\6.0.1\\ReadMe.txt",
+              "RelativeToolTip": "..\\..\\..\\..\\.nuget\\packages\\communitytoolkit.maui.mediaelement\\6.0.1\\ReadMe.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-02-20T12:56:19.569Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "App.xaml",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\App.xaml",
               "RelativeDocumentMoniker": "DictionaryApp\\App.xaml",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\App.xaml",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\App.xaml",
               "RelativeToolTip": "DictionaryApp\\App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -477,11 +524,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "AppShell.xaml",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\AppShell.xaml",
               "RelativeDocumentMoniker": "DictionaryApp\\AppShell.xaml",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\AppShell.xaml",
               "RelativeToolTip": "DictionaryApp\\AppShell.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -489,11 +536,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "DictionaryApp.csproj",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\DictionaryApp.csproj",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\DictionaryApp.csproj",
               "RelativeDocumentMoniker": "DictionaryApp\\DictionaryApp.csproj",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\DictionaryApp.csproj",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\DictionaryApp.csproj",
               "RelativeToolTip": "DictionaryApp\\DictionaryApp.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -501,11 +548,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "DictionaryPage.xaml",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\DictionaryPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\DictionaryPage.xaml",
               "RelativeDocumentMoniker": "DictionaryApp\\Views\\DictionaryPage.xaml",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\DictionaryPage.xaml",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\DictionaryPage.xaml",
               "RelativeToolTip": "DictionaryApp\\Views\\DictionaryPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -513,21 +560,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "ReadMe.txt",
               "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui\\11.1.0\\ReadMe.txt",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\.nuget\\packages\\communitytoolkit.maui\\11.1.0\\ReadMe.txt",
               "ToolTip": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui\\11.1.0\\ReadMe.txt",
+              "RelativeToolTip": "..\\..\\..\\..\\.nuget\\packages\\communitytoolkit.maui\\11.1.0\\ReadMe.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-02-18T12:29:49.213Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\AppShell.xaml.cs",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\AppShell.xaml.cs",
               "RelativeToolTip": "DictionaryApp\\AppShell.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -535,11 +584,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "NewPage1.xaml",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\NewPage1.xaml",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\NewPage1.xaml",
               "RelativeDocumentMoniker": "DictionaryApp\\Views\\NewPage1.xaml",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\Views\\NewPage1.xaml",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\Views\\NewPage1.xaml",
               "RelativeToolTip": "DictionaryApp\\Views\\NewPage1.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -547,11 +596,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "DictionaryApp",
-              "DocumentMoniker": "D:\\DictionaryApp_production\\DictionaryApp\\DictionaryApp.csproj",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\DictionaryApp.csproj",
               "RelativeDocumentMoniker": "DictionaryApp\\DictionaryApp.csproj",
-              "ToolTip": "D:\\DictionaryApp_production\\DictionaryApp\\DictionaryApp.csproj",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryApp\\DictionaryApp\\DictionaryApp.csproj",
               "RelativeToolTip": "DictionaryApp\\DictionaryApp.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-02-18T11:47:15.299Z"

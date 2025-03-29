@@ -57,4 +57,26 @@ public class WordController {
         return wordService.getWordByName(wordName);
     }
 
+    @GetMapping("/{wordId}/processed-phrases")
+    public ResponseEntity<?> getProcessedPhrasesForWord(@PathVariable Integer wordId) {
+        Word word = wordService.getWordById(wordId).getBody();
+        if (word == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Word not found");
+        }
+
+        // Fetch direct and related phrases
+        List<Phrase> directPhrases = phraseService.getDirectPhrasesForWord(wordId);
+        List<Phrase> relatedPhrases = phraseService.getRelatedPhrasesForWord(wordId, word.getWordName());
+
+        // Process phrases to include hyperlinks
+        List<Phrase> processedDirectPhrases = phraseService.processPhrasesWithHyperlinks(directPhrases);
+        List<Phrase> processedRelatedPhrases = phraseService.processPhrasesWithHyperlinks(relatedPhrases);
+
+        return ResponseEntity.ok(new PhraseResponse(processedDirectPhrases, processedRelatedPhrases, word));
+    }
+    @GetMapping("/search-by-root")
+    public List<Word> searchWordsByRoot(@RequestParam String query) {
+        return wordService.searchWordsByRoot(query);
+    }
+
 }

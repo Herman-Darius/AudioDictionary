@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 
 @Entity
 @Data
@@ -35,5 +37,17 @@ public class Word {
     @Column
     private String audioFile;
 
+    @Transient
+    private List<Word> relatedWords;
+
+    @Transient
+    private String suffix;
+
+    public String getSuffix() {
+        if (root != null && wordName.startsWith(root.getName())) {
+            return wordName.substring(root.getName().length()); // Extract suffix
+        }
+        return "";
+    }
 
 }
