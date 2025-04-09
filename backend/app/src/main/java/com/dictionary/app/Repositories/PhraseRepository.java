@@ -6,7 +6,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface PhraseRepository extends JpaRepository<Phrase, Integer> {
-    List<Phrase> findByWordId(Integer wordId);
+    List<Phrase> findByRootId(Integer wordId);
 
     List<Phrase> findByContentContainingIgnoreCase(String word);
+
+
 }

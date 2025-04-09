@@ -19,11 +19,13 @@ public class Phrase {
     private String content;
 
     @ManyToOne
-    @JoinColumn(name = "word_id", nullable = false)
-    private Word word;
+    @JoinColumn(name = "root_id", nullable = false)
+    private WordRoot root;
 
     @Column
     private String audioFile;
 
+    @Column(nullable = false, name = "explication")
+    private String explication;
 
 }

@@ -1,109 +1,193 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DictionaryApp.MainPage"
-             BackgroundColor="#f4f4f9">
+             BackgroundColor="#FDF6EC"
+             Appearing="OnPageAppearing">
 
     <ContentPage.Resources>
-        <!-- Button Style for Primary Button -->
+        <Style x:Key="RusticHeader" TargetType="Label">
+            <Setter Property="FontSize" Value="26"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="FontFamily" Value="RusticSerif"/>
+            <Setter Property="TextColor" Value="#4B2E06"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+
+        <Style x:Key="SearchBarStyle" TargetType="SearchBar">
+            <Setter Property="BackgroundColor" Value="#FAF1E6"/>
+            <Setter Property="TextColor" Value="#3E2603"/>
+            <Setter Property="PlaceholderColor" Value="#8B7E74"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="HeightRequest" Value="50"/>
+            
+            <Setter Property="FontFamily" Value="RusticSerif"/>
+        </Style>
+
+        <Style x:Key="LetterButton" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#A9743F"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="CornerRadius" Value="14"/>
+            <Setter Property="FontFamily" Value="RusticSerif"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="HeightRequest" Value="50"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Shadow">
+                <Setter.Value>
+                    <Shadow Brush="Black" Offset="1,2" Radius="4" Opacity="0.2"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
         <Style x:Key="PrimaryButton" TargetType="Button">
-            <Setter Property="BackgroundColor" Value="#4CAF50"/>
+            <Setter Property="BackgroundColor" Value="#8B4513"/>
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontFamily" Value="RusticSerif"/>
             <Setter Property="Padding" Value="12, 8"/>
-            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="CornerRadius" Value="10"/>
             <Setter Property="WidthRequest" Value="250"/>
             <Setter Property="HorizontalOptions" Value="Center"/>
             <Setter Property="HeightRequest" Value="50"/>
         </Style>
-
-        <!-- Style for Alphabet Buttons -->
-        <Style x:Key="LetterButton" TargetType="Button">
-            <Setter Property="BackgroundColor" Value="#2196F3"/>
-            <Setter Property="TextColor" Value="White"/>
-            <Setter Property="FontSize" Value="16"/>
-            <Setter Property="Padding" Value="10"/>
-            <Setter Property="CornerRadius" Value="6"/>
-            <Setter Property="WidthRequest" Value="40"/>
-            <Setter Property="HeightRequest" Value="40"/>
-        </Style>
-
-        <!-- Style for SearchBar -->
-        <Style x:Key="SearchBarStyle" TargetType="SearchBar">
-            <Setter Property="BackgroundColor" Value="#fff"/>
-            <Setter Property="HeightRequest" Value="45"/>
-            
-            <Setter Property="FontSize" Value="16"/>
-            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
-        </Style>
-
-        <!-- Label Style for Title -->
-        <Style x:Key="TitleLabel" TargetType="Label">
-            <Setter Property="FontSize" Value="24"/>
-            <Setter Property="FontAttributes" Value="Bold"/>
-            <Setter Property="TextColor" Value="#333"/>
-            <Setter Property="HorizontalOptions" Value="Center"/>
-            <Setter Property="Margin" Value="0,0,0,20"/>
-        </Style>
-
-        <!-- Style for Results Label -->
-        <Style x:Key="NoResultsLabelStyle" TargetType="Label">
-            <Setter Property="FontSize" Value="18"/>
-            <Setter Property="TextColor" Value="Red"/>
-            <Setter Property="HorizontalOptions" Value="Center"/>
-            <Setter Property="IsVisible" Value="False"/>
-        </Style>
     </ContentPage.Resources>
 
-    <VerticalStackLayout Padding="20" Spacing="25">
-        <!-- App Title -->
-        <Label Text="Welcome to Dictionary App!"
-               Style="{StaticResource TitleLabel}"/>
+    <Grid>
+        <!-- 🌲 Background -->
+        <Image Source="rustic_wood_bg.jpg"
+               Aspect="AspectFill"
+               Opacity="0.25"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"
+               ZIndex="0" />
 
-        <!-- Search Bar -->
-        <SearchBar Placeholder="Search for a word..."
-                   TextChanged="OnSearchTextChanged"
-                   Style="{StaticResource SearchBarStyle}"/>
+        <!-- 🌿 Foreground UI -->
+        <ScrollView x:Name="MainContent" ZIndex="1" Opacity="0">
+            <VerticalStackLayout Padding="20" Spacing="20">
 
-        <!-- Alphabet Buttons -->
-        <CollectionView ItemsSource="{Binding Alphabet}" SelectionMode="None">
-            <CollectionView.ItemsLayout>
-                <GridItemsLayout Orientation="Horizontal" Span="6"/>
-            </CollectionView.ItemsLayout>
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Button Text="{Binding}" Style="{StaticResource LetterButton}"
-                            Clicked="OnLetterClicked"/>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+                <Label Text="Welcome to my dictionary application!" Style="{StaticResource RusticHeader}" />
 
-        <!-- Search Results -->
-        <ListView x:Name="WordListView"
-                  IsVisible="False"
-                  ItemSelected="OnWordSelected"
-                  HasUnevenRows="True">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding wordName}" Detail="{Binding rootName.name}"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                <!-- Search Bar & Loading -->
+                <Grid ColumnDefinitions="*,Auto" Padding="10,5" Margin="0,0,0,10">
+                    <SearchBar x:Name="SearchBarInstance"
+                               Placeholder="Search for a word..."
+                               Style="{StaticResource SearchBarStyle}"
+                               TextChanged="OnSearchTextChanged"
+                               Grid.Column="0"/>
+                    <ActivityIndicator x:Name="SearchLoadingIndicator"
+                                       Grid.Column="1"
+                                       IsRunning="False"
+                                       IsVisible="False"
+                                       WidthRequest="25"
+                                       HeightRequest="25"
+                                       VerticalOptions="Center"
+                                       Color="#8B4513"/>
+                </Grid>
 
-        <!-- No Results Label -->
-        <Label x:Name="NoResultsLabel"
-               Text="No results found"
-               Style="{StaticResource NoResultsLabelStyle}"/>
+                <!-- Alphabet Grid -->
+                <Grid ColumnSpacing="5" RowSpacing="5" Padding="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-        <!-- Navigation Button to Dictionary Page -->
-        <Button Text="Go to Dictionary Page"
-                Clicked="OnNavigateToDictionary"
-                Style="{StaticResource PrimaryButton}"/>
+                    <!-- Buttons Row 0 -->
+                    <Button Text="A" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="0" Clicked="OnLetterClicked"/>
+                    <Button Text="B" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="1" Clicked="OnLetterClicked"/>
+                    <Button Text="C" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="2" Clicked="OnLetterClicked"/>
+                    <Button Text="D" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="3" Clicked="OnLetterClicked"/>
+                    <Button Text="E" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="4" Clicked="OnLetterClicked"/>
+                    <Button Text="F" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="5" Clicked="OnLetterClicked"/>
+                    <Button Text="G" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="6" Clicked="OnLetterClicked"/>
 
-        <!-- Navigation Button to Upload Page -->
-        <Button Text="Upload Files"
-                Clicked="OnNavigateToUploadPage"
-                Style="{StaticResource PrimaryButton}"/>
-    </VerticalStackLayout>
+                    <!-- Row 1 -->
+                    <Button Text="H" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="0" Clicked="OnLetterClicked"/>
+                    <Button Text="I" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="1" Clicked="OnLetterClicked"/>
+                    <Button Text="J" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="2" Clicked="OnLetterClicked"/>
+                    <Button Text="K" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="3" Clicked="OnLetterClicked"/>
+                    <Button Text="L" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="4" Clicked="OnLetterClicked"/>
+                    <Button Text="M" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="5" Clicked="OnLetterClicked"/>
+                    <Button Text="N" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="6" Clicked="OnLetterClicked"/>
 
+                    <!-- Row 2 -->
+                    <Button Text="O" Style="{StaticResource LetterButton}" Grid.Row="2" Grid.Column="0" Clicked="OnLetterClicked"/>
+                    <Button Text="P" Style="{StaticResource LetterButton}" Grid.Row="2" Grid.Column="1" Clicked="OnLetterClicked"/>
+                    <Button Text="Q" Style="{StaticResource LetterButton}" Grid.Row="2" Grid.Column="2" Clicked="OnLetterClicked"/>
+                    <Button Text="R" Style="{StaticResource LetterButton}" Grid.Row="2" Grid.Column="3" Clicked="OnLetterClicked"/>
+                    <Button Text="S" Style="{StaticResource LetterButton}" Grid.Row="2" Grid.Column="4" Clicked="OnLetterClicked"/>
+                    <Button Text="T" Style="{StaticResource LetterButton}" Grid.Row="2" Grid.Column="5" Clicked="OnLetterClicked"/>
+                    <Button Text="U" Style="{StaticResource LetterButton}" Grid.Row="2" Grid.Column="6" Clicked="OnLetterClicked"/>
+
+                    <!-- Row 3 -->
+                    <Button Text="V" Style="{StaticResource LetterButton}" Grid.Row="3" Grid.Column="0" Clicked="OnLetterClicked"/>
+                    <Button Text="W" Style="{StaticResource LetterButton}" Grid.Row="3" Grid.Column="1" Clicked="OnLetterClicked"/>
+                    <Button Text="X" Style="{StaticResource LetterButton}" Grid.Row="3" Grid.Column="2" Clicked="OnLetterClicked"/>
+                    <Button Text="Y" Style="{StaticResource LetterButton}" Grid.Row="3" Grid.Column="3" Clicked="OnLetterClicked"/>
+                    <Button Text="Z" Style="{StaticResource LetterButton}" Grid.Row="3" Grid.Column="4" Clicked="OnLetterClicked"/>
+                    <Button Text="⌫" Style="{StaticResource LetterButton}" Grid.Row="3" Grid.Column="5" Clicked="OnBackspaceClicked"/>
+                    <Button Text="␣" Style="{StaticResource LetterButton}" Grid.Row="3" Grid.Column="6" Clicked="OnSpaceClicked"/>
+                </Grid>
+
+                <!-- Search Results -->
+                <CollectionView x:Name="WordListView"
+                                IsVisible="False"
+                                SelectionMode="Single"
+                                SelectionChanged="OnWordSelected"
+                                Margin="10,20,10,0">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Border
+                                Background="#FFF9F4"
+                                Stroke="#D3BFA6"
+                                StrokeThickness="1"
+                                Padding="12"
+                                Margin="6"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="Center"
+                                StrokeShape="RoundRectangle 16">
+
+                                <VerticalStackLayout Spacing="4">
+                                    <Label Text="{Binding Root}"
+                                           FontSize="20"
+                                           FontAttributes="Bold"
+                                           TextColor="#4B2E06"
+                                           FontFamily="RusticSerif"/>
+
+                                    <Label Text="{Binding RootDefinition}"
+                                           FontSize="15"
+                                           FontAttributes="Italic"
+                                           TextColor="#6E5841"
+                                           FontFamily="RusticSerif"/>
+                                </VerticalStackLayout>
+
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+
+                <Label x:Name="NoResultsLabel"
+                       Text="No results found"
+                       FontSize="18"
+                       TextColor="DarkRed"
+                       FontFamily="RusticSerif"
+                       HorizontalOptions="Center"
+                       IsVisible="False" />
+
+                <Button Text="Upload Files"
+                        Clicked="OnNavigateToUploadPage"
+                        Style="{StaticResource PrimaryButton}" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>

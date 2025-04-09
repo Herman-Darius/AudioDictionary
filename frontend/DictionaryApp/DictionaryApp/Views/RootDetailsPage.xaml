@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="DictionaryApp.Views.RootDetailsPage"
+    Title="Root Details"
+    BackgroundColor="#FDF6EC">
+
+    <ContentPage.Resources>
+        <!-- Rustic Header Style -->
+        <Style x:Key="RusticHeader" TargetType="Label">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="TextColor" Value="#5D3A00"/>
+            <Setter Property="FontFamily" Value="serif"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+
+        <!-- Rustic SubText Style -->
+        <Style x:Key="RusticSubText" TargetType="Label">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="TextColor" Value="#6E5841"/>
+            <Setter Property="FontAttributes" Value="Italic"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+
+        <!-- Rustic Section Header Style -->
+        <Style x:Key="RusticSectionHeader" TargetType="Label">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="TextColor" Value="#8B4513"/>
+            <Setter Property="Margin" Value="0,15,0,5"/>
+        </Style>
+
+        <!-- Rustic Button Style -->
+        <Style x:Key="RusticButton" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#A9743F"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Padding" Value="10"/>
+        </Style>
+
+        <!-- Phrase Container Style (Frame) -->
+        <Style x:Key="PhraseContainer" TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="#FFF9F0"/>
+            <Setter Property="Padding" Value="12"/>
+            <Setter Property="Margin" Value="0,6"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="HasShadow" Value="True"/>
+        </Style>
+
+        <!-- Rustic Phrase Text Style -->
+        <Style x:Key="RusticPhraseText" TargetType="Label">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="serif"/>
+            <Setter Property="TextColor" Value="#4B2E06"/>
+            <Setter Property="LineHeight" Value="1.3"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <Grid>
+        <!-- Wood Background Image -->
+        <Image Source="rustic_wood_bg.jpg"
+               Aspect="AspectFill"
+               Opacity="0.2"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"
+               ZIndex="0"/>
+        <!-- Falling Leaves Animation GIF -->
+        <Image Source="leaves.gif"
+               Aspect="AspectFill"
+               Opacity="0.4"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"
+               ZIndex="1"/>
+        <!-- Spinner -->
+        <ActivityIndicator x:Name="LoadingIndicator"
+                           IsRunning="False"
+                           IsVisible="False"
+                           Color="#8B4513"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           WidthRequest="80"
+                           HeightRequest="80"
+                           ZIndex="2"/>
+        <!-- Main Content -->
+        <ScrollView x:Name="MainContent" Opacity="0" ZIndex="3">
+            <VerticalStackLayout Padding="20" Spacing="16">
+                <Label x:Name="RootLabel" Style="{StaticResource RusticHeader}" />
+                <Label x:Name="DefinitionLabel" Style="{StaticResource RusticSubText}" />
+                <Button Text="📋"
+                        Style="{StaticResource RusticButton}"
+                        Clicked="OnCopyRootClicked" />
+                <Label Text="Direct Phrases" Style="{StaticResource RusticSectionHeader}" />
+                <StackLayout x:Name="DirectPhrasesStackLayoutInstance" />
+                <Label Text="Related Phrases" Style="{StaticResource RusticSectionHeader}" />
+                <StackLayout x:Name="RelatedPhrasesStackLayoutInstance" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

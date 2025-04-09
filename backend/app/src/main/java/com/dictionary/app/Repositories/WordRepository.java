@@ -14,4 +14,6 @@ public interface WordRepository extends JpaRepository<Word, Integer> {
     Word findByWordNameIgnoreCase(String wordName);
     List<Word> findByRoot(WordRoot root);
     Optional<Word> findByWordName(String wordName);
+
+    List<Word> findByRootId(Integer rootId);
 }

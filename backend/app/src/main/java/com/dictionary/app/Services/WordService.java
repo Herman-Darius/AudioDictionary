@@ -10,10 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -23,6 +20,81 @@ public class WordService {
     private final WordRepository wordRepository;
     @Autowired
     private final PhraseRepository phraseRepository;
+
+
+    public ResponseEntity<?> searchWordsNew(String query) {
+        if (query == null || query.trim().isEmpty()) {
+            return ResponseEntity.badRequest().body(Map.of("error", "Search query cannot be empty."));
+        }
+
+        // Use startingWith instead of containing
+        List<Word> words = wordRepository.findByWordNameStartingWithIgnoreCase(query);
+        if (words.isEmpty()) {
+            return ResponseEntity.ok(Map.of("message", "No words found starting with: " + query));
+        }
+
+        // Group words by their root name
+        Map<String, List<Word>> groupedByRoot = words.stream()
+                .collect(Collectors.groupingBy(word -> word.getRoot().getName()));
+
+        List<String> formattedResults = new ArrayList<>();
+
+        // Process each group of words with the same root
+        for (Map.Entry<String, List<Word>> entry : groupedByRoot.entrySet()) {
+            String rootName = entry.getKey();
+            List<Word> groupWords = entry.getValue();
+
+            // Build a list of affix information for each word in the group
+            List<AffixInfo> infos = new ArrayList<>();
+            for (Word w : groupWords) {
+                boolean isPrefix = false;
+                String affix = "";
+                // Check if the word starts with the root; if so, the extra part is the suffix
+                if (w.getWordName().startsWith(rootName)) {
+                    affix = w.getWordName().substring(rootName.length());
+                }
+                // Otherwise, if it ends with the root then treat the extra part as a prefix
+                else if (w.getWordName().endsWith(rootName)) {
+                    affix = w.getWordName().substring(0, w.getWordName().length() - rootName.length());
+                    isPrefix = true;
+                }
+                infos.add(new AffixInfo(w, affix, isPrefix));
+            }
+
+            // Choose a base word – preferably one that starts with the root (suffix variant) and with the smallest affix
+            AffixInfo baseInfo = infos.stream()
+                    .filter(info -> !info.affix.isEmpty() && !info.isPrefix)
+                    .min(Comparator.comparingInt(info -> info.affix.length()))
+                    .orElse(infos.get(0));
+
+            // Collect unique affixes from the rest (skip the base word)
+            Set<String> otherAffixes = infos.stream()
+                    .filter(info -> info.word != baseInfo.word && !info.affix.isEmpty())
+                    .map(info -> info.isPrefix ? info.affix + "-" : "-" + info.affix)
+                    .collect(Collectors.toSet());
+
+            String result = baseInfo.word.getWordName();
+            if (!otherAffixes.isEmpty()) {
+                result += " (" + String.join(", ", otherAffixes) + ")";
+            }
+            formattedResults.add(result);
+        }
+
+        return ResponseEntity.ok(formattedResults);
+    }
+    private static class AffixInfo {
+        Word word;
+        String affix;
+        boolean isPrefix;
+
+        AffixInfo(Word word, String affix, boolean isPrefix) {
+            this.word = word;
+            this.affix = affix;
+            this.isPrefix = isPrefix;
+        }
+    }
+
+
 
     public ResponseEntity<?> searchWords(String query) {
         if (query == null || query.trim().isEmpty()) {
@@ -50,7 +122,7 @@ public class WordService {
     /**
      * Retrieve phrases for a given word, and find all phrases containing the word.
      */
-    public ResponseEntity<?> getPhrasesForWord(Integer wordId) {
+    /*public ResponseEntity<?> getPhrasesForWord(Integer wordId) {
         Optional<Word> wordOpt = wordRepository.findById(wordId);
         if (wordOpt.isEmpty()) {
             return ResponseEntity.status(404).body(Map.of("error", "Word not found with ID: " + wordId));
@@ -77,7 +149,7 @@ public class WordService {
         response.put("relatedPhrases", formattedPhrases);
 
         return ResponseEntity.ok(response);
-    }
+    }*/
 
     public ResponseEntity<Word> getWordById(Integer wordId) {
         // Use Optional to safely handle missing word
@@ -119,4 +191,28 @@ public class WordService {
 
         return words;
     }
+
+    public List<Word> getAllWords() {
+        return wordRepository.findAll();
+    }
+
+    public ResponseEntity<?> searchWordsWithRoots(String query) {
+        List<Word> words = wordRepository.findByWordNameStartingWithIgnoreCase(query);
+
+        Map<String, Map<String, Object>> groupedWords = new HashMap<>();
+        for (Word word : words) {
+            String rootName = word.getRoot().getName();
+            String suffix = word.getSuffix();
+
+            groupedWords.putIfAbsent(rootName, new HashMap<>());
+            groupedWords.get(rootName).putIfAbsent("baseWord", word.getWordName());
+
+            List<String> suffixes = (List<String>) groupedWords.get(rootName).getOrDefault("suffixes", new ArrayList<>());
+            suffixes.add("-" + suffix);
+            groupedWords.get(rootName).put("suffixes", suffixes);
+        }
+
+        return ResponseEntity.ok(groupedWords);
+    }
+
 }

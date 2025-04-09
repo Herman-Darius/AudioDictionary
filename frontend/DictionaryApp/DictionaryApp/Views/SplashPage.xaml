@@ -1,0 +1,44 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DictionaryApp.Views.SplashPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#FDF6EC">
+
+    <Grid>
+        <!-- 🌲 Background -->
+        <Image Source="rustic_wood_bg.jpg"
+               Aspect="AspectFill"
+               Opacity="0.3"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"
+               ZIndex="0" />
+
+        <!-- 🍃 Animated overlay -->
+        <Image Source="leaves.gif"
+               Aspect="AspectFill"
+               Opacity="0.4"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"
+               ZIndex="1" />
+
+        <!-- 🌟 Splash Content -->
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" ZIndex="2"
+                             Spacing="20" Padding="30">
+
+            <!-- 🖼️ App Logo -->
+            <Image Source="logo.png" WidthRequest="160" HeightRequest="160" />
+
+            <!-- ⏳ Activity Spinner -->
+            <ActivityIndicator IsRunning="True"
+                               Color="#8B4513"
+                               WidthRequest="60"
+                               HeightRequest="60" />
+
+            <!-- 📝 Loading Label -->
+            <Label x:Name="LoadingMessageLabel"
+                   Text="Se pregătesc vorbele..."
+                   Opacity="1"
+                   Style="{StaticResource RusticMessageStyle}" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

@@ -13,6 +13,7 @@ namespace DictionaryApp.Services
     {
         private readonly HttpClient _httpClient;
         private readonly IAudioManager _audioManager;
+        private IAudioPlayer _currentPlayer;
 
         public AudioService(IHttpClientFactory httpClientFactory, IAudioManager audioManager)
         {
@@ -96,35 +97,34 @@ namespace DictionaryApp.Services
         {
             try
             {
+                // 🔇 Stop previous
+                _currentPlayer?.Stop();
+                _currentPlayer?.Dispose();
+                _currentPlayer = null;
+
                 var response = await _httpClient.GetAsync($"api/audio/phrases/{phraseId}");
                 if (!response.IsSuccessStatusCode)
                 {
                     Console.WriteLine($"Error: Received status code {response.StatusCode}");
                     return;
                 }
-                var responseStream = await response.Content.ReadAsStreamAsync();
 
+                var responseStream = await response.Content.ReadAsStreamAsync();
                 if (responseStream == null || responseStream.Length == 0)
                 {
-                    Console.WriteLine("Error: Audio stream is null or empty.");
+                    Console.WriteLine("Audio stream is null or empty.");
                     return;
                 }
 
-                Console.WriteLine($"Audio stream successfully retrieved with length: {responseStream.Length} bytes.");
-
-                var player = _audioManager.CreatePlayer(responseStream);
-
-                if (player == null)
-                {
-                    Console.WriteLine("Error: Unable to create player.");
-                    return;
-                }
-                player.Play();
+                _currentPlayer = _audioManager.CreatePlayer(responseStream);
+                _currentPlayer.Play();
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error playing phrase audio: {ex.Message}");
+                Console.WriteLine($"Error playing audio: {ex.Message}");
             }
         }
+
     }
+
 }

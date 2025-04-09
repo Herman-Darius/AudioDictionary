@@ -10,6 +10,7 @@ namespace DictionaryApp.Models
     {
         public int id { get; set; } 
         public string content { get; set; }
+        public string definition { get; set; }
         public string audioFile { get; set; }
     }
 }

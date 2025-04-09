@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using DictionaryApp.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +32,7 @@ namespace DictionaryApp.Services
                 // Log the response content for debugging
                 var jsonResponse = await response.Content.ReadAsStringAsync();
                 Console.WriteLine($"SearchWords Response: {jsonResponse}");
-
+                
                 return JsonConvert.DeserializeObject<List<Word>>(jsonResponse) ?? new List<Word>();
             }
             catch (Exception ex)
@@ -67,46 +68,107 @@ namespace DictionaryApp.Services
         }
         public async Task<Word> GetWordByNameAsync(string wordName)
         {
-            if (string.IsNullOrEmpty(wordName))
-                return null;
-
             try
             {
-                var response = await _httpClient.GetStringAsync($"api/words/searchByName?wordName={wordName}");
-
-                // Deserialize the response into a Word object
+                var response = await _httpClient.GetStringAsync($"/api/words/name/{wordName}");
                 return JsonConvert.DeserializeObject<Word>(response);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error fetching word by name: {ex.Message}");
+                Console.WriteLine($"Error fetching word details: {ex.Message}");
                 return null;
             }
         }
 
-
-
-
-
-        //--------------> Asta o las pentru mai tarziu <--------------
-
-        /*public async Task<List<Word>> SearchWordsAsync(string query)
-        {
-            var response = await _httpClient.GetStringAsync($"api/words/search?query={query}");
-            return JsonConvert.DeserializeObject<List<Word>>(response) ?? new List<Word>();
-        }
-
-        public async Task<List<Word>> GetWordsByLetterAsync(string letter)
-        {
-            var response = await _httpClient.GetStringAsync($"api/words/letter/{letter}");
-            return JsonConvert.DeserializeObject<List<Word>>(response) ?? new List<Word>();
-        }
-
         public async Task<List<Word>> GetAllWordsAsync()
         {
-            var response = await _httpClient.GetStringAsync("api/words");
-            return JsonConvert.DeserializeObject<List<Word>>(response) ?? new List<Word>();
+            try
+            {
+                var response = await _httpClient.GetStringAsync("api/words/all");
+                return JsonConvert.DeserializeObject<List<Word>>(response);
+
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"Error fetching words: {ex.Message}");
+                return new List<Word>();
+            }
+        }
+
+
+       /* public async Task<List<WordRoot>> SearchRootsAsync(string query)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"api/roots/search?query={query}");
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine($"Error: {response.StatusCode}");
+                    return new List<WordRoot>();
+                }
+
+                var jsonResponse = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"SearchRoots Response: {jsonResponse}");
+
+                return JsonConvert.DeserializeObject<List<WordRoot>>(jsonResponse) ?? new List<WordRoot>();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error fetching roots: {ex.Message}");
+                return new List<WordRoot>();
+            }
         }*/
 
+
+
+
+        public async Task<List<RootResult>> SearchRootsAsync(string query)
+        {
+            var response = await _httpClient.GetAsync($"api/roots/search-root-by-word?query={query}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<RootResult>>(json);
+            }
+
+            return new List<RootResult>();
+        }
+
+        public async Task<WordRoot?> GetRootByNameAsync(string name)
+        {
+            var response = await _httpClient.GetAsync($"api/roots/name/{name}");
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<WordRoot>(json);
+            }
+
+            return null;
+        }
+        public async Task<WordRoot?> GetRootByWordAsync(string wordName)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"api/words/by-word?wordName={wordName}");
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine($"Failed to fetch root for word: {wordName}, Status: {response.StatusCode}");
+                    return null;
+                }
+
+                var json = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<WordRoot>(json);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception in GetRootByWordAsync: {ex.Message}");
+                return null;
+            }
+        }
+
     }
+
 }

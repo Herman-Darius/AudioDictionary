@@ -112,5 +112,38 @@ namespace DictionaryApp.Services
                 return phrase;
             }
         }
+
+        public async Task<List<Phrase>> GetPhrasesByRootIdAsync(int rootId)
+        {
+            var response = await _httpClient.GetAsync($"api/phrases/{rootId}/phrases");
+            if (!response.IsSuccessStatusCode) return new List<Phrase>();
+
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<List<Phrase>>(json) ?? new List<Phrase>();
+        }
+
+        public async Task<List<Phrase>> GetRelatedPhrasesByRootIdAsync(int rootId)
+        {
+            var response = await _httpClient.GetAsync($"api/phrases/{rootId}/related-phrases");
+            if (!response.IsSuccessStatusCode) return new List<Phrase>();
+
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<List<Phrase>>(json) ?? new List<Phrase>();
+        }
+
+        internal async Task PlayPhraseAudioAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+        public async Task<List<Phrase>> GetPhrasesWithLinksByRootIdAsync(int rootId)
+        {
+            var response = await _httpClient.GetAsync($"api/phrases/{rootId}/phrases-with-links");
+            if (!response.IsSuccessStatusCode) return new List<Phrase>();
+
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<List<Phrase>>(json) ?? new List<Phrase>();
+        }
+
     }
+
 }

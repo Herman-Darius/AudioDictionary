@@ -5,11 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:DictionaryApp"
     Shell.FlyoutBehavior="Flyout"
-    Title="DictionaryApp">
+    Title="DictionaryApp"
+    BackgroundColor="#4CAF50"
+    ForegroundColor="White"
+    Shell.NavBarHasShadow="True"
+    Shell.TitleColor="White">
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-
 </Shell>

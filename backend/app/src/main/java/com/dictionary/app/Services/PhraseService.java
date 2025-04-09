@@ -2,7 +2,9 @@ package com.dictionary.app.Services;
 
 import com.dictionary.app.Models.Phrase;
 import com.dictionary.app.Models.Word;
+import com.dictionary.app.Models.WordRoot;
 import com.dictionary.app.Repositories.PhraseRepository;
+import com.dictionary.app.Repositories.RootRepository;
 import com.dictionary.app.Repositories.WordRepository;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,38 +26,53 @@ public class PhraseService {
     @Autowired
     private WordRepository wordRepository;
 
-    public List<Phrase> getDirectPhrasesForWord(Integer wordId) {
-        return phraseRepository.findByWordId(wordId);  // Directly associated phrases by wordId
+    @Autowired
+    private RootRepository rootRepository;
+
+    public List<Phrase> getDirectPhrasesForRoot(Integer rootId) {
+        return phraseRepository.findByRootId(rootId);  // Directly associated phrases by rootId
     }
 
-    // Fetch Related Phrases (where the word appears in content)
-    public List<Phrase> getRelatedPhrasesForWord(Integer wordId, String wordName) {
-        return phraseRepository.findByContentContainingIgnoreCase(wordName);  // Matching the word in content
+    // Fetch related phrases where any word with the given root appears
+    public List<Phrase> getRelatedPhrasesForRoot(Integer rootId) {
+        // Find all words linked to the given root
+        List<Word> wordsWithRoot = wordRepository.findByRootId(rootId);
+        if (wordsWithRoot.isEmpty()) {
+            return List.of();
+        }
+
+        // Extract word names from these words
+        Set<String> wordNames = wordsWithRoot.stream()
+                .map(Word::getWordName)
+                .collect(Collectors.toSet());
+
+        // Fetch phrases containing any of these words
+        return phraseRepository.findAll().stream()
+                .filter(phrase -> wordNames.stream().anyMatch(word -> phrase.getContent().toLowerCase().contains(word.toLowerCase())))
+                .collect(Collectors.toList());
     }
 
-    // Combine and filter related phrases to exclude direct phrases
+    // Filter related phrases to exclude direct phrases
     public List<Phrase> getFilteredRelatedPhrases(List<Phrase> directPhrases, List<Phrase> relatedPhrases) {
-        // Create a set of direct phrase IDs for easy lookup
         Set<Integer> directPhraseIds = directPhrases.stream()
                 .map(Phrase::getId)
                 .collect(Collectors.toSet());
 
-        // Filter out related phrases whose IDs match direct phrase IDs
         return relatedPhrases.stream()
                 .filter(relatedPhrase -> !directPhraseIds.contains(relatedPhrase.getId()))
                 .collect(Collectors.toList());
     }
 
     public List<Phrase> processPhrasesWithHyperlinks(List<Phrase> phrases) {
-        List<Word> allWords = wordRepository.findAll(); // Get all words from the DB
+        List<WordRoot> allRoots = rootRepository.findAll(); // Get all roots from the DB
 
         for (Phrase phrase : phrases) {
             String content = phrase.getContent();
 
-            for (Word word : allWords) {
-                if (content.contains(word.getWordName())) {
-                    String hyperlink = "<a href='/word/" + word.getId() + "'>" + word.getWordName() + "</a>";
-                    content = content.replaceAll("(?i)\\b" + word.getWordName() + "\\b", hyperlink); // Case-insensitive replacement
+            for (WordRoot root : allRoots) {
+                if (content.contains(root.getName())) {
+                    String hyperlink = "<a href='/root/" + root.getId() + "'>" + root.getName() + "</a>";
+                    content = content.replaceAll("(?i)\\b" + root.getName() + "\\b", hyperlink); // Case-insensitive replacement
                 }
             }
 

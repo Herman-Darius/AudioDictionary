@@ -31,7 +31,7 @@ public class AudioController {
 
         File directory = new File(uploadDir);
         if (!directory.exists()) {
-            directory.mkdirs(); // Create the directory if it doesn't exist
+            directory.mkdirs();
         }
 
         try {

@@ -19,5 +19,8 @@ public class WordRoot {
     @Column(nullable = false)
     private String name;
 
+    @Column(length = 1000)
+    private String definition;
+
 
 }

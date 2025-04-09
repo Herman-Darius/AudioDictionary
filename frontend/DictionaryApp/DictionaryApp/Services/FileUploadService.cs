@@ -128,7 +128,6 @@ namespace DictionaryApp.Services
             }
         }
 
-        // Method for uploading multiple audio files
         public async Task<string> UploadAudioFilesAsync(IEnumerable<FileResult> audioFiles)
         {
             try

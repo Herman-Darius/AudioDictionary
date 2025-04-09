@@ -46,56 +46,81 @@ public class ExcelService {
                 String rootName = row.getCell(0).getStringCellValue().trim();
                 if (rootName.isEmpty()) continue;
 
-                // Check if the root exists in the database, if not, create it
+                // Check if the root exists, if not, create it
                 if (!rootRepository.findByName(rootName).isPresent()) {
                     WordRoot root = new WordRoot();
                     root.setName(rootName);
+
+                    // ADD THIS: Import definition (column index 1 assumed)
+                    if (row.getCell(1) != null) {
+                        root.setDefinition(row.getCell(1).getStringCellValue().trim());
+                    }
+
                     rootRepository.save(root);
                 }
             }
 
-            // Import words and their phrases
+            // Import words using root + prefix/suffix
             Sheet wordSheet = workbook.getSheet("Words");
             for (Row row : wordSheet) {
                 if (row.getRowNum() == 0) continue; // Skip header row
 
-                String wordName = row.getCell(0).getStringCellValue().trim();
-                String audioFile = row.getCell(1).getStringCellValue().trim();
-                String rootName = row.getCell(2).getStringCellValue().trim();
-                String phrases = row.getCell(3) != null ? row.getCell(3).getStringCellValue().trim() : "";
+                String rootName = row.getCell(0).getStringCellValue().trim();
+                String suffix = row.getCell(1) != null ? row.getCell(1).getStringCellValue().trim() : "";
+                String prefix = row.getCell(2) != null ? row.getCell(2).getStringCellValue().trim() : "";
+                String audioFile = row.getCell(3) != null ? row.getCell(3).getStringCellValue().trim() : "";
+                String phrases = row.getCell(4) != null ? row.getCell(4).getStringCellValue().trim() : "";
 
-                if (wordName.isEmpty() || rootName.isEmpty()) {
-                    return ResponseEntity.badRequest().body("Word or Root cannot be empty!");
+                if (rootName.isEmpty()) {
+                    return ResponseEntity.badRequest().body("Root cannot be empty!");
                 }
 
-                // Retrieve the corresponding root from the database
                 Optional<WordRoot> optionalRoot = rootRepository.findByName(rootName);
                 if (!optionalRoot.isPresent()) {
                     return ResponseEntity.badRequest().body("Root not found: " + rootName);
                 }
 
                 WordRoot root = optionalRoot.get();
-                Word word = new Word();
-                word.setWordName(wordName);
-                word.setAudioFile(audioFile);
-                word.setRoot(root); // Associate the word with the existing root
-                wordRepository.save(word);
+                String fullWord = prefix + rootName + suffix; // Construct the word
 
-                // Handle phrases for this word
-                if (!phrases.isEmpty()) {
-                    String[] phraseArray = phrases.split(",");
-                    for (String phraseText : phraseArray) {
-                        Phrase phrase = new Phrase();
-                        phrase.setContent(phraseText.trim()); // Trim spaces and save the phrase
-                        phrase.setWord(word); // Associate the phrase with the word
-                        phraseRepository.save(phrase);
-                    }
+                Word word = new Word();
+                word.setWordName(fullWord);
+                word.setAudioFile(audioFile);
+                word.setRoot(root);
+                wordRepository.save(word);
+            }
+
+            // Import phrases and bind them to ROOT instead of WORD
+            Sheet phraseSheet = workbook.getSheet("Phrases");
+            for (Row row : phraseSheet) {
+                if (row.getRowNum() == 0) continue; // Skip header row
+
+                String rootName = row.getCell(0).getStringCellValue().trim();
+                String phraseText = row.getCell(1).getStringCellValue().trim();
+                String explication = row.getCell(2).getStringCellValue().trim();
+                String audioFile = row.getCell(3) != null ? row.getCell(3).getStringCellValue().trim() : "";
+
+                if (rootName.isEmpty() || phraseText.isEmpty() || explication.isEmpty()) {
+                    continue; // Skip invalid rows
                 }
+
+                Optional<WordRoot> optionalRoot = rootRepository.findByName(rootName);
+                if (!optionalRoot.isPresent()) {
+                    return ResponseEntity.badRequest().body("Root not found for phrase: " + rootName);
+                }
+
+                WordRoot root = optionalRoot.get();
+
+                Phrase phrase = new Phrase();
+                phrase.setContent("<b><i>" + phraseText + "</i></b>");
+                phrase.setExplication(explication);
+                phrase.setRoot(root); // Bind to ROOT instead of WORD
+                phrase.setAudioFile(audioFile);
+                phraseRepository.save(phrase);
             }
 
             workbook.close();
             return ResponseEntity.ok("Excel file imported successfully!");
-
         } catch (IOException e) {
             return ResponseEntity.status(500).body("Error reading Excel file: " + e.getMessage());
         } catch (Exception e) {

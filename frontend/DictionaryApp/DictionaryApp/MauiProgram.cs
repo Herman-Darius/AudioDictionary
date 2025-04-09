@@ -58,6 +58,13 @@ namespace DictionaryApp
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddTransient<WordDetailsPage>();
             builder.Services.AddTransient<UploadPage>();
+            builder.Services.AddTransient<RootDetailsPage>();
+
+            //fonts
+            builder.ConfigureFonts(fonts =>
+            {
+                fonts.AddFont("serif.ttf", "RusticSerif");
+            });
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
