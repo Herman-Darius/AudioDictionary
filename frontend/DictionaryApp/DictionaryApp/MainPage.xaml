@@ -8,7 +8,7 @@
         <Style x:Key="RusticHeader" TargetType="Label">
             <Setter Property="FontSize" Value="26"/>
             <Setter Property="FontAttributes" Value="Bold"/>
-            <Setter Property="FontFamily" Value="RusticSerif"/>
+            <Setter Property="FontFamily" Value="Serif"/>
             <Setter Property="TextColor" Value="#4B2E06"/>
             <Setter Property="HorizontalOptions" Value="Center"/>
         </Style>
@@ -20,14 +20,14 @@
             <Setter Property="FontSize" Value="16"/>
             <Setter Property="HeightRequest" Value="50"/>
             
-            <Setter Property="FontFamily" Value="RusticSerif"/>
+            <Setter Property="FontFamily" Value="Serif"/>
         </Style>
 
         <Style x:Key="LetterButton" TargetType="Button">
             <Setter Property="BackgroundColor" Value="#A9743F"/>
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="CornerRadius" Value="14"/>
-            <Setter Property="FontFamily" Value="RusticSerif"/>
+            <Setter Property="FontFamily" Value="Serif"/>
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="HeightRequest" Value="50"/>
             <Setter Property="Margin" Value="2"/>
@@ -180,7 +180,7 @@
                        Text="No results found"
                        FontSize="18"
                        TextColor="DarkRed"
-                       FontFamily="RusticSerif"
+                       FontFamily="Serif"
                        HorizontalOptions="Center"
                        IsVisible="False" />
 
@@ -189,5 +189,18 @@
                         Style="{StaticResource PrimaryButton}" />
             </VerticalStackLayout>
         </ScrollView>
+            <Button Text="ℹ️"
+                    WidthRequest="54"
+                    HeightRequest="54"
+                    CornerRadius="27"
+                    FontSize="26"
+                    BackgroundColor="#8B4513"
+                    TextColor="White"
+                    VerticalOptions="End"
+                    HorizontalOptions="End"
+                    Margin="20"
+                    Clicked="OnInfoClicked"
+                    ZIndex="5"/>
+
     </Grid>
 </ContentPage>

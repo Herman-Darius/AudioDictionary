@@ -4,6 +4,16 @@
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="#FDF6EC">
 
+    <ContentPage.Resources>
+        <Style x:Key="RusticMessageStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="TextColor" Value="#5D3A00"/>
+            <Setter Property="FontFamily" Value="RusticSerif"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="TextTransform" Value="None"/>
+        </Style>
+    </ContentPage.Resources>
+
     <Grid>
         <!-- 🌲 Background -->
         <Image Source="rustic_wood_bg.jpg"

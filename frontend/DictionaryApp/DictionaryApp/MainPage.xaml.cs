@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Collections.ObjectModel;
 using Microsoft.Maui.Controls;
+using CommunityToolkit.Maui.Views;
 
 namespace DictionaryApp
 {
@@ -165,10 +166,11 @@ namespace DictionaryApp
 
             WordListView.SelectedItem = null;
         }
-
-
-
-
+        private void OnInfoClicked(object sender, EventArgs e)
+        {
+            var popup = new InfoPopup();
+            this.ShowPopup(popup);
+        }
     }
 
 }

@@ -90,7 +90,16 @@
                 <Label x:Name="RootLabel" Style="{StaticResource RusticHeader}" />
                 <Label x:Name="DefinitionLabel" Style="{StaticResource RusticSubText}" />
                 <Button Text="📋"
-                        Style="{StaticResource RusticButton}"
+                        WidthRequest="48"
+                        HeightRequest="48"
+                        CornerRadius="12"
+                        FontSize="20"
+                        BackgroundColor="#D6A56C"
+                        TextColor="White"
+                        BorderColor="#8B4513"
+                        BorderWidth="1"
+                        FontFamily="Serif"
+                        HorizontalOptions="Center"
                         Clicked="OnCopyRootClicked" />
                 <Label Text="Direct Phrases" Style="{StaticResource RusticSectionHeader}" />
                 <StackLayout x:Name="DirectPhrasesStackLayoutInstance" />

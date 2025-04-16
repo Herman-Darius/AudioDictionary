@@ -1811,6 +1811,7 @@ D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.
 D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\logo.scale-100.png
 D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-100.png
-D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
-D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\leaves.scale-100.gif
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\rustic_wood_bg.scale-100.jpg
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\leaves.scale-100.gif
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\rustic_wood_bg.scale-100.jpg

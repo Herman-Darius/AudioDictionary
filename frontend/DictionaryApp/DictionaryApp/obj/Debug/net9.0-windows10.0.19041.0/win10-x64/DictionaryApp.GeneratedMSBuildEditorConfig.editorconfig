@@ -58,6 +58,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = DictionaryApp.Views.Dictio
 build_metadata.AdditionalFiles.TargetPath = Views\DictionaryPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\DictionaryPage.xaml
 
+[D:/Versiunea care merge ok pana acum/DictionaryApp/DictionaryApp/Views/InfoPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DictionaryApp.Views.InfoPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\InfoPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\InfoPopup.xaml
+
 [D:/Versiunea care merge ok pana acum/DictionaryApp/DictionaryApp/Views/RootDetailsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DictionaryApp.Views.RootDetailsPage.xaml
