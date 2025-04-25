@@ -2,6 +2,7 @@ package com.dictionary.app.Controllers;
 
 import com.dictionary.app.Models.Phrase;
 import com.dictionary.app.Models.Word;
+import com.dictionary.app.Models.WordRoot;
 import com.dictionary.app.Services.PhraseResponse;
 import com.dictionary.app.Services.PhraseService;
 import com.dictionary.app.Services.WordService;
@@ -25,7 +26,7 @@ public class WordController {
     @GetMapping("/search")
     public ResponseEntity<?> searchWords(@RequestParam String query) {
         System.out.println(query);
-        return wordService.searchWordsNew(query);
+        return wordService.searchWords(query);
     }
 
     @GetMapping("/letter/{letter}")
@@ -34,20 +35,35 @@ public class WordController {
     }
 
 
-
-    @GetMapping("/name/{wordName}")
-    public ResponseEntity<?> getWordByName(@PathVariable String wordName) {
-        // Call the service to get the word by name
+    @GetMapping("/searchByName")
+    public ResponseEntity<?> getWordByName(@RequestParam String wordName) {
         return wordService.getWordByName(wordName);
     }
+
 
     @GetMapping("/search-by-root")
     public List<Word> searchWordsByRoot(@RequestParam String query) {
         return wordService.searchWordsByRoot(query);
     }
 
-    @GetMapping("/all")
-    public List<Word> getAllWords() {
+    @GetMapping("/search-root-by-word")
+    public List<Map<String, String>> searchRootByWord(@RequestParam String query) {
+        return wordService.searchRootsFromWords(query);
+    }
+
+    @GetMapping("/by-word")
+    public ResponseEntity<WordRoot> getRootByWord(@RequestParam String wordName) {
+        WordRoot root = wordService.getRootByWordName(wordName);
+
+        if (root == null) {
+            return ResponseEntity.notFound().build();
+        }
+
+        return ResponseEntity.ok(root);
+    }
+
+    @GetMapping("all")
+    public ResponseEntity<?> getAllWords() {
         return wordService.getAllWords();
     }
 

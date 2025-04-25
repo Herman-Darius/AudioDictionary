@@ -3,6 +3,9 @@ package com.dictionary.app.Models;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Data
 @Setter
@@ -19,8 +22,13 @@ public class WordRoot {
     @Column(nullable = false)
     private String name;
 
-    @Column(length = 1000)
+    @Column(name = "normalized_name")
+    private String normalizedName;
+
+    @Column
     private String definition;
 
+    @OneToMany(mappedBy = "root", cascade = CascadeType.ALL)
+    private List<Phrase> phrases;
 
 }

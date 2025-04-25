@@ -1,5 +1,6 @@
 package com.dictionary.app.Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,14 +19,21 @@ public class Phrase {
     @Column(nullable = false, name = "content")
     private String content;
 
-    @ManyToOne
-    @JoinColumn(name = "root_id", nullable = false)
-    private WordRoot root;
+    @Column
+    private String definition;
 
     @Column
     private String audioFile;
 
-    @Column(nullable = false, name = "explication")
-    private String explication;
+    @ManyToOne
+    @JoinColumn(name = "root_id")
+    @JsonIgnore
+    private WordRoot root;
+
+    @ManyToOne
+    @JoinColumn(name = "word_id")
+    @JsonIgnore
+    private Word word;
+
 
 }

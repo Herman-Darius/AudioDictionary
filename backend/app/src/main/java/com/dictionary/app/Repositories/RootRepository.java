@@ -9,6 +9,11 @@ import java.util.Optional;
 
 public interface RootRepository extends JpaRepository<WordRoot, Integer> {
     Optional<WordRoot> findByName(String rootName);
-    List<WordRoot> findByNameStartingWithIgnoreCase(String query);
-    List<WordRoot> findByNameContainingIgnoreCase(String query);
+
+    List<WordRoot> findByNameStartingWithIgnoreCase(String string);
+
+    WordRoot findByNameIgnoreCase(String name);
+
+    List<WordRoot> findByNormalizedNameStartingWithIgnoreCase(String prefix);
+    WordRoot findByNormalizedNameIgnoreCase(String name);
 }

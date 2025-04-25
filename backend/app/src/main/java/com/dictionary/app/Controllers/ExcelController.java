@@ -20,10 +20,20 @@ public class ExcelController {
 
     @PostMapping("/upload")
     public ResponseEntity<?> uploadExcelFile(@RequestParam("file") MultipartFile file) {
-        System.out.println("I accesed the endpoint /upload");
+        System.out.println("===============================  S-a făcut upload");
+        if (file == null || file.isEmpty()) {
+            return ResponseEntity.badRequest().body(
+                    "Please provide a non-empty Excel file for upload."
+            );
+        }
 
-        excelService.importFromExcel(file);
-        return ResponseEntity.ok("File content uploaded successfully!");
+        try {
+            return excelService.importFromExcel(file);
+        } catch (Exception e) {
+            return ResponseEntity
+                    .status(500)
+                    .body("Unexpected error while processing the file: " + e.getMessage());
+        }
 
     }
 }

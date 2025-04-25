@@ -24,11 +24,8 @@ public class Word {
     @Column
     private String definition;
 
-    /*
-    @Column
-    private String phrase;
-
-     */
+    /*@Column(name = "normalized_name")
+    private String normalizedName;*/
 
     @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "root_id", nullable = false)
@@ -36,6 +33,9 @@ public class Word {
 
     @Column
     private String audioFile;
+
+    @Column(name = "image_file")
+    private String imageFile;
 
     @Transient
     private List<Word> relatedWords;

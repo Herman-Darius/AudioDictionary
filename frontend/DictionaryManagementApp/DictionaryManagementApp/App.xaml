@@ -1,0 +1,10 @@
+﻿<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:DictionaryManagementApp.Resources.Converters;assembly=DictionaryManagementApp"
+             x:Class="DictionaryManagementApp.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <converters:ZeroToBoolConverter x:Key="ZeroToBoolConverter" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

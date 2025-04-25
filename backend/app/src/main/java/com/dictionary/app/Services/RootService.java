@@ -1,35 +1,54 @@
 package com.dictionary.app.Services;
 
-import com.dictionary.app.Models.Word;
+import com.dictionary.app.Utils.SearchUtils;
 import com.dictionary.app.Models.WordRoot;
 import com.dictionary.app.Repositories.RootRepository;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import org.springframework.http.ResponseEntity;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 @Service
 @Data
-@AllArgsConstructor
 public class RootService {
-    private static RootRepository rootRepository;
+    @Autowired
+    private RootRepository rootRepository;
 
-    public ResponseEntity<?> searchRootStartingWith(String query){
-        if (query == null || query.trim().isEmpty()) {
-            return ResponseEntity.badRequest().body(Map.of("error", "Search query cannot be empty."));
+    public List<Map<String, String>> searchRootsByPrefix(String prefix) {
+        String normalizedPrefix = SearchUtils.normalize(prefix);
+        List<WordRoot> matchingRoots = rootRepository.findByNormalizedNameStartingWithIgnoreCase(normalizedPrefix);
+
+        List<Map<String, String>> response = new ArrayList<>();
+        for (WordRoot root : matchingRoots) {
+            Map<String, String> rootData = new HashMap<>();
+            rootData.put("root", root.getName());
+            rootData.put("rootDefinition", root.getDefinition());
+            response.add(rootData);
         }
-        List<WordRoot> roots = rootRepository.findByNameStartingWithIgnoreCase(query);
-        if (roots.isEmpty()) {
-            return ResponseEntity.ok(Map.of("message", "No words found containing: " + query));
-        }
-        return ResponseEntity.ok(roots);
+
+        return response;
     }
 
+    public WordRoot getRootByName(String name) {
+        String normalized = SearchUtils.normalize(name);
+        return rootRepository.findByNormalizedNameIgnoreCase(normalized);
+    }
 
-    public WordRoot findById(Integer rootId) {
-        return rootRepository.findById(rootId).orElse(null);
+    @Scheduled(initialDelay = 12000, fixedDelay = Long.MAX_VALUE)
+    public void normalizeAllRootsOnce() {
+        List<WordRoot> roots = rootRepository.findAll();
+
+        for (WordRoot root : roots) {
+            root.setNormalizedName(SearchUtils.normalize(root.getName()));
+        }
+
+        rootRepository.saveAll(roots);
+        System.out.println("Root normalization completed.");
     }
 }
+
