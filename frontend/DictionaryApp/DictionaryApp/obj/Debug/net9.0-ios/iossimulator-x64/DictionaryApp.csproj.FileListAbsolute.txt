@@ -684,3 +684,15 @@ D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.
 D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-ios\iossimulator-x64\DictionaryApp.AssemblyInfoInputs.cache
 D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-ios\iossimulator-x64\DictionaryApp.AssemblyInfo.cs
 D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-ios\iossimulator-x64\DictionaryApp.csproj.CoreCompileInputs.cache
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\sp\MauiInfo.plist
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\sp\MauiSplash.storyboard
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449.png
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@2x.png
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@3x.png
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\logo_vechi.png
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\copy_icon.png
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\information_icon.png
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\speaker_icon.png
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-ios\iossimulator-x64\DictionaryApp.dll
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-ios\iossimulator-x64\refint\DictionaryApp.dll
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-ios\iossimulator-x64\DictionaryApp.pdb

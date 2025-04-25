@@ -64,7 +64,8 @@ public partial class SplashPage : ContentPage
         Application.Current.MainPage = new NavigationPage(new MainPage(
             App.Services.GetRequiredService<WordService>(),
             App.Services.GetRequiredService<PhraseService>(),
-            App.Services.GetRequiredService<AudioService>()
+            App.Services.GetRequiredService<AudioService>(),
+            App.Services.GetRequiredService<HealthService>()
         ));
 
         Navigation.RemovePage(this);

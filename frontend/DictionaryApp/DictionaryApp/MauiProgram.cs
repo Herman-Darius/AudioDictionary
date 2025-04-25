@@ -38,6 +38,7 @@ namespace DictionaryApp
             builder.Services.AddSingleton<WordService>();
             builder.Services.AddSingleton<PhraseService>();
             builder.Services.AddSingleton<AudioService>();
+            builder.Services.AddSingleton<HealthService>();
             builder.Services.AddSingleton<IAudioManager>(AudioManager.Current);
 
             /*

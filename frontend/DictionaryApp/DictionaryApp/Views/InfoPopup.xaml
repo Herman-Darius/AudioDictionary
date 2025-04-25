@@ -10,38 +10,65 @@
     <ScrollView Padding="20" BackgroundColor="#FDF6EC">
         <VerticalStackLayout Spacing="15">
 
-            <Label Text="📜 Reguli de pronunție:"
-                   FontAttributes="Bold"
-                   FontSize="18"
+            <Label Text="📜 Reguli de pronunție:" 
+                   FontAttributes="Bold" 
+                   FontSize="18" 
                    TextColor="#4B2E06" />
-            <Label Text="cὶ - se pronunță ca grupul ci, dar înlocuind i cu î;
-                    ď , Ď - se pronunță aproximativ ca în grupul ghi înlocuind g cu d;
-                    ę, Ę - se pronunță e cu gura deschisă ca pentru litera a;
-                    í, Í - se pronunță ca un i lung (ex: în cuvântul copii);
-                    ň, Ň - se pronunță n cu toată limba lipită de cerul gurii;
-                    ǫ, Ǫ - se pronunță o cu gura deschisă ca pentru litera a;
-                    ó - este un o mai lung;
-                    ť, Ť - se pronunță t cu toată limba lipită de cerul gurii;
-                    ú - este un u mai lung;"
-                   LineBreakMode="WordWrap"
-                   FontSize="14"
+
+            <Label Text="cὶ - se pronunță ca grupul ci, dar înlocuind i cu î;" 
+                   FontSize="14" 
+                   TextColor="#5D3A00" />
+            <Label Text="ď , Ď - se pronunță aproximativ ca în grupul ghi înlocuind g cu d;" 
+                   FontSize="14" 
+                   TextColor="#5D3A00" />
+            <Label Text="ę, Ę - se pronunță e cu gura deschisă ca pentru litera a;" 
+                   FontSize="14" 
+                   TextColor="#5D3A00" />
+            <Label Text="í, Í - se pronunță ca un i lung (ex: în cuvântul copii);" 
+                   FontSize="14" 
+                   TextColor="#5D3A00" />
+            <Label Text="ň, Ň - se pronunță n cu toată limba lipită de cerul gurii;" 
+                   FontSize="14" 
+                   TextColor="#5D3A00" />
+            <Label Text="ǫ, Ǫ - se pronunță o cu gura deschisă ca pentru litera a;" 
+                   FontSize="14" 
+                   TextColor="#5D3A00" />
+            <Label Text="ó - este un o mai lung;" 
+                   FontSize="14" 
+                   TextColor="#5D3A00" />
+            <Label Text="ť, Ť - se pronunță t cu toată limba lipită de cerul gurii;" 
+                   FontSize="14" 
+                   TextColor="#5D3A00" />
+            <Label Text="ú - este un u mai lung;" 
+                   FontSize="14" 
                    TextColor="#5D3A00" />
 
-            <Label Text="📚 Reguli de editare:"
-                   FontAttributes="Bold"
-                   FontSize="18"
-                   TextColor="#4B2E06" />
-            <Label Text="În cazul substantivelor se prezintă cu litere aldine forma populară și cu litere normale forma literară. În paranteză: pluralul, cu semnul „~” pentru rădăcina comună:
-                        Exemple: casă (~ăsi) - casă (~e); cucuruz (~) - știulete (~ți).
+            <Label Text="📚 Reguli de editare:" 
+                   FontAttributes="Bold" 
+                   FontSize="18" 
+                   TextColor="#4B2E06"
+                   Margin="0,10,0,0" />
 
-                        Pentru adjective/adverbe: forma populară (bold), urmată de literară. Paranteză cu terminațiile (fem. sg., masc. pl., fem. pl.)
-                        Exemple: băncuros (~ǫsă, ~oși, ~ǫse) - glumeț (~ață, ~ți, ~țe);
-                        bugăt (~tă, ~ț, ~ťe) - destul (~lă, ~i, ~le);
-                        lęzňe (~, ~, ~) - ieftin (~ă, ~i, ~e);"
-                   LineBreakMode="WordWrap"
-                   FontSize="14"
+            <Label Text="• Substantive: cu litere aldine forma populară, litere normale forma literară. Paranteză: pluralul, cu ~ pentru rădăcina comună." 
+                   FontSize="14" 
+                   TextColor="#5D3A00" />
+            <Label Text="Exemple: casă (~ăsi) - casă (~e); cucuruz (~) - știulete (~ți)." 
+                   FontSize="14" 
                    TextColor="#5D3A00" />
 
+            <Label Text="• Adjective/Adverbe: forma populară (bold), apoi literară. Paranteză: terminațiile (fem. sg., masc. pl., fem. pl.)" 
+                    FontSize="14" 
+                    TextColor="#5D3A00" />
+            <Label Text="Exemple: băncuros (~ǫsă, ~oși, ~ǫse) - glumeț (~ață, ~ți, ~țe);" 
+                    FontSize="14" 
+                    TextColor="#5D3A00" />
+            <Label Text="bugăt (~tă, ~ț, ~ťe) - destul (~lă, ~i, ~le);" 
+                   FontSize="14" 
+                   TextColor="#5D3A00" />
+            <Label Text="lęzňe (~, ~, ~) - ieftin (~ă, ~i, ~e);" 
+                   FontSize="14" 
+                   TextColor="#5D3A00" />
+            
             <Button Text="Închide"
                     HorizontalOptions="Center"
                     BackgroundColor="#A9743F"

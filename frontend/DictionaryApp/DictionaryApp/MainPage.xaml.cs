@@ -14,23 +14,29 @@ namespace DictionaryApp
         private readonly WordService _wordService;
         private readonly PhraseService _phraseService;
         private readonly AudioService _audioService;
+        private readonly HealthService _healthService;
+        private CancellationTokenSource _cts;
         public ObservableCollection<string> Alphabet { get; set; }
 
-        public MainPage(WordService wordService, PhraseService phraseService, AudioService audioService)
+        public MainPage(WordService wordService, PhraseService phraseService, AudioService audioService, HealthService healthService)
         {
             InitializeComponent();
             _audioService = audioService;
             _wordService = wordService;
             _phraseService = phraseService;
-            
+            _healthService = healthService;
+
             SearchBarInstance.TextChanged += OnSearchTextChanged;
             SearchBarInstance.Text = " ";
             SearchBarInstance.Text = "";
             Alphabet = new ObservableCollection<string>
             {
-                "A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
-                "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
-                "U", "V", "W", "X", "Y", "Z"
+                "A","B","C","D","E","F","G",
+                "H","I","J","K","L","M","N",
+                "O","P","Q","R","S","T","U",
+                "V","W","X","Y","Z",
+                "ă","â","î","ș","ț","ď","ę",
+                "ň","ǫ","ó","ť"
             };
             
             BindingContext = this;
@@ -54,27 +60,43 @@ namespace DictionaryApp
                 return;
             }
 
-            // 🔁 Spinner ON before awaiting
+            if (_cts != null)
+            {
+                _cts.Cancel();
+            }
+
+            _cts = new CancellationTokenSource();
+            var token = _cts.Token;
+
             Device.BeginInvokeOnMainThread(() =>
             {
                 SearchLoadingIndicator.IsRunning = true;
                 SearchLoadingIndicator.IsVisible = true;
             });
 
-            var roots = await _wordService.SearchRootsAsync(query);
-
-            // 🛑 Spinner OFF after search completes
-            Device.BeginInvokeOnMainThread(() =>
+            try
             {
-                SearchLoadingIndicator.IsRunning = false;
-                SearchLoadingIndicator.IsVisible = false;
+                await Task.Delay(250, token);
 
-                WordListView.ItemsSource = roots;
-                WordListView.IsVisible = roots.Count > 0;
-                NoResultsLabel.IsVisible = roots.Count == 0;
-            });
+                if (token.IsCancellationRequested) return;
+
+                var roots = await _wordService.SearchRootsAsync(query);
+
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    SearchLoadingIndicator.IsRunning = false;
+                    SearchLoadingIndicator.IsVisible = false;
+
+                    WordListView.ItemsSource = roots;
+                    WordListView.IsVisible = roots.Count > 0;
+                    NoResultsLabel.IsVisible = roots.Count == 0;
+                });
+            }
+            catch (TaskCanceledException)
+            {
+                // The task was canceled, ignore this one
+            }
         }
-
 
         private void OnSpaceClicked(object sender, EventArgs e)
         {
@@ -93,10 +115,6 @@ namespace DictionaryApp
         {
             SearchBarInstance.Text = string.Empty;
         }
-
-
-
-
 
         private async void OnWordSelected(object sender, SelectionChangedEventArgs e)
         {
@@ -166,11 +184,53 @@ namespace DictionaryApp
 
             WordListView.SelectedItem = null;
         }
-        private void OnInfoClicked(object sender, EventArgs e)
+        private async void OnInfoClicked(object sender, EventArgs e)
         {
             var popup = new InfoPopup();
-            this.ShowPopup(popup);
+            await InfoButton.ScaleTo(0.9, 75, Easing.CubicOut);
+            await InfoButton.ScaleTo(1.05, 75, Easing.CubicIn);
+            await InfoButton.ScaleTo(1, 50);
+
+            await this.ShowPopupAsync(new InfoPopup());
         }
+        private async void OnToggleAlphabetClicked(object sender, EventArgs e)
+        {
+            if (AlphabetContainer.IsVisible)
+            {
+                await AlphabetContainer.TranslateTo(0, -20, 250, Easing.CubicOut);
+                await AlphabetContainer.FadeTo(0, 150, Easing.CubicOut);
+                AlphabetContainer.IsVisible = false;
+                ToggleAlphabetButton.Text = "▼ Afișează butoanele";
+            }
+            else
+            {
+                AlphabetContainer.Opacity = 0;
+                AlphabetContainer.TranslationY = -20;
+                AlphabetContainer.IsVisible = true;
+
+                await AlphabetContainer.TranslateTo(0, 0, 250, Easing.CubicIn);
+                await AlphabetContainer.FadeTo(1, 150, Easing.CubicIn);
+                ToggleAlphabetButton.Text = "▲ Ascunde butoanele";
+            }
+        }
+
+
+        private async Task ShowOfflineBanner()
+        {
+            OfflineBanner.IsVisible = true;
+            await OfflineBanner.FadeTo(1, 300, Easing.CubicInOut);
+        }
+
+        private async Task HideOfflineBanner()
+        {
+            if (OfflineBanner.IsVisible)
+            {
+                await OfflineBanner.FadeTo(0, 300, Easing.CubicInOut);
+                OfflineBanner.IsVisible = false;
+            }
+        }
+
+
     }
 
 }

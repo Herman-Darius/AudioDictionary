@@ -1815,3 +1815,10 @@ D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\bin\Debug\net9.
 D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\rustic_wood_bg.scale-100.jpg
 D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\leaves.scale-100.gif
 D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\rustic_wood_bg.scale-100.jpg
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\information_icon.scale-100.png
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\logo_vechi.scale-100.png
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\speaker_icon.scale-100.png
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\information_icon.scale-100.png
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_vechi.scale-100.png
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\speaker_icon.scale-100.png
+D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\copy_icon.scale-100.png

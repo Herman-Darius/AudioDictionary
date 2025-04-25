@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="DictionaryApp.Views.RootDetailsPage"
     Title="Root Details"
+    NavigationPage.HasNavigationBar="False"
     BackgroundColor="#FDF6EC">
 
     <ContentPage.Resources>
@@ -89,18 +90,20 @@
             <VerticalStackLayout Padding="20" Spacing="16">
                 <Label x:Name="RootLabel" Style="{StaticResource RusticHeader}" />
                 <Label x:Name="DefinitionLabel" Style="{StaticResource RusticSubText}" />
-                <Button Text="📋"
-                        WidthRequest="48"
-                        HeightRequest="48"
-                        CornerRadius="12"
-                        FontSize="20"
-                        BackgroundColor="#D6A56C"
-                        TextColor="White"
-                        BorderColor="#8B4513"
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <ImageButton 
+                        Source="copy_icon.png"
+                        WidthRequest="36"
+                        HeightRequest="36"
+                        BackgroundColor="#EEE5D5"
+                        CornerRadius="10"
+                        Padding="4"
+                        BorderColor="#A67C52"
                         BorderWidth="1"
-                        FontFamily="Serif"
-                        HorizontalOptions="Center"
+                        Aspect="AspectFit"
                         Clicked="OnCopyRootClicked" />
+                </HorizontalStackLayout>
+
                 <Label Text="Direct Phrases" Style="{StaticResource RusticSectionHeader}" />
                 <StackLayout x:Name="DirectPhrasesStackLayoutInstance" />
                 <Label Text="Related Phrases" Style="{StaticResource RusticSectionHeader}" />

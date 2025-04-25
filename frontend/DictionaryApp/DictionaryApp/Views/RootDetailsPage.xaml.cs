@@ -1,6 +1,7 @@
 ﻿
 using DictionaryApp.Models;
 using DictionaryApp.Services;
+using Microsoft.Maui.Layouts;
 using Microsoft.Maui.Platform;
 using System.Runtime.CompilerServices;
 
@@ -96,13 +97,6 @@ public partial class RootDetailsPage : ContentPage
                 Style = (Style)Resources["PhraseContainer"]
             };
 
-            var innerLayout = new StackLayout
-            {
-                Orientation = StackOrientation.Vertical,
-                Spacing = 6
-            };
-
-            // Build formatted text with hyperlinks
             var formatted = new FormattedString();
             var words = phrase.content.Split(' ');
 
@@ -155,26 +149,20 @@ public partial class RootDetailsPage : ContentPage
                 FontAttributes = FontAttributes.Italic
             };
 
-            var audioButton = new Button
+            var audioButton = new ImageButton
             {
-                Text = "🔊",
-                BackgroundColor = Color.FromArgb("#D9C4A4"),
-                WidthRequest = 44,
-                HeightRequest = 44,
-                CornerRadius = 22,
-                FontSize = 18,
-                FontFamily = "RusticSerif",
+                Source = "speaker_icon.png",
+                BackgroundColor = Color.FromArgb("#EEE5D5"),
+                WidthRequest = 32,
+                HeightRequest = 32,
+                CornerRadius = 16,
+                Padding = 4,
                 BorderColor = Color.FromArgb("#A67C52"),
-                BorderWidth = 2,
-                Shadow = new Shadow
-                {
-                    Brush = Color.FromArgb("#444"),
-                    Offset = new Point(1, 2),
-                    Radius = 4,
-                    Opacity = 0.3f
-                },
+                BorderWidth = 1,
+                Aspect = Aspect.AspectFit,
                 HorizontalOptions = LayoutOptions.End,
-                VerticalOptions = LayoutOptions.Center
+                VerticalOptions = LayoutOptions.Start,
+                Margin = new Thickness(0, 0, 0, 0)
             };
 
             var loadingIndicator = new ActivityIndicator
@@ -212,21 +200,7 @@ public partial class RootDetailsPage : ContentPage
                 }
             };
 
-            var buttonGrid = new Grid
-            {
-                ColumnDefinitions =
-            {
-                new ColumnDefinition { Width = GridLength.Auto },
-                new ColumnDefinition { Width = GridLength.Auto }
-            },
-                HorizontalOptions = LayoutOptions.End,
-                VerticalOptions = LayoutOptions.Center
-            };
-
-            buttonGrid.Add(audioButton, 0, 0);
-            buttonGrid.Add(loadingIndicator, 1, 0);
-
-            var headerRow = new Grid
+            var phraseTopGrid = new Grid
             {
                 ColumnDefinitions =
             {
@@ -235,13 +209,26 @@ public partial class RootDetailsPage : ContentPage
             }
             };
 
-            headerRow.Add(phraseLabel, 0, 0);
-            headerRow.Add(buttonGrid, 1, 0);
+            phraseTopGrid.Add(phraseLabel, 0, 0);
+            phraseTopGrid.Add(new Grid
+            {
+                Children =
+            {
+                audioButton,
+                loadingIndicator
+            },
+                HorizontalOptions = LayoutOptions.End,
+                VerticalOptions = LayoutOptions.Start
+            }, 1, 0);
 
-            innerLayout.Children.Add(headerRow);
-            innerLayout.Children.Add(definitionLabel);
+            var innerLayout = new StackLayout
+            {
+                Orientation = StackOrientation.Vertical,
+                Spacing = 6,
+                Children = { phraseTopGrid, definitionLabel }
+            };
+
             phraseContainer.Content = innerLayout;
-
             container.Children.Add(phraseContainer);
         }
     }
