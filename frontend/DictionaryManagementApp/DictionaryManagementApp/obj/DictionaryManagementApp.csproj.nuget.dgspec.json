@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Herman Darius-Razvan\\source\\repos\\DictionaryManagementApp\\DictionaryManagementApp\\DictionaryManagementApp.csproj": {}
+    "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryManagementApp\\DictionaryManagementApp\\DictionaryManagementApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Herman Darius-Razvan\\source\\repos\\DictionaryManagementApp\\DictionaryManagementApp\\DictionaryManagementApp.csproj": {
+    "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryManagementApp\\DictionaryManagementApp\\DictionaryManagementApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Herman Darius-Razvan\\source\\repos\\DictionaryManagementApp\\DictionaryManagementApp\\DictionaryManagementApp.csproj",
+        "projectUniqueName": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryManagementApp\\DictionaryManagementApp\\DictionaryManagementApp.csproj",
         "projectName": "DictionaryManagementApp",
-        "projectPath": "C:\\Users\\Herman Darius-Razvan\\source\\repos\\DictionaryManagementApp\\DictionaryManagementApp\\DictionaryManagementApp.csproj",
+        "projectPath": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryManagementApp\\DictionaryManagementApp\\DictionaryManagementApp.csproj",
         "packagesPath": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Herman Darius-Razvan\\source\\repos\\DictionaryManagementApp\\DictionaryManagementApp\\obj\\",
+        "outputPath": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryManagementApp\\DictionaryManagementApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

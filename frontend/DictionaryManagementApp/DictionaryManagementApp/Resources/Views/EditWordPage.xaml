@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="DictionaryManagementApp.Resources.Views.EditWordPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Editare Cuvânt"
+    BackgroundColor="#FFF7ED">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- Word fields -->
+            <Label Text="Cuvânt" FontAttributes="Bold" />
+            <Entry x:Name="WordNameEntry" Placeholder="Cuvânt" />
+
+            <Label Text="Rădăcină" FontAttributes="Bold" />
+            <Entry x:Name="RootEntry" Placeholder="Rădăcină" />
+
+            <Label Text="Definiție" FontAttributes="Bold" />
+            <Editor x:Name="DefinitionEditor" HeightRequest="80" />
+
+            <!-- Word audio/image -->
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="🎤 Alege Audio"
+                Clicked="OnPickWordAudioClicked" />
+                <Label x:Name="WordAudioLabel" VerticalOptions="Center" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="🖼️ Alege Imagine"
+                Clicked="OnPickWordImageClicked" />
+                <Label x:Name="WordImageLabel" VerticalOptions="Center" />
+            </HorizontalStackLayout>
+
+            <!-- Phrases -->
+            <Label Text="Fraze" FontAttributes="Bold" FontSize="18" />
+            <CollectionView
+        x:Name="PhrasesCollection"
+        ItemsSource="{Binding PhraseEditors}"
+        SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10"
+                  Margin="0,5"
+                  BackgroundColor="#FAF8F2"
+                  RowSpacing="8">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Entry Grid.Row="0"
+                     Text="{Binding Content}"
+                     Placeholder="Fraza"
+                     HorizontalOptions="FillAndExpand"/>
+                            <Entry Grid.Row="1"
+                     Text="{Binding Definition}"
+                     Placeholder="Definiție frază"
+                     HorizontalOptions="FillAndExpand"/>
+                            <HorizontalStackLayout Grid.Row="2" Spacing="8">
+                                <Button Text="🎤 Alege Audio"
+                        Command="{Binding PickAudioCommand}" />
+                                <Label Text="{Binding AudioFileName}"
+                       VerticalOptions="Center" />
+                            </HorizontalStackLayout>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Button Text="+ Adaugă încă o frază"
+              Clicked="OnAddPhraseClicked" />
+
+            <Button Text="Salvează modificările"
+              BackgroundColor="#4CAF50"
+              TextColor="White"
+              CornerRadius="8"
+              Clicked="OnSaveClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

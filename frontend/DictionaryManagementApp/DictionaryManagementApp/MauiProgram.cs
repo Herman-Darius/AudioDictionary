@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Maui;
 using DictionaryManagementApp.Resources.Converters;
 using DictionaryManagementApp.Resources.Services;
+using DictionaryManagementApp.Resources.Views;
 using Microsoft.Extensions.Logging;
 
 namespace DictionaryManagementApp;
@@ -35,6 +36,9 @@ public static class MauiProgram
 
         //pages
         builder.Services.AddSingleton<MainPage>();
+        builder.Services.AddSingleton<SplashPage>();
+        builder.Services.AddTransient<WordsPage>();
+        builder.Services.AddTransient<EditWordPage>();
 
 #if DEBUG
         builder.Logging.AddDebug();

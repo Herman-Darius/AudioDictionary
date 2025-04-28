@@ -3,6 +3,7 @@ using DictionaryManagementApp.Resources.Models;
 using DictionaryManagementApp.Resources.Services;
 using System.Collections.ObjectModel;
 using CommunityToolkit.Maui;
+using DictionaryManagementApp.Resources.Views;
 
 namespace DictionaryManagementApp
 {
@@ -124,7 +125,12 @@ namespace DictionaryManagementApp
             DropLabel.Text = "📎 Trage fișierul aici...";
             PreviewCollection.IsVisible = false;
         }
-
+        private async void OnWordsPageClicked(object sender, EventArgs e)
+        {
+            var services = Application.Current!.Handler.MauiContext.Services;
+            var wordsPage = services.GetRequiredService<WordsPage>();
+            await Navigation.PushAsync(wordsPage);
+        }
 
 
 

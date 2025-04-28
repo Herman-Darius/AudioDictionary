@@ -8,7 +8,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DictionaryManagementApp
-build_property.ProjectDir = C:\Users\Herman Darius-Razvan\source\repos\DictionaryManagementApp\DictionaryManagementApp\
+build_property.ProjectDir = C:\Users\Herman Darius-Razvan\Desktop\Licenta-Aplicatie-Mobile\frontend\DictionaryManagementApp\DictionaryManagementApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotOptimizerEnabled = true
@@ -22,32 +22,50 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Herman Darius-Razvan/source/repos/DictionaryManagementApp/DictionaryManagementApp/App.xaml]
+[C:/Users/Herman Darius-Razvan/Desktop/Licenta-Aplicatie-Mobile/frontend/DictionaryManagementApp/DictionaryManagementApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DictionaryManagementApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Herman Darius-Razvan/source/repos/DictionaryManagementApp/DictionaryManagementApp/AppShell.xaml]
+[C:/Users/Herman Darius-Razvan/Desktop/Licenta-Aplicatie-Mobile/frontend/DictionaryManagementApp/DictionaryManagementApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DictionaryManagementApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Herman Darius-Razvan/source/repos/DictionaryManagementApp/DictionaryManagementApp/MainPage.xaml]
+[C:/Users/Herman Darius-Razvan/Desktop/Licenta-Aplicatie-Mobile/frontend/DictionaryManagementApp/DictionaryManagementApp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DictionaryManagementApp.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/Herman Darius-Razvan/source/repos/DictionaryManagementApp/DictionaryManagementApp/Resources/Styles/Colors.xaml]
+[C:/Users/Herman Darius-Razvan/Desktop/Licenta-Aplicatie-Mobile/frontend/DictionaryManagementApp/DictionaryManagementApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DictionaryManagementApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Herman Darius-Razvan/source/repos/DictionaryManagementApp/DictionaryManagementApp/Resources/Styles/Styles.xaml]
+[C:/Users/Herman Darius-Razvan/Desktop/Licenta-Aplicatie-Mobile/frontend/DictionaryManagementApp/DictionaryManagementApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DictionaryManagementApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Herman Darius-Razvan/Desktop/Licenta-Aplicatie-Mobile/frontend/DictionaryManagementApp/DictionaryManagementApp/Resources/Views/EditWordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DictionaryManagementApp.Resources.Views.EditWordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Views\EditWordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Views\EditWordPage.xaml
+
+[C:/Users/Herman Darius-Razvan/Desktop/Licenta-Aplicatie-Mobile/frontend/DictionaryManagementApp/DictionaryManagementApp/Resources/Views/SplashPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DictionaryManagementApp.Resources.Views.SplashPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Views\SplashPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Views\SplashPage.xaml
+
+[C:/Users/Herman Darius-Razvan/Desktop/Licenta-Aplicatie-Mobile/frontend/DictionaryManagementApp/DictionaryManagementApp/Resources/Views/WordsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DictionaryManagementApp.Resources.Views.WordsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Views\WordsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Views\WordsPage.xaml

@@ -1,15 +1,18 @@
-﻿namespace DictionaryManagementApp
+﻿using DictionaryManagementApp.Resources.Views;
+
+namespace DictionaryManagementApp
 {
     public partial class App : Application
     {
-        public App()
+        public App(SplashPage splash)
         {
             InitializeComponent();
+
+            MainPage = splash;
         }
 
-        protected override Window CreateWindow(IActivationState? activationState)
-        {
-            return new Window(new AppShell());
-        }
+        protected override Window CreateWindow(IActivationState? activationState)        
+            => new Window(MainPage);
+        
     }
 }

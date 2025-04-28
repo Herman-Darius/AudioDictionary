@@ -36,6 +36,11 @@
                         BackgroundColor="#4CAF50"
                         TextColor="White"
                         CornerRadius="8"/>
+                <Button Text="📖 Vezi toate cuvintele"
+                      Clicked="OnWordsPageClicked"
+                      BackgroundColor="#2196F3"
+                      TextColor="White"
+                      CornerRadius="8"/>
             </VerticalStackLayout>
 
             <!-- Divider -->

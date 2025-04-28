@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="DictionaryManagementApp.Resources.Views.SplashPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#FFF7ED"
+    NavigationPage.HasNavigationBar="False">
+
+    <Grid Padding="40">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- (Optional) Your logo or title -->
+        <Label
+            Grid.Row="0"
+            Text="📖 Dictionary Uploader"
+            FontSize="28"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            TextColor="#4B2E06" />
+
+        <!-- Loading indicator + message -->
+        <VerticalStackLayout Grid.Row="1" Spacing="12" HorizontalOptions="Center">
+            <ActivityIndicator
+                IsRunning="True"
+                WidthRequest="50"
+                HeightRequest="50"
+                Color="#4B2E06" />
+            <Label
+                x:Name="LoadingLabel"
+                Text="Se încarcă…"
+                FontSize="16"
+                HorizontalOptions="Center"
+                TextColor="#4B2E06" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

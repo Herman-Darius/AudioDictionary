@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="DictionaryManagementApp.Resources.Views.WordsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Toate cuvintele"
+    BackgroundColor="#FFF7ED">
+
+    <!-- Use a Grid so we can give the CV a star‐sized row -->
+    <Grid Padding="20" RowSpacing="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- search bar -->
+            <RowDefinition Height="Auto"/>
+            <!-- sort buttons -->
+            <RowDefinition Height="*"/>
+            <!-- results: expand & scroll -->
+            <RowDefinition Height="Auto"/>
+            <!-- “no results” message -->
+            <RowDefinition Height="Auto"/>
+            <!-- pagination -->
+        </Grid.RowDefinitions>
+
+        <!-- 1) Search bar -->
+        <SearchBar
+      Grid.Row="0"
+      x:Name="SearchBar"
+      Placeholder="Caută cuvânt…"
+      TextChanged="SearchBar_TextChanged"
+      SearchButtonPressed="SearchBar_SearchButtonPressed"
+      />
+
+        <!-- 2) Sort buttons -->
+        <HorizontalStackLayout
+      Grid.Row="1"
+      Spacing="10">
+            <Button Text="A → Z" Clicked="OnSortAscClicked"
+              BackgroundColor="#4CAF50" TextColor="White" CornerRadius="6"/>
+            <Button Text="Z → A" Clicked="OnSortDescClicked"
+              BackgroundColor="#FF9800" TextColor="White" CornerRadius="6"/>
+            <Button Text="By Date" IsEnabled="False"
+              BackgroundColor="#BDBDBD" TextColor="White" CornerRadius="6"/>
+        </HorizontalStackLayout>
+
+        <!-- 3) Results (star‐sized row makes this take all extra space and scroll) -->
+        <CollectionView
+      Grid.Row="2"
+      x:Name="WordsCollection"
+      ItemsSource="{Binding DisplayedWords}"
+      SelectionMode="None"
+      VerticalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10" Margin="0,5" BackgroundColor="#FAF8F2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="{Binding wordName}"
+                   FontSize="16"
+                   VerticalOptions="Center"
+                   TextColor="#3E2603"/>
+
+                        <Button Text="Edit"
+                    Grid.Column="1"
+                    FontSize="14"
+                    Padding="8,4"
+                    CommandParameter="{Binding id}"
+                    Clicked="OnEditClicked"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- 4) “No results” message -->
+        <Label
+      Grid.Row="3"
+      Text="Nici un cuvânt nu a fost găsit"
+      IsVisible="{Binding IsEmpty}"
+      HorizontalOptions="Center"
+      TextColor="Gray"
+      FontSize="16" />
+
+        <!-- 5) Pagination controls -->
+        <HorizontalStackLayout
+      Grid.Row="4"
+      HorizontalOptions="Center"
+      Spacing="20"
+      Padding="10">
+            <Button Text="◀ Prev"
+              Clicked="OnPrevPageClicked"
+              IsEnabled="{Binding CanGoPrev}" />
+            <Label Text="{Binding PageInfo}"
+             VerticalOptions="Center"/>
+            <Button Text="Next ▶"
+              Clicked="OnNextPageClicked"
+              IsEnabled="{Binding CanGoNext}" />
+        </HorizontalStackLayout>
+
+    </Grid>
+</ContentPage>

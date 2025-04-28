@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sbuxx7SYY40=",
+  "dgSpecHash": "IXmDZM85cQA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Herman Darius-Razvan\\source\\repos\\DictionaryManagementApp\\DictionaryManagementApp\\DictionaryManagementApp.csproj",
+  "projectFilePath": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryManagementApp\\DictionaryManagementApp\\DictionaryManagementApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\closedxml\\0.104.2\\closedxml.0.104.2.nupkg.sha512",
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\closedxml.parser\\1.2.0\\closedxml.parser.1.2.0.nupkg.sha512",
