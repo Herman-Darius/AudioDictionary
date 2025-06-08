@@ -16,7 +16,7 @@ public partial class SplashPage : ContentPage
         "„Încălzim vorbele moștenite...”",
         "„Căutăm printre rădăcini...”",
         "„Împletim graiul din bătrâni...”",
-        "„Polishăm proverbele cu grijă...”",
+        "„Polișăm proverbele cu grijă...”",
         "„Punem lemnele pe focul limbii române...”",
         "„Ascultăm șoaptele limbii strămoșești...”"
     };

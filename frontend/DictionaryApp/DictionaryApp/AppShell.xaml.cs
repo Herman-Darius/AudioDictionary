@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿using DictionaryApp.Views;
+using Microsoft.Win32;
 using System.Collections;
 
 namespace DictionaryApp
@@ -8,8 +9,7 @@ namespace DictionaryApp
         public AppShell()
         {
             InitializeComponent();
-            // Register routes for navigation
-            //Routing.RegisterRoute(nameof(DictionaryPage), typeof(DictionaryPage));
+           
         }
     }
 }

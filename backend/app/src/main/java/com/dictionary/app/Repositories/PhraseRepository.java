@@ -13,4 +13,6 @@ public interface PhraseRepository extends JpaRepository<Phrase, Integer> {
     boolean existsByContentAndWord(String content, Word word);
 
     List<Phrase> findByRootId(int rootId);
+
+    List<Phrase> findByWord_IdOrderByIdAsc(Integer id);
 }

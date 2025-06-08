@@ -23,11 +23,12 @@ namespace DictionaryApp
             .UseMauiCommunityToolkit()
             .UseMauiCommunityToolkitMediaElement()
             .UseMauiCommunityToolkitCore();
-
+            
             //Custom URL
             string baseAddress = DeviceInfo.Platform == DevicePlatform.Android ?
                                  "http://10.0.2.2:8080/" : "http://localhost:8080/";
-
+            
+            //string baseAddress = "http://192.168.114.34:8080/";
             builder.Services.AddHttpClient("custom-httpclient", client =>
             {
                 client.BaseAddress = new Uri(baseAddress);
@@ -60,6 +61,8 @@ namespace DictionaryApp
             builder.Services.AddTransient<WordDetailsPage>();
             builder.Services.AddTransient<UploadPage>();
             builder.Services.AddTransient<RootDetailsPage>();
+            builder.Services.AddSingleton<AppShell>();
+            builder.Services.AddSingleton<SplashPage>();
 
             //fonts
             builder.ConfigureFonts(fonts =>

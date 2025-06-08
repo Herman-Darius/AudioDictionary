@@ -7,16 +7,13 @@ namespace DictionaryManagementApp.Resources.Views;
 public partial class WordsPage : ContentPage
 {
     public bool IsEmpty => DisplayedWords.Count == 0;
-    const int PageSize = 3;
+    const int PageSize = 50;
     readonly WordAdminService _wordAdminService;
 
-    // 1) master list (loaded once)
     private ObservableCollection<Word> _allWordsMaster = new();
 
-    // 2) working view (filtered & sorted)
     private ObservableCollection<Word> _allWordsView = new();
 
-    // 3) current page
     public ObservableCollection<Word> DisplayedWords { get; } = new();
 
     private int _currentPage = 1;

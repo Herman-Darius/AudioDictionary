@@ -5,41 +5,167 @@ using Plugin.Maui.Audio;
 using System.Net.Http;
 using System.Threading.Tasks;
 using DictionaryApp.Services;
+using Microsoft.Maui.Layouts;
 
 
 namespace DictionaryApp.Views;
 
 public partial class WordDetailsPage : ContentPage
 {
-    private readonly WordService _wordService;
+    private readonly Word _word;
     private readonly PhraseService _phraseService;
     private readonly AudioService _audioService;
-    private readonly Word _selectedWord;
+    private readonly WordService _wordService;
+    private CancellationTokenSource _cts = new();
 
-    public WordDetailsPage(Word selectedWord, WordService wordService, PhraseService phraseService, AudioService audioService)
+    public WordDetailsPage(Word word, WordService wordService, PhraseService phraseService, AudioService audioService)
     {
         InitializeComponent();
-        _selectedWord = selectedWord;
-        _wordService = wordService;
+
+        _word = word;
         _phraseService = phraseService;
         _audioService = audioService;
-        BindingContext = _selectedWord;
-        LoadPhrases();
+        _wordService = wordService;
+
+        LoadWordDetails();
     }
 
-    private async void LoadPhrases()
+    private async void LoadWordDetails()
+    {
+        _cts = new CancellationTokenSource();
+
+        WordLabel.Text = _word.wordName;
+        DefinitionLabel.Text = _word.definition;
+        WordImage.Source = await _wordService.GetWordImageAsync(_word.imageFile);
+
+
+        await LoadPhrases();
+    }
+
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+        _cts.Cancel();
+    }
+
+    private async Task LoadPhrases()
     {
         try
         {
-            var (directPhrases, relatedPhrases) = await _phraseService.GetPhrasesAsync(_selectedWord.id);
-            var allWordNames = (await _wordService.GetAllWordsAsync()).Select(w => w.wordName.ToLower()).ToList();
+            LoadingIndicator.IsRunning = true;
+            LoadingIndicator.IsVisible = true;
 
+            var phrases = await _phraseService.GetPhrasesForWordAsync(_word.id);
 
-            DirectPhrasesStackLayoutInstance.Children.Clear();
-            RelatedPhrasesStackLayoutInstance.Children.Clear();
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                PhrasesStackLayout.Children.Clear();
 
-            AddPhrasesToStackLayout(directPhrases, DirectPhrasesStackLayoutInstance, allWordNames);
-            AddPhrasesToStackLayout(relatedPhrases, RelatedPhrasesStackLayoutInstance, allWordNames);
+                foreach (var phrase in phrases)
+                {
+                    var phraseContainer = new Frame
+                    {
+                        Style = (Style)Resources["PhraseContainer"]
+                    };
+
+                    var phraseLabel = new Label
+                    {
+                        Text = phrase.content,
+                        FontSize = 16,
+                        LineBreakMode = LineBreakMode.WordWrap,
+                        Style = (Style)Resources["RusticPhraseText"]
+                    };
+
+                    var definitionLabel = new Label
+                    {
+                        Text = phrase.definition,
+                        FontSize = 14,
+                        TextColor = Colors.Gray,
+                        FontAttributes = FontAttributes.Italic
+                    };
+
+                    var audioButton = new ImageButton
+                    {
+                        Source = "speaker_icon.png",
+                        BackgroundColor = Color.FromArgb("#EEE5D5"),
+                        WidthRequest = 32,
+                        HeightRequest = 32,
+                        CornerRadius = 16,
+                        Padding = 4,
+                        BorderColor = Color.FromArgb("#A67C52"),
+                        BorderWidth = 1,
+                        Aspect = Aspect.AspectFit,
+                        HorizontalOptions = LayoutOptions.End,
+                        VerticalOptions = LayoutOptions.Start
+                    };
+
+                    var loadingIndicator = new ActivityIndicator
+                    {
+                        IsRunning = false,
+                        IsVisible = false,
+                        Color = Colors.Brown,
+                        WidthRequest = 20,
+                        HeightRequest = 20,
+                        VerticalOptions = LayoutOptions.Center,
+                        HorizontalOptions = LayoutOptions.End
+                    };
+
+                    audioButton.Clicked += async (s, e) =>
+                    {
+                        try
+                        {
+                            await audioButton.ScaleTo(0.9, 80, Easing.CubicOut);
+                            await audioButton.ScaleTo(1.05, 80, Easing.CubicIn);
+                            await audioButton.ScaleTo(1.0, 50, Easing.Linear);
+
+                            audioButton.Opacity = 0.5;
+                            audioButton.IsEnabled = false;
+                            loadingIndicator.IsRunning = true;
+                            loadingIndicator.IsVisible = true;
+
+                            await _audioService.PlayPhraseAudioAsync(phrase.id);
+                        }
+                        finally
+                        {
+                            loadingIndicator.IsRunning = false;
+                            loadingIndicator.IsVisible = false;
+                            audioButton.Opacity = 1.0;
+                            audioButton.IsEnabled = true;
+                        }
+                    };
+
+                    var topGrid = new Grid
+                    {
+                        ColumnDefinitions =
+                        {
+                            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) },
+                            new ColumnDefinition { Width = GridLength.Auto }
+                        }
+                    };
+
+                    topGrid.Add(phraseLabel, 0, 0);
+                    topGrid.Add(new Grid
+                    {
+                        Children = { audioButton, loadingIndicator },
+                        HorizontalOptions = LayoutOptions.End,
+                        VerticalOptions = LayoutOptions.Start
+                    }, 1, 0);
+
+                    var innerLayout = new StackLayout
+                    {
+                        Orientation = StackOrientation.Vertical,
+                        Spacing = 6,
+                        Children = { topGrid, definitionLabel }
+                    };
+
+                    phraseContainer.Content = innerLayout;
+                    PhrasesStackLayout.Children.Add(phraseContainer);
+                }
+
+                LoadingIndicator.IsRunning = false;
+                LoadingIndicator.IsVisible = false;
+                MainContent.FadeTo(1, 500);
+            });
         }
         catch (Exception ex)
         {
@@ -47,161 +173,67 @@ public partial class WordDetailsPage : ContentPage
         }
     }
 
-    private void AddPhrasesToStackLayout(List<Phrase> phrases, StackLayout stackLayout, List<string> allWordNames)
-    {
-        foreach (var phrase in phrases)
-        {
-            var phraseLayout = new StackLayout
-            {
-                Style = (Style)Resources["PhraseContainer"],
-                Orientation = StackOrientation.Horizontal,
-                Spacing = 10
-            };
-
-            var formattedText = new FormattedString();
-            var phraseText = phrase.content.Split(' ');
-
-            foreach (var word in phraseText)
-            {
-                var isLink = allWordNames.Contains(word.ToLower()) && word.ToLower() != _selectedWord.wordName.ToLower();
-                var span = new Span
-                {
-                    Text = word + " ",
-                    FontSize = 16,
-                    TextColor = isLink ? Colors.Blue : Colors.Black,
-                    TextDecorations = isLink ? TextDecorations.Underline : TextDecorations.None
-                };
-
-                if (isLink)
-                {
-                    var tapGesture = new TapGestureRecognizer();
-                    tapGesture.Tapped += async (s, e) =>
-                    {
-                        var tappedWord = word.Trim();
-                        var newWord = await _wordService.GetWordByNameAsync(tappedWord);
-                        if (newWord != null)
-                        {
-                            await Navigation.PushAsync(new WordDetailsPage(newWord, _wordService, _phraseService, _audioService));
-                        }
-                    };
-                    span.GestureRecognizers.Add(tapGesture);
-                }
-
-                formattedText.Spans.Add(span);
-            }
-
-            var phraseLabel = new Label
-            {
-                FormattedText = formattedText,
-                VerticalOptions = LayoutOptions.Center,
-                LineBreakMode = LineBreakMode.WordWrap,
-                HorizontalOptions = LayoutOptions.StartAndExpand
-            };
-
-            var playButton = new Button
-            {
-                Text = "🔊",
-                BackgroundColor = Color.FromArgb("#EEEEEE"),
-                FontSize = 16,
-                WidthRequest = 44,
-                HeightRequest = 44,
-                CornerRadius = 22,
-                VerticalOptions = LayoutOptions.Center,
-                HorizontalOptions = LayoutOptions.End
-            };
-
-            playButton.Clicked += async (s, e) =>
-            {
-                await _audioService.PlayPhraseAudioAsync(phrase.id);
-            };
-
-            phraseLayout.Children.Add(phraseLabel);
-            phraseLayout.Children.Add(playButton);
-
-            stackLayout.Children.Add(phraseLayout);
-        }
-    }
-
-    private void ProcessPhrases(List<Phrase> phrases, StackLayout targetStack, HashSet<string> wordSet)
-    {
-        targetStack.Children.Clear(); // Clear previous items
-
-        if (!phrases.Any())
-        {
-            targetStack.Children.Add(new Label { Text = "No phrases available.", Style = (Style)Resources["PhraseLabel"] });
-            return;
-        }
-
-        foreach (var phrase in phrases)
-        {
-            var phraseLayout = new HorizontalStackLayout { Spacing = 10, HorizontalOptions = LayoutOptions.FillAndExpand };
-
-            var formattedText = new FormattedString();
-            var words = phrase.content.Split(' ');
-
-            foreach (var word in words)
-            {
-                var span = new Span { Text = word + " " };
-
-                if (wordSet.Contains(word.ToLower()))
-                {
-                    span.TextDecorations = TextDecorations.Underline;
-                    span.TextColor = Colors.Blue;
-
-                    // Attach Tap Gesture
-                    var tapGesture = new TapGestureRecognizer();
-                    tapGesture.Tapped += async (s, e) =>
-                    {
-                        var selectedWord = await _wordService.GetWordByNameAsync(word);
-                        if (selectedWord != null)
-                        {
-                            await Navigation.PushAsync(new WordDetailsPage(selectedWord, _wordService, _phraseService, _audioService));
-                        }
-                    };
-
-                    var clickableLabel = new Label { FormattedText = new FormattedString { Spans = { span } } };
-                    clickableLabel.GestureRecognizers.Add(tapGesture);
-                    phraseLayout.Children.Add(clickableLabel);
-                }
-                else
-                {
-                    formattedText.Spans.Add(span);
-                }
-            }
-
-            if (formattedText.Spans.Count > 0)
-            {
-                phraseLayout.Children.Add(new Label { FormattedText = formattedText, Style = (Style)Resources["PhraseLabel"] });
-            }
-
-            targetStack.Children.Add(phraseLayout);
-        }
-    }
-    private async void OnPlayAudioClicked(object sender, EventArgs e)
-    {
-        if (_selectedWord == null || string.IsNullOrEmpty(_selectedWord.wordName))
-        {
-            Console.WriteLine("Error: No word selected for audio playback.");
-            return;
-        }
-
-        try
-        {
-            await _audioService.PlayWordAudioAsync(_selectedWord.wordName);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error playing audio: {ex.Message}");
-        }
-    }
     private async void OnCopyWordClicked(object sender, EventArgs e)
     {
-        if (!string.IsNullOrEmpty(_selectedWord?.wordName))
+        if (!string.IsNullOrWhiteSpace(_word.wordName))
         {
-            await Clipboard.SetTextAsync(_selectedWord.wordName);
-            await DisplayAlert("Copied!", $"'{_selectedWord.wordName}' has been copied to clipboard.", "OK");
+            await Clipboard.SetTextAsync(_word.wordName);
+            await DisplayAlert("Copied!", $"'{_word.wordName}' has been copied to clipboard.", "OK");
         }
     }
 
+    private async void OnPlayWordAudioClicked(object sender, EventArgs e)
+    {
+        if (!string.IsNullOrWhiteSpace(_word.wordName))
+        {
+            await _audioService.PlayWordAudioAsync(_word.wordName);
+        }
+    }
+
+    private async void OnGoToMainPageClicked(object sender, EventArgs e)
+    {
+        await Navigation.PopToRootAsync();
+    }
+
+    private async void OnWordLabelTapped(object sender, EventArgs e)
+    {
+        if (!string.IsNullOrWhiteSpace(_word.wordName))
+        {
+            await Clipboard.SetTextAsync(_word.wordName);
+            await DisplayAlert("Copiat!", $"Cuvântul '{_word.wordName}' a fost copiat în clipboard.", "OK");
+        }
+    }
+
+    private async void OnCopyWordTapped(object sender, EventArgs e)
+    {
+        if (string.IsNullOrWhiteSpace(_word.wordName)) return;
+
+        await Clipboard.SetTextAsync(_word.wordName);
+
+        LeafLabel.Opacity = 0;
+        LeafLabel.TranslationY = 0;
+        LeafLabel.IsVisible = true;
+
+        await LeafLabel.FadeTo(1, 150);
+        await LeafLabel.TranslateTo(0, -20, 500, Easing.SinOut);
+        await LeafLabel.FadeTo(0, 250);
+
+        LeafLabel.TranslationY = 0;
+
+        await WordLabel.ScaleTo(1.1, 100);
+        await WordLabel.ScaleTo(1.0, 100);
+
+        await DisplayToastAsync();
+    }
+
+    private async Task DisplayToastAsync()
+    {
+        CopyToastLabel.IsVisible = true;
+        CopyToastLabel.Opacity = 0;
+        await CopyToastLabel.FadeTo(1, 200);
+        await Task.Delay(1000);
+        await CopyToastLabel.FadeTo(0, 300);
+        CopyToastLabel.IsVisible = false;
+    }
 }
 

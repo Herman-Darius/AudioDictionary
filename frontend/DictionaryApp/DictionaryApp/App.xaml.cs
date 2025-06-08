@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using DictionaryApp.Views;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 
 namespace DictionaryApp
@@ -10,7 +11,7 @@ namespace DictionaryApp
         {
             InitializeComponent();
             Services = serviceProvider;
-
+            MainPage = App.Services.GetRequiredService<SplashPage>();
             AppDomain.CurrentDomain.UnhandledException += (sender, e) =>
             {
                 Console.WriteLine($"Unhandled exception: {e.ExceptionObject}");
@@ -18,10 +19,6 @@ namespace DictionaryApp
 
         }
 
-        protected override Window CreateWindow(IActivationState? activationState)
-        {
-            return new Window(new Views.SplashPage());
 
-        }
     }
 }

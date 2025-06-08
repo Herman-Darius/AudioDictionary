@@ -3,12 +3,16 @@ package com.dictionary.app.Controllers;
 import com.dictionary.app.Security.MediaProperties;
 import com.dictionary.app.Services.MediaService;
 import org.springframework.core.io.FileSystemResource;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 
 @RestController
 @RequestMapping("/api")
@@ -59,12 +63,76 @@ public class MediaController {
         return mediaService.getAudioForPhrase(phraseId);
     }
     @GetMapping("/media/images/{fileName:.+}")
-    public ResponseEntity<FileSystemResource> getImage(@PathVariable String fileName) {
-        return mediaService.getImageFile(fileName);
+    public ResponseEntity<FileSystemResource> getImage(@PathVariable String fileName) throws IOException {
+        fileName = URLDecoder.decode(fileName, StandardCharsets.UTF_8);
+
+        File imageFile = new File(mediaProperties.getImageDir(), fileName);
+        if (!imageFile.exists()) {
+            return ResponseEntity.notFound().build();
+        }
+
+        String mime = Files.probeContentType(imageFile.toPath());
+        if (mime == null) {
+            mime = "application/octet-stream";
+        }
+
+        return ResponseEntity.ok()
+                .header(HttpHeaders.CONTENT_TYPE, mime)
+                .header(HttpHeaders.CACHE_CONTROL, "no-cache, no-store, must-revalidate")
+                .header(HttpHeaders.PRAGMA, "no-cache")
+                .header(HttpHeaders.EXPIRES, "0")
+                .body(new FileSystemResource(imageFile));
     }
 
     @PostMapping("/media/images/upload")
     public ResponseEntity<String> uploadImages(@RequestParam("files") MultipartFile[] files) {
         return mediaService.saveFiles(files, mediaProperties.getImageDir(), "image");
     }
+
+    //sa fac pentru admin app
+
+    /** Returns 200 + true/false if the word’s image exists */
+    @GetMapping("/check/word-image/{wordId}")
+    public ResponseEntity<Boolean> checkWordImage(@PathVariable int wordId) {
+        return ResponseEntity.ok(mediaService.checkIfWordImageExists(wordId));
+    }
+
+    /** Returns 200 + true/false if the word’s audio exists */
+    @GetMapping("/check/word-audio/{wordId}")
+    public ResponseEntity<Boolean> checkWordAudio(@PathVariable int wordId) {
+        return ResponseEntity.ok(mediaService.checkIfWordAudioExists(wordId));
+    }
+
+    /** Returns 200 + true/false if the phrase’s audio exists */
+    @GetMapping("/check/phrase-audio/{phraseId}")
+    public ResponseEntity<Boolean> checkPhraseAudio(@PathVariable int phraseId) {
+        return ResponseEntity.ok(mediaService.checkIfAudioFileExists(phraseId));
+    }
+
+    // --- SINGLE-FILE UPLOADS ---
+
+    /** Upload or replace a single word image */
+    @PostMapping("/upload/word-image/{wordId}")
+    public ResponseEntity<String> uploadWordImage(
+            @PathVariable int wordId,
+            @RequestParam("file") MultipartFile file) {
+        return mediaService.saveWordImage(wordId, file);
+    }
+
+    /** Upload or replace a single word audio file */
+    @PostMapping("/upload/word-audio/{wordId}")
+    public ResponseEntity<String> uploadWordAudio(
+            @PathVariable int wordId,
+            @RequestParam("file") MultipartFile file) {
+        return mediaService.saveWordAudio(wordId, file);
+    }
+
+    /** Upload or replace a single phrase audio file */
+    @PostMapping("/upload/phrase-audio/{phraseId}")
+    public ResponseEntity<String> uploadPhraseAudio(
+            @PathVariable int phraseId,
+            @RequestParam("file") MultipartFile file) {
+        return mediaService.savePhraseAudio(phraseId, file);
+    }
+
 }

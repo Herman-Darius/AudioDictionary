@@ -17,7 +17,49 @@ namespace DictionaryApp.Services
         {
             _httpClient = httpClientFactory.CreateClient("custom-httpclient");
         }
+        public async Task<List<Phrase>> GetPhrasesByWordIdAsync(long wordId)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"api/phrases/by-word/{wordId}");
+                response.EnsureSuccessStatusCode();
 
+                var json = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<Phrase>>(json) ?? new List<Phrase>();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error fetching phrases for wordId {wordId}: {ex.Message}");
+                return new List<Phrase>();
+            }
+        }
+        public async Task<List<Phrase>> GetPhrasesForWordAsync(int wordId)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"api/phrases/by-word/{wordId}");
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine($"Failed to get phrases for word {wordId}: {response.StatusCode}");
+                    return new List<Phrase>();
+                }
+
+                var json = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<Phrase>>(json) ?? new List<Phrase>();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error fetching phrases for word {wordId}: {ex.Message}");
+                return new List<Phrase>();
+            }
+        }
+        
+
+
+        /*
+         * CODUL VECHI PENTRU HYPERLINKS
+         * 
         public async Task<(List<Phrase> DirectPhrases, List<Phrase> RelatedPhrases)> GetPhrasesAsync(int wordId)
         {
             try
@@ -121,7 +163,6 @@ namespace DictionaryApp.Services
             var json = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<List<Phrase>>(json) ?? new List<Phrase>();
         }
-
         public async Task<List<Phrase>> GetRelatedPhrasesByRootIdAsync(int rootId)
         {
             var response = await _httpClient.GetAsync($"api/phrases/{rootId}/related-phrases");
@@ -131,10 +172,6 @@ namespace DictionaryApp.Services
             return JsonConvert.DeserializeObject<List<Phrase>>(json) ?? new List<Phrase>();
         }
 
-        internal async Task PlayPhraseAudioAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
         public async Task<List<Phrase>> GetPhrasesWithLinksByRootIdAsync(int rootId)
         {
             var response = await _httpClient.GetAsync($"api/phrases/{rootId}/phrases-with-links");
@@ -143,6 +180,10 @@ namespace DictionaryApp.Services
             var json = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<List<Phrase>>(json) ?? new List<Phrase>();
         }
+        *
+        *
+        */
+        
 
     }
 

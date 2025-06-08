@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\infopopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\infopopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\dictionarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\dictionarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\splashpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\splashpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\worddetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\worddetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\platforms\\android\\resources\\xml\\network_security_config.xml||{6B79B2C4-8503-4A04-8248-ADCEF2B49CB1}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\platforms\\android\\resources\\xml\\network_security_config.xml||{6B79B2C4-8503-4A04-8248-ADCEF2B49CB1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\splashpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\splashpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\rootdetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\rootdetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\infopopup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,44 +51,102 @@
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\splashpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\splashpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\worddetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\worddetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\dictionaryapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\dictionaryapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\rootdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\rootdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\splashpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\splashpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\models\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\services\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\services\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\services\\healthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\services\\healthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\infopopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\infopopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\dictionarypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\dictionarypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\services\\wordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\services\\wordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\platforms\\android\\androidmanifest.xml||{6B79B2C4-8503-4A04-8248-ADCEF2B49CB1}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\platforms\\android\\androidmanifest.xml||{6B79B2C4-8503-4A04-8248-ADCEF2B49CB1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\converters\\nonclosingstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\converters\\nonclosingstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\services\\phraseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\services\\phraseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.39\\tools\\Xamarin.Android.Aapt2.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\dictionaryapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\dictionaryapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\services\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\services\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\rootdetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\rootdetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\models\\phrase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\phrase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\rootdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\rootdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\models\\phraseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\phraseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\models\\rootresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\rootresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\models\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\models\\wordroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\wordroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\services\\healthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\services\\healthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Herman Darius-Razvan\\AppData\\Local\\Temp\\.vsdbgsrc\\daa66508a10f86107909a7d4c90ac1f533f13694\\Views_SplashPage.xaml.sg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -69,64 +163,8 @@
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\dictionaryapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\dictionarypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\dictionarypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\uploadpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\uploadpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\models\\rootresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\rootresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\services\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\services\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\services\\wordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\services\\wordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\models\\phrase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\phrase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\worddetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\worddetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\worddetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\worddetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\models\\wordroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\wordroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\models\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\models\\phraseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\phraseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\converters\\listtostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -135,10 +173,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\models\\groupedwordresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\groupedwordresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\models\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\models\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\uploadpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -151,18 +185,10 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Herman Darius-Razvan\\AppData\\Local\\Temp\\.vsdbgsrc\\6f92567b6ba3ee0a8a34f48c6ebbcbf8e539e35e\\MainPage.xaml.sg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\views\\dictionarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\views\\dictionarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Common.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Javac.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|d:\\versiunea care merge ok pana acum\\dictionaryapp\\dictionaryapp\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
-      "RelativeMoniker": "D:0:0:{1145DFDD-07D0-4588-BFC6-75BE48E96642}|DictionaryApp\\DictionaryApp.csproj|solutionrelative:dictionaryapp\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui.core\\11.1.0\\ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
@@ -181,7 +207,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -189,43 +215,262 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SplashPage.xaml.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\SplashPage.xaml.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Views\\SplashPage.xaml.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\SplashPage.xaml.cs",
+              "RelativeToolTip": "DictionaryApp\\Views\\SplashPage.xaml.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwE0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T10:12:35.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\MauiProgram.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\MauiProgram.cs",
+              "RelativeToolTip": "DictionaryApp\\MauiProgram.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T11:47:25.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WordDetailsPage.xaml",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\WordDetailsPage.xaml",
+              "RelativeDocumentMoniker": "DictionaryApp\\Views\\WordDetailsPage.xaml",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\WordDetailsPage.xaml",
+              "RelativeToolTip": "DictionaryApp\\Views\\WordDetailsPage.xaml",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAwwLMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-20T11:49:09.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WordDetailsPage.xaml.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\WordDetailsPage.xaml.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Views\\WordDetailsPage.xaml.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\WordDetailsPage.xaml.cs",
+              "RelativeToolTip": "DictionaryApp\\Views\\WordDetailsPage.xaml.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAiwGcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T12:09:11.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\AppShell.xaml.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\AppShell.xaml.cs",
+              "RelativeToolTip": "DictionaryApp\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:11:32.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\MainPage.xaml.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\MainPage.xaml.cs",
+              "RelativeToolTip": "DictionaryApp\\MainPage.xaml.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAA6wKsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:06:16.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\App.xaml.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\App.xaml.cs",
+              "RelativeToolTip": "DictionaryApp\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:11:00.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DictionaryPage.xaml.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\DictionaryPage.xaml.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Views\\DictionaryPage.xaml.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\DictionaryPage.xaml.cs",
+              "RelativeToolTip": "DictionaryApp\\Views\\DictionaryPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:40:39.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\MainPage.xaml",
               "RelativeDocumentMoniker": "DictionaryApp\\MainPage.xaml",
               "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\MainPage.xaml",
               "RelativeToolTip": "DictionaryApp\\MainPage.xaml",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAAAB0AAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAwwOQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-18T12:02:00.132Z"
+              "WhenOpened": "2025-02-18T12:02:00.132Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 16,
+              "Title": "Word.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\Word.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Models\\Word.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\Word.cs",
+              "RelativeToolTip": "DictionaryApp\\Models\\Word.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T11:35:20.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainActivity.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\MainActivity.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Platforms\\Android\\MainActivity.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\MainActivity.cs",
+              "RelativeToolTip": "DictionaryApp\\Platforms\\Android\\MainActivity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:29:12.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainApplication.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\MainApplication.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Platforms\\Android\\MainApplication.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\MainApplication.cs",
+              "RelativeToolTip": "DictionaryApp\\Platforms\\Android\\MainApplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:29:18.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "SplashPage.xaml",
               "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\SplashPage.xaml",
               "RelativeDocumentMoniker": "DictionaryApp\\Views\\SplashPage.xaml",
               "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\SplashPage.xaml",
               "RelativeToolTip": "DictionaryApp\\Views\\SplashPage.xaml",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAkwCAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAmwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-20T11:43:11.546Z"
+              "WhenOpened": "2025-02-20T11:43:11.546Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "App.g.i.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "RelativeToolTip": "DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAADwv0UAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "network_security_config.xml",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\Resources\\xml\\network_security_config.xml",
+              "RelativeDocumentMoniker": "DictionaryApp\\Platforms\\Android\\Resources\\xml\\network_security_config.xml",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\Resources\\xml\\network_security_config.xml",
+              "RelativeToolTip": "DictionaryApp\\Platforms\\Android\\Resources\\xml\\network_security_config.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-04-23T14:17:14.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RootDetailsPage.xaml.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\RootDetailsPage.xaml.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Views\\RootDetailsPage.xaml.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\RootDetailsPage.xaml.cs",
+              "RelativeToolTip": "DictionaryApp\\Views\\RootDetailsPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIAwwBkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T12:36:16.884Z"
+              "WhenOpened": "2025-04-06T10:05:05.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "InfoPopup.xaml.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\InfoPopup.xaml.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Views\\InfoPopup.xaml.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\InfoPopup.xaml.cs",
+              "RelativeToolTip": "DictionaryApp\\Views\\InfoPopup.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T11:18:15.442Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
+              "Title": "AudioService.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\AudioService.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Services\\AudioService.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\AudioService.cs",
+              "RelativeToolTip": "DictionaryApp\\Services\\AudioService.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowCcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T10:56:47.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "InfoPopup.xaml",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\InfoPopup.xaml",
+              "RelativeDocumentMoniker": "DictionaryApp\\Views\\InfoPopup.xaml",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\InfoPopup.xaml",
+              "RelativeToolTip": "DictionaryApp\\Views\\InfoPopup.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-09T11:18:07.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-05-03T11:47:26.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Xamarin.Android.Aapt2.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.39\\tools\\Xamarin.Android.Aapt2.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.39\\tools\\Xamarin.Android.Aapt2.targets",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAMwJsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-04-23T14:21:47.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "DictionaryPage.xaml",
               "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\DictionaryPage.xaml",
               "RelativeDocumentMoniker": "DictionaryApp\\Views\\DictionaryPage.xaml",
@@ -237,20 +482,115 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InfoPopup.xaml",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\InfoPopup.xaml",
-              "RelativeDocumentMoniker": "DictionaryApp\\Views\\InfoPopup.xaml",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\InfoPopup.xaml",
-              "RelativeToolTip": "DictionaryApp\\Views\\InfoPopup.xaml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAwDwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-09T11:18:07.618Z",
+              "DocumentIndex": 24,
+              "Title": "PhraseService.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\PhraseService.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Services\\PhraseService.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\PhraseService.cs",
+              "RelativeToolTip": "DictionaryApp\\Services\\PhraseService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAuwDgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T12:02:54.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "WordService.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\WordService.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Services\\WordService.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\WordService.cs",
+              "RelativeToolTip": "DictionaryApp\\Services\\WordService.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAA7wGYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T10:31:52.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AgIAAPcAAAAAAAAAAAAjwAoBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-05-04T09:43:08.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-05-04T09:43:27.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
+              "Title": "NonClosingStream.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Converters\\NonClosingStream.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Converters\\NonClosingStream.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Converters\\NonClosingStream.cs",
+              "RelativeToolTip": "DictionaryApp\\Converters\\NonClosingStream.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA3wDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T15:56:47.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\AppShell.xaml",
+              "RelativeDocumentMoniker": "DictionaryApp\\AppShell.xaml",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\AppShell.xaml",
+              "RelativeToolTip": "DictionaryApp\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-18T12:02:11.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\App.xaml",
+              "RelativeDocumentMoniker": "DictionaryApp\\App.xaml",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\App.xaml",
+              "RelativeToolTip": "DictionaryApp\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-18T12:02:09.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DictionaryApp.csproj",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\DictionaryApp.csproj",
+              "RelativeDocumentMoniker": "DictionaryApp\\DictionaryApp.csproj",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\DictionaryApp.csproj",
+              "RelativeToolTip": "DictionaryApp\\DictionaryApp.csproj",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-18T11:47:18.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "FileUploadService.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\FileUploadService.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Services\\FileUploadService.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\FileUploadService.cs",
+              "RelativeToolTip": "DictionaryApp\\Services\\FileUploadService.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAowJQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T10:56:58.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "RootResult.cs",
               "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\RootResult.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Models\\RootResult.cs",
@@ -262,242 +602,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Phrase.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\Phrase.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\Models\\Phrase.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\Phrase.cs",
-              "RelativeToolTip": "DictionaryApp\\Models\\Phrase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 32,
+              "Title": "PhraseResponse.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\PhraseResponse.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Models\\PhraseResponse.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\PhraseResponse.cs",
+              "RelativeToolTip": "DictionaryApp\\Models\\PhraseResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T12:09:40.597Z"
+              "WhenOpened": "2025-03-13T13:03:22.281Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UploadPage.xaml",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\UploadPage.xaml",
-              "RelativeDocumentMoniker": "DictionaryApp\\Views\\UploadPage.xaml",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\UploadPage.xaml",
-              "RelativeToolTip": "DictionaryApp\\Views\\UploadPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAowCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-18T12:31:36.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SplashPage.xaml.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\SplashPage.xaml.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\Views\\SplashPage.xaml.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\SplashPage.xaml.cs",
-              "RelativeToolTip": "DictionaryApp\\Views\\SplashPage.xaml.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAkwEEAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T10:12:35.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DictionaryApp.csproj",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\DictionaryApp.csproj",
-              "RelativeDocumentMoniker": "DictionaryApp\\DictionaryApp.csproj",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\DictionaryApp.csproj",
-              "RelativeToolTip": "DictionaryApp\\DictionaryApp.csproj",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-18T11:47:18.82Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\MainPage.xaml.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\MainPage.xaml.cs",
-              "RelativeToolTip": "DictionaryApp\\MainPage.xaml.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAwwEcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T12:06:16.356Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HealthService.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\HealthService.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\Services\\HealthService.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\HealthService.cs",
-              "RelativeToolTip": "DictionaryApp\\Services\\HealthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T12:03:52.797Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InfoPopup.xaml.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\InfoPopup.xaml.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\Views\\InfoPopup.xaml.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\InfoPopup.xaml.cs",
-              "RelativeToolTip": "DictionaryApp\\Views\\InfoPopup.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T11:18:15.442Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 31,
               "Title": "RootDetailsPage.xaml",
               "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\RootDetailsPage.xaml",
               "RelativeDocumentMoniker": "DictionaryApp\\Views\\RootDetailsPage.xaml",
               "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\RootDetailsPage.xaml",
               "RelativeToolTip": "DictionaryApp\\Views\\RootDetailsPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-06T10:04:59.791Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PhraseService.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\PhraseService.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\Services\\PhraseService.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\PhraseService.cs",
-              "RelativeToolTip": "DictionaryApp\\Services\\PhraseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T12:02:54.389Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\MauiProgram.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\MauiProgram.cs",
-              "RelativeToolTip": "DictionaryApp\\MauiProgram.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAwCgAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T11:47:25.837Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FileUploadService.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\FileUploadService.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\Services\\FileUploadService.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\FileUploadService.cs",
-              "RelativeToolTip": "DictionaryApp\\Services\\FileUploadService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T10:56:58.6Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RootDetailsPage.xaml.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\RootDetailsPage.xaml.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\Views\\RootDetailsPage.xaml.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\RootDetailsPage.xaml.cs",
-              "RelativeToolTip": "DictionaryApp\\Views\\RootDetailsPage.xaml.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAuwPQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T10:05:05.242Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Microsoft.Maui.Resizetizer.After.targets",
-              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\microsoft.maui.resizetizer\\9.0.40\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
-              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\microsoft.maui.resizetizer\\9.0.40\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
-              "ViewState": "AgIAAPAAAAAAAAAAAAAewPkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-04-09T10:32:00.287Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Views_SplashPage.xaml.sg.cs",
-              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\AppData\\Local\\Temp\\.vsdbgsrc\\daa66508a10f86107909a7d4c90ac1f533f13694\\Views_SplashPage.xaml.sg.cs",
-              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\AppData\\Local\\Temp\\.vsdbgsrc\\daa66508a10f86107909a7d4c90ac1f533f13694\\Views_SplashPage.xaml.sg.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAwwB8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T10:35:37.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DictionaryApp",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\DictionaryApp.csproj",
-              "RelativeDocumentMoniker": "DictionaryApp\\DictionaryApp.csproj",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\DictionaryApp.csproj",
-              "RelativeToolTip": "DictionaryApp\\DictionaryApp.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-18T11:47:15.299Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\AppShell.xaml.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\AppShell.xaml.cs",
-              "RelativeToolTip": "DictionaryApp\\AppShell.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T12:11:32.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AudioService.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\AudioService.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\Services\\AudioService.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\AudioService.cs",
-              "RelativeToolTip": "DictionaryApp\\Services\\AudioService.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAuwGYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T10:56:47.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "WordService.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\WordService.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\Services\\WordService.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\WordService.cs",
-              "RelativeToolTip": "DictionaryApp\\Services\\WordService.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAqwK4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T10:31:52.408Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "WordDetailsPage.xaml",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\WordDetailsPage.xaml",
-              "RelativeDocumentMoniker": "DictionaryApp\\Views\\WordDetailsPage.xaml",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\WordDetailsPage.xaml",
-              "RelativeToolTip": "DictionaryApp\\Views\\WordDetailsPage.xaml",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAuwHkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-20T11:49:09.418Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "WordDetailsPage.xaml.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\WordDetailsPage.xaml.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\Views\\WordDetailsPage.xaml.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\WordDetailsPage.xaml.cs",
-              "RelativeToolTip": "DictionaryApp\\Views\\WordDetailsPage.xaml.cs",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAcwM8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T12:09:11.849Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 35,
               "Title": "WordRoot.cs",
               "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\WordRoot.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Models\\WordRoot.cs",
@@ -510,86 +639,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 30,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\App.xaml.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\App.xaml.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\App.xaml.cs",
-              "RelativeToolTip": "DictionaryApp\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Title": "Phrase.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\Phrase.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Models\\Phrase.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\Phrase.cs",
+              "RelativeToolTip": "DictionaryApp\\Models\\Phrase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T12:11:00.687Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Word.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\Word.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\Models\\Word.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\Word.cs",
-              "RelativeToolTip": "DictionaryApp\\Models\\Word.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T11:35:20.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "PhraseResponse.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\PhraseResponse.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\Models\\PhraseResponse.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\PhraseResponse.cs",
-              "RelativeToolTip": "DictionaryApp\\Models\\PhraseResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T13:03:22.281Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\AppShell.xaml",
-              "RelativeDocumentMoniker": "DictionaryApp\\AppShell.xaml",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\AppShell.xaml",
-              "RelativeToolTip": "DictionaryApp\\AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-18T12:02:11.341Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ListToStringConverter.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Converters\\ListToStringConverter.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\Converters\\ListToStringConverter.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Converters\\ListToStringConverter.cs",
-              "RelativeToolTip": "DictionaryApp\\Converters\\ListToStringConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T08:37:32.058Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\App.xaml",
-              "RelativeDocumentMoniker": "DictionaryApp\\App.xaml",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\App.xaml",
-              "RelativeToolTip": "DictionaryApp\\App.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-18T12:02:09.584Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "GroupedWordResult.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\GroupedWordResult.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\Models\\GroupedWordResult.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\GroupedWordResult.cs",
-              "RelativeToolTip": "DictionaryApp\\Models\\GroupedWordResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T08:31:49.043Z"
+              "WhenOpened": "2025-03-13T12:09:40.597Z"
             },
             {
               "$type": "Document",
@@ -605,7 +662,99 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
+              "Title": "HealthService.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\HealthService.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Services\\HealthService.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Services\\HealthService.cs",
+              "RelativeToolTip": "DictionaryApp\\Services\\HealthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T12:03:52.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "UploadPage.xaml",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\UploadPage.xaml",
+              "RelativeDocumentMoniker": "DictionaryApp\\Views\\UploadPage.xaml",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\UploadPage.xaml",
+              "RelativeToolTip": "DictionaryApp\\Views\\UploadPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-18T12:31:36.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "App.g.i.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeToolTip": "DictionaryApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAADwv0UAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T12:36:16.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Microsoft.Maui.Resizetizer.After.targets",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\microsoft.maui.resizetizer\\9.0.40\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\microsoft.maui.resizetizer\\9.0.40\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAewPkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-04-09T10:32:00.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Views_SplashPage.xaml.sg.cs",
+              "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\AppData\\Local\\Temp\\.vsdbgsrc\\daa66508a10f86107909a7d4c90ac1f533f13694\\Views_SplashPage.xaml.sg.cs",
+              "ToolTip": "C:\\Users\\Herman Darius-Razvan\\AppData\\Local\\Temp\\.vsdbgsrc\\daa66508a10f86107909a7d4c90ac1f533f13694\\Views_SplashPage.xaml.sg.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T10:35:37.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "DictionaryApp",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\DictionaryApp.csproj",
+              "RelativeDocumentMoniker": "DictionaryApp\\DictionaryApp.csproj",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\DictionaryApp.csproj",
+              "RelativeToolTip": "DictionaryApp\\DictionaryApp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-18T11:47:15.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ListToStringConverter.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Converters\\ListToStringConverter.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Converters\\ListToStringConverter.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Converters\\ListToStringConverter.cs",
+              "RelativeToolTip": "DictionaryApp\\Converters\\ListToStringConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T08:37:32.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "GroupedWordResult.cs",
+              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\GroupedWordResult.cs",
+              "RelativeDocumentMoniker": "DictionaryApp\\Models\\GroupedWordResult.cs",
+              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Models\\GroupedWordResult.cs",
+              "RelativeToolTip": "DictionaryApp\\Models\\GroupedWordResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T08:31:49.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
               "Title": "UploadPage.xaml.cs",
               "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\UploadPage.xaml.cs",
               "RelativeDocumentMoniker": "DictionaryApp\\Views\\UploadPage.xaml.cs",
@@ -617,7 +766,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 47,
               "Title": "Xamarin.Android.Common.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Common.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Common.targets",
@@ -626,18 +775,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "AndroidManifest.xml",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
-              "RelativeDocumentMoniker": "DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
-              "RelativeToolTip": "DictionaryApp\\Platforms\\Android\\AndroidManifest.xml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-02-27T12:29:30.801Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 45,
               "Title": "MainPage.xaml.sg.cs",
               "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\AppData\\Local\\Temp\\.vsdbgsrc\\ac4007249d757b47417176141ecdbb6b99469e24\\MainPage.xaml.sg.cs",
               "ToolTip": "C:\\Users\\Herman Darius-Razvan\\AppData\\Local\\Temp\\.vsdbgsrc\\ac4007249d757b47417176141ecdbb6b99469e24\\MainPage.xaml.sg.cs",
@@ -647,7 +785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 46,
               "Title": "MainPage.xaml.sg.cs",
               "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\AppData\\Local\\Temp\\.vsdbgsrc\\6f92567b6ba3ee0a8a34f48c6ebbcbf8e539e35e\\MainPage.xaml.sg.cs",
               "ToolTip": "C:\\Users\\Herman Darius-Razvan\\AppData\\Local\\Temp\\.vsdbgsrc\\6f92567b6ba3ee0a8a34f48c6ebbcbf8e539e35e\\MainPage.xaml.sg.cs",
@@ -657,19 +795,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "DictionaryPage.xaml.cs",
-              "DocumentMoniker": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\DictionaryPage.xaml.cs",
-              "RelativeDocumentMoniker": "DictionaryApp\\Views\\DictionaryPage.xaml.cs",
-              "ToolTip": "D:\\Versiunea care merge ok pana acum\\DictionaryApp\\DictionaryApp\\Views\\DictionaryPage.xaml.cs",
-              "RelativeToolTip": "DictionaryApp\\Views\\DictionaryPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T12:40:39.424Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 48,
               "Title": "Xamarin.Android.Javac.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Javac.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Javac.targets",
@@ -678,7 +804,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 49,
               "Title": "ReadMe.txt",
               "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui.core\\11.1.0\\ReadMe.txt",
               "ToolTip": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui.core\\11.1.0\\ReadMe.txt",
@@ -688,7 +814,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 50,
               "Title": "ReadMe.txt",
               "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui.mediaelement\\6.0.1\\ReadMe.txt",
               "ToolTip": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui.mediaelement\\6.0.1\\ReadMe.txt",
@@ -698,7 +824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 51,
               "Title": "ReadMe.txt",
               "DocumentMoniker": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui\\11.1.0\\ReadMe.txt",
               "ToolTip": "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\communitytoolkit.maui\\11.1.0\\ReadMe.txt",

@@ -30,9 +30,30 @@ namespace DictionaryManagementApp.Resources.Services
 
             var response = await _httpClient.PostAsync("api/excel/upload", content);
 
-            return response.IsSuccessStatusCode
-                ? "File uploaded successfully!"
-                : $"Upload failed: {response.ReasonPhrase}";
+            var message = await response.Content.ReadAsStringAsync();
+
+            if (response.IsSuccessStatusCode)
+                return message;
+
+            return message;
         }
+        public async Task<(bool IsValid, string ErrorMessage)> ValidateExcelFileAsync(FileResult file)
+        {
+            using var stream = await file.OpenReadAsync();
+            using var content = new MultipartFormDataContent();
+
+            var fileContent = new StreamContent(stream);
+            fileContent.Headers.ContentType = new MediaTypeHeaderValue("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+            content.Add(fileContent, "file", file.FileName);
+
+            var response = await _httpClient.PostAsync("api/excel/validate", content);
+            var msg = await response.Content.ReadAsStringAsync();
+
+            return response.IsSuccessStatusCode
+                ? (true, "")
+                : (false, msg);
+        }
+
     }
+
 }

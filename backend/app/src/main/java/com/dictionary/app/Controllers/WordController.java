@@ -1,5 +1,7 @@
 package com.dictionary.app.Controllers;
 
+import com.dictionary.app.DTOs.AddWordWithPhrasesDTO;
+import com.dictionary.app.DTOs.UpdateWordWithPhrasesDTO;
 import com.dictionary.app.Models.Phrase;
 import com.dictionary.app.Models.Word;
 import com.dictionary.app.Models.WordRoot;
@@ -10,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 
 import java.util.List;
 import java.util.Map;
@@ -66,5 +69,28 @@ public class WordController {
     public ResponseEntity<?> getAllWords() {
         return wordService.getAllWords();
     }
+    @GetMapping("/{id}")
+    public ResponseEntity<Word> getWordById(@PathVariable Integer id) {
+        return wordService.getWordById(id);
+    }
+    @PutMapping("/update-with-phrases")
+    public ResponseEntity<?> updateWithPhrases(
+            @RequestBody UpdateWordWithPhrasesDTO dto) {
+        return wordService.updateWordWithPhrases(dto);
+    }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteWord(@PathVariable Integer id) {
+        boolean removed = wordService.deleteWordById(id);
+        if (!removed) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(Map.of("message", "Word not found: " + id));
+        }
+        return ResponseEntity.ok(Map.of("message", "Deleted"));
+    }
+    @PutMapping("/add-with-phrases")
+    public ResponseEntity<?> addWithPhrases(@RequestBody AddWordWithPhrasesDTO dto)
+    {
+        return wordService.addWordWithPhrases(dto);
+    }
 }

@@ -23,11 +23,11 @@
 
         <!-- 1) Search bar -->
         <SearchBar
-      Grid.Row="0"
-      x:Name="SearchBar"
-      Placeholder="Caută cuvânt…"
-      TextChanged="SearchBar_TextChanged"
-      SearchButtonPressed="SearchBar_SearchButtonPressed"
+          Grid.Row="0"
+          x:Name="SearchBar"
+          Placeholder="Caută cuvânt…"
+          TextChanged="SearchBar_TextChanged"
+          SearchButtonPressed="SearchBar_SearchButtonPressed"
       />
 
         <!-- 2) Sort buttons -->
@@ -44,55 +44,78 @@
 
         <!-- 3) Results (star‐sized row makes this take all extra space and scroll) -->
         <CollectionView
-      Grid.Row="2"
-      x:Name="WordsCollection"
-      ItemsSource="{Binding DisplayedWords}"
-      SelectionMode="None"
-      VerticalOptions="FillAndExpand">
+             Grid.Row="2"
+             x:Name="WordsCollection"
+             ItemsSource="{Binding DisplayedWords}"
+             SelectionMode="None"
+             VerticalOptions="FillAndExpand">
+
             <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Grid Padding="10" Margin="0,5" BackgroundColor="#FAF8F2">
+            <DataTemplate>
+                <Grid Padding="10" Margin="0,5" BackgroundColor="#FAF8F2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="1"/>
+                    </Grid.RowDefinitions>
+                    <Grid
+                      Grid.Row="0"
+                      Padding="10"
+                      Margin="0,5"
+                      BackgroundColor="#FAF8F2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
 
-                        <Label Text="{Binding wordName}"
-                   FontSize="16"
-                   VerticalOptions="Center"
-                   TextColor="#3E2603"/>
+                        <Label
+                        Text="{Binding wordName}"
+                        FontSize="16"
+                        VerticalOptions="Center"
+                        TextColor="#3E2603"/>
 
-                        <Button Text="Edit"
-                    Grid.Column="1"
-                    FontSize="14"
-                    Padding="8,4"
-                    CommandParameter="{Binding id}"
-                    Clicked="OnEditClicked"/>
+                        <Button
+                        Text="Editează"
+                        Grid.Column="1"
+                        FontSize="14"
+                        Padding="8,4"
+                        CommandParameter="{Binding id}"
+                        Clicked="OnEditClicked"/>
                     </Grid>
-                </DataTemplate>
+
+                    <!-- new separator line -->
+                    <BoxView
+                      Grid.Row="1"
+                      HeightRequest="1"
+                      BackgroundColor="LightGray"
+                      HorizontalOptions="FillAndExpand"/>
+                </Grid>
+            </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <!-- 4) “No results” message -->
         <Label
-      Grid.Row="3"
-      Text="Nici un cuvânt nu a fost găsit"
-      IsVisible="{Binding IsEmpty}"
-      HorizontalOptions="Center"
-      TextColor="Gray"
-      FontSize="16" />
+          Grid.Row="3"
+          Text="Nici un cuvânt nu a fost găsit"
+          IsVisible="{Binding IsEmpty}"
+          HorizontalOptions="Center"
+          TextColor="Gray"
+          FontSize="16" />
 
         <!-- 5) Pagination controls -->
         <HorizontalStackLayout
-      Grid.Row="4"
-      HorizontalOptions="Center"
-      Spacing="20"
-      Padding="10">
+          Grid.Row="4"
+          HorizontalOptions="Center"
+          Spacing="20"
+          Padding="10">
             <Button Text="◀ Prev"
               Clicked="OnPrevPageClicked"
               IsEnabled="{Binding CanGoPrev}" />
             <Label Text="{Binding PageInfo}"
-             VerticalOptions="Center"/>
+              VerticalOptions="Center"/>
             <Button Text="Next ▶"
               Clicked="OnNextPageClicked"
               IsEnabled="{Binding CanGoNext}" />

@@ -3,13 +3,12 @@ package com.dictionary.app.Controllers;
 import com.dictionary.app.Models.Phrase;
 import com.dictionary.app.Services.PhraseService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/phrases")
@@ -35,5 +34,14 @@ public class PhraseController {
         return phraseService.getPhrasesByWordId(wordId);
     }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deletePhrase(@PathVariable Integer id) {
+        boolean removed = phraseService.deletePhraseById(id);
+        if (!removed) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(Map.of("message", "Phrase not found"));
+        }
+        return ResponseEntity.ok().build();
+    }
 
 }

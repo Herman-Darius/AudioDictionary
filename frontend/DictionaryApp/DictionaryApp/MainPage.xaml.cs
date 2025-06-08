@@ -48,54 +48,26 @@ namespace DictionaryApp
 
             if (string.IsNullOrEmpty(query))
             {
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    SearchLoadingIndicator.IsRunning = false;
-                    SearchLoadingIndicator.IsVisible = false;
-
-                    WordListView.ItemsSource = null;
-                    WordListView.IsVisible = false;
-                    NoResultsLabel.IsVisible = false;
-                });
+                WordListView.ItemsSource = null;
+                WordListView.IsVisible = false;
+                NoResultsLabel.IsVisible = false;
                 return;
             }
 
-            if (_cts != null)
-            {
-                _cts.Cancel();
-            }
+            SearchLoadingIndicator.IsRunning = true;
+            SearchLoadingIndicator.IsVisible = true;
 
-            _cts = new CancellationTokenSource();
-            var token = _cts.Token;
+            var words = await _wordService.SearchWordsAsync(query);
 
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                SearchLoadingIndicator.IsRunning = true;
-                SearchLoadingIndicator.IsVisible = true;
-            });
+            SearchLoadingIndicator.IsRunning = false;
+            SearchLoadingIndicator.IsVisible = false;
 
-            try
-            {
-                await Task.Delay(250, token);
+            WordListView.ItemsSource = words;
+            WordListView.IsVisible = words.Count > 0;
+            NoResultsLabel.IsVisible = false;
+            NoResultsImage.IsVisible = words.Count == 0;
+            //NoResultsMessage.IsVisible = words.Count == 0;
 
-                if (token.IsCancellationRequested) return;
-
-                var roots = await _wordService.SearchRootsAsync(query);
-
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    SearchLoadingIndicator.IsRunning = false;
-                    SearchLoadingIndicator.IsVisible = false;
-
-                    WordListView.ItemsSource = roots;
-                    WordListView.IsVisible = roots.Count > 0;
-                    NoResultsLabel.IsVisible = roots.Count == 0;
-                });
-            }
-            catch (TaskCanceledException)
-            {
-                // The task was canceled, ignore this one
-            }
         }
 
         private void OnSpaceClicked(object sender, EventArgs e)
@@ -110,36 +82,23 @@ namespace DictionaryApp
                 SearchBarInstance.Text = SearchBarInstance.Text.Substring(0, SearchBarInstance.Text.Length - 1);
             }
         }
-
         private void OnClearClicked(object sender, EventArgs e)
         {
             SearchBarInstance.Text = string.Empty;
         }
-
         private async void OnWordSelected(object sender, SelectionChangedEventArgs e)
         {
-            if (e.CurrentSelection.FirstOrDefault() is RootResult selectedRoot)
+            if (e.CurrentSelection.FirstOrDefault() is Word selectedWord)
             {
-                WordListView.SelectedItem = null;
-
-                var fullRoot = await _wordService.GetRootByNameAsync(selectedRoot.Root);
-                if (fullRoot != null)
-                {
-                    await Navigation.PushAsync(new RootDetailsPage(fullRoot, _wordService, _phraseService, _audioService));
-                }
-                else
-                {
-                    await DisplayAlert("Not Found", "Unable to load full root data.", "OK");
-                }
+                await Navigation.PushAsync(new WordDetailsPage(selectedWord, _wordService, _phraseService, _audioService));
             }
+
+            ((CollectionView)sender).SelectedItem = null;
         }
-
-
         private async void OnNavigateToDictionary(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new DictionaryPage());
         }
-
         private async void OnNavigateToUploadPage(object sender, EventArgs e)
         {
             var fileUploadService = App.Services.GetRequiredService<FileUploadService>();
@@ -147,12 +106,20 @@ namespace DictionaryApp
 
             await Navigation.PushAsync(new UploadPage(fileUploadService, audioService));
         }
-        private void OnLetterClicked(object sender, EventArgs e)
+        private async void OnLetterClicked(object sender, EventArgs e)
         {
             if (sender is Button button)
             {
                 string letter = button.Text;
                 SearchBarInstance.Text += letter;
+
+                var originalColor = button.BackgroundColor;
+                await button.ScaleTo(0.9, 75, Easing.CubicOut);
+                button.BackgroundColor = Color.FromArgb("#D99A5B");
+                await button.ScaleTo(1.05, 75, Easing.CubicIn);
+                await button.ScaleTo(1.0, 50, Easing.Linear);
+                await Task.Delay(100);
+                button.BackgroundColor = originalColor;
             }
         }
 
@@ -170,7 +137,6 @@ namespace DictionaryApp
                 }
             }
         }
-
         private async void OnPageAppearing(object sender, EventArgs e)
         {
             MainContent.Opacity = 0;
@@ -186,18 +152,30 @@ namespace DictionaryApp
         }
         private async void OnInfoClicked(object sender, EventArgs e)
         {
-            var popup = new InfoPopup();
-            await InfoButton.ScaleTo(0.9, 75, Easing.CubicOut);
-            await InfoButton.ScaleTo(1.05, 75, Easing.CubicIn);
-            await InfoButton.ScaleTo(1, 50);
+            try
+            {
+                // do your button bounce…
+                System.Diagnostics.Debug.WriteLine("[InfoPopup] OnInfoClicked fired");
+                await InfoButton.ScaleTo(0.9, 75, Easing.CubicOut);
+                await InfoButton.ScaleTo(1.05, 75, Easing.CubicIn);
+                await InfoButton.ScaleTo(1, 50);
 
-            await this.ShowPopupAsync(new InfoPopup());
+                // show your popup
+                var popup = new InfoPopup();
+                await this.ShowPopupAsync(popup);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"[InfoPopup ERROR] {ex}");
+                // show an alert so you’ll _see_ the exception on the device
+                await DisplayAlert("Oops, something went wrong", ex.Message, "OK");
+            }
         }
+
         private async void OnToggleAlphabetClicked(object sender, EventArgs e)
         {
             if (AlphabetContainer.IsVisible)
             {
-                await AlphabetContainer.TranslateTo(0, -20, 250, Easing.CubicOut);
                 await AlphabetContainer.FadeTo(0, 150, Easing.CubicOut);
                 AlphabetContainer.IsVisible = false;
                 ToggleAlphabetButton.Text = "▼ Afișează butoanele";
@@ -205,15 +183,11 @@ namespace DictionaryApp
             else
             {
                 AlphabetContainer.Opacity = 0;
-                AlphabetContainer.TranslationY = -20;
                 AlphabetContainer.IsVisible = true;
-
-                await AlphabetContainer.TranslateTo(0, 0, 250, Easing.CubicIn);
                 await AlphabetContainer.FadeTo(1, 150, Easing.CubicIn);
                 ToggleAlphabetButton.Text = "▲ Ascunde butoanele";
             }
         }
-
 
         private async Task ShowOfflineBanner()
         {

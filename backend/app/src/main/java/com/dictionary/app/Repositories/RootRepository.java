@@ -16,4 +16,5 @@ public interface RootRepository extends JpaRepository<WordRoot, Integer> {
 
     List<WordRoot> findByNormalizedNameStartingWithIgnoreCase(String prefix);
     WordRoot findByNormalizedNameIgnoreCase(String name);
+
 }

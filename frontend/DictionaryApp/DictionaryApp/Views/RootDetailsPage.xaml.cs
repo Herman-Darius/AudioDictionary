@@ -23,9 +23,9 @@ public partial class RootDetailsPage : ContentPage
         _phraseService = phraseService;
         _audioService = audioService;
 
-        LoadRootDetails(root);
+        //LoadRootDetails(root);
     }
-
+    /*
     public static async Task NavigateToAsync(WordRoot root, WordService wordService, PhraseService phraseService, AudioService audioService)
     {
         var newPage = new RootDetailsPage(root, wordService, phraseService, audioService);
@@ -242,4 +242,5 @@ public partial class RootDetailsPage : ContentPage
             await DisplayAlert("Copied!", $"'{_root.name}' has been copied to clipboard.", "OK");
         }
     }
+    */
 }

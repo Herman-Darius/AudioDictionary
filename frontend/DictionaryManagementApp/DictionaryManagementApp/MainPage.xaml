@@ -2,76 +2,124 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DictionaryManagementApp.MainPage"
-             Title="Admin Dictionary Uploader"
+             Title="Administrare aplicație"
              BackgroundColor="#FFF7ED">
 
-    <ScrollView>
-        <Grid Padding="20">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="30" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
+    <Grid>
+        <ScrollView>
+            <Grid Padding="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
-            <!-- 👈 Manual Word Entry Form -->
-            <VerticalStackLayout Grid.Column="0" Spacing="15">
-                <Label Text="🔤 Adaugă cuvânt nou"
-                       FontSize="20"
-                       FontAttributes="Bold"
-                       TextColor="#4B2E06"/>
+                <!-- Manual Word Entry Form (left column) -->
+                <VerticalStackLayout Grid.Column="0" Spacing="15">
 
-                <Label Text="Cuvânt" />
-                <Entry x:Name="WordEntry" Placeholder="Ex: alergai" />
+                    <Label Text="🔤 Adaugă un cuvânt nou"
+                     FontSize="20"
+                     FontAttributes="Bold"
+                     TextColor="#4B2E06"/>
 
-                <Label Text="Definiție" />
-                <Editor x:Name="DefinitionEntry"
-                        Placeholder="Definiția cuvântului"
-                        HeightRequest="80" />
+                    <Label Text="Cuvânt" FontAttributes="Bold" />
+                    <Entry x:Name="WordEntry" Placeholder="Ex: acățat" Focused="OnInputFocused"/>
 
-                <Label Text="Rădăcină" />
-                <Entry x:Name="RootEntry" Placeholder="Ex: alerga" />
+                    <Label Text="Rădăcină" FontAttributes="Bold" />
+                    <Entry x:Name="RootEntry" Placeholder="Ex: acăț" Focused="OnInputFocused"/>
 
-                <Button Text="✅ Adaugă cuvânt"
-                        Clicked="OnAddWordClicked"
-                        BackgroundColor="#4CAF50"
-                        TextColor="White"
-                        CornerRadius="8"/>
-                <Button Text="📖 Vezi toate cuvintele"
-                      Clicked="OnWordsPageClicked"
+                    <Label Text="Definiție" FontAttributes="Bold" />
+                    <Editor x:Name="DefinitionEntry" HeightRequest="80" Focused="OnInputFocused"/>
+
+                    <!-- Fraze -->
+                    <Label Text="Fraze (opțional)" FontAttributes="Bold" FontSize="18"/>
+                    <CollectionView
+                    x:Name="PhrasesCollection"
+                    ItemsSource="{Binding PhraseEditors}"
+                    SelectionMode="None">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Padding="10" Margin="0,5" BackgroundColor="#FAF8F2">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Entry Grid.Row="0"
+                                     Text="{Binding Content}"
+                                     Placeholder="Frază"
+                                     HorizontalOptions="FillAndExpand"
+                                           Focused="OnInputFocused"/>
+                                    <Entry Grid.Row="1"
+                                     Text="{Binding Definition}"
+                                     Placeholder="Definiție frază"
+                                     HorizontalOptions="FillAndExpand"
+                                           Focused="OnInputFocused"/>
+                                    <ImageButton Grid.Row="2"
+                                   Source="delete.png"
+                                   BackgroundColor="Transparent"
+                                   Clicked="OnDeletePhraseClicked"
+                                   WidthRequest="24"
+                                   HeightRequest="24"
+                                   HorizontalOptions="End"/>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+
+                    <Button Text="+ Adaugă frază"
                       BackgroundColor="#2196F3"
                       TextColor="White"
-                      CornerRadius="8"/>
-            </VerticalStackLayout>
+                      CornerRadius="6"
+                      Clicked="OnAddPhraseClicked" />
 
-            <!-- Divider -->
-            <BoxView Grid.Column="1" WidthRequest="1" Color="#DDD" VerticalOptions="FillAndExpand" />
+                    <!-- Acțiuni -->
+                    <HorizontalStackLayout Spacing="10">
+                        <Button Text="Salvează"
+                        BackgroundColor="#4CAF50"
+                        TextColor="White"
+                        CornerRadius="8"
+                        Clicked="OnSaveClicked" />
+                        <Button Text="Vezi toate cuvintele"
+                        BackgroundColor="#2196F3"
+                        TextColor="White"
+                        CornerRadius="8"
+                        Clicked="OnWordsPageClicked" />
+                    </HorizontalStackLayout>
 
-            <!-- 👉 Excel Upload + Preview -->
-            <VerticalStackLayout Grid.Column="2" Spacing="15">
-                <Label Text="📄 Upload Excel"
+                </VerticalStackLayout>
+
+
+                <!-- Divider -->
+                <BoxView Grid.Column="1" WidthRequest="1" Color="#DDD" VerticalOptions="FillAndExpand" />
+
+                <!-- 👉 Excel Upload + Preview -->
+                <VerticalStackLayout Grid.Column="2" Spacing="15">
+                    <Label Text="📄 Import cu Excel"
                        FontSize="20"
                        FontAttributes="Bold"
                        TextColor="#4B2E06"/>
 
-                <Label Text="Trage fișierul Excel sau selectează unul" />
-                <Grid BackgroundColor="#FAF8F2"
+                    <Label Text="Trage fișierul Excel sau selectează unul" />
+                    <Grid BackgroundColor="#FAF8F2"
                       Padding="20"
                       HeightRequest="150"
                       VerticalOptions="Start">
-                    <Label x:Name="DropLabel"
+                        <Label x:Name="DropLabel"
                            Text="📎 Trage fișierul aici..."
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            TextColor="#777"/>
-                </Grid>
+                    </Grid>
 
-                <Button x:Name="SelectFileButton"
+                    <Button x:Name="SelectFileButton"
                         Text="📂 Selectează fișier Excel"
                         Clicked="OnSelectFileClicked"
                         BackgroundColor="#8B4513"
                         TextColor="White"
                         CornerRadius="8"/>
-                <ActivityIndicator x:Name="ParsingIndicator"
+                    <ActivityIndicator x:Name="ParsingIndicator"
                                    IsVisible="False"
                                    IsRunning="False"
                                    Color="#8B4513"
@@ -79,46 +127,47 @@
                                    HeightRequest="40"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center" />
-                <!-- Confirm Upload Button -->
-                <Button Text="💾 Confirmă salvarea în dicționar"
+                    <!-- Confirm Upload Button -->
+                    <Button Text="💾 Confirmă salvarea în dicționar"
                         Clicked="OnConfirmUploadClicked"
                         BackgroundColor="#4CAF50"
                         TextColor="White"
                         CornerRadius="8"
                         IsVisible="{Binding PreviewItems.Count, Converter={StaticResource ZeroToBoolConverter}}" />
-                <Button Text="❌ Anulează încărcarea"
+                    <Button Text="❌ Anulează încărcarea"
                         Clicked="OnCancelUploadClicked"
                         BackgroundColor="#D32F2F"
                         TextColor="White"
                         CornerRadius="8"
                         IsVisible="{Binding PreviewItems.Count, Converter={StaticResource ZeroToBoolConverter}}" />
 
-                <Label Text="📋 Previzualizare fișier"
+                    <Label Text="📋 Previzualizare fișier"
                        FontSize="18"
                        FontAttributes="Bold"
                        TextColor="#4B2E06"
                        IsVisible="{Binding PreviewItems.Count, Converter={StaticResource ZeroToBoolConverter}}" />
 
-                <CollectionView x:Name="PreviewCollection"
+                    <CollectionView x:Name="PreviewCollection"
                                 ItemsSource="{Binding PreviewItems}"
                                 IsVisible="{Binding PreviewItems.Count, Converter={StaticResource ZeroToBoolConverter}}">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid Padding="10" Margin="0,10" BackgroundColor="#FAF8F2">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
-                                </Grid.RowDefinitions>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Padding="10" Margin="0,10" BackgroundColor="#FAF8F2">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
 
-                                <Label Text="{Binding WordName}"
+                                    <Label Text="{Binding WordName}"
                                        FontAttributes="Bold"
                                        FontSize="16"
                                        TextColor="#4B2E06" />
-                                <ImageButton Source="delete.png"
+                                    <ImageButton Source="delete.png"
                                              Command="{Binding RemoveCommand}"
                                              BackgroundColor="Transparent"
                                              HorizontalOptions="End"
+                                             IsVisible="False"
                                              VerticalOptions="Start"
                                              Padding="5"
                                              WidthRequest="24"
@@ -126,31 +175,31 @@
                                              Margin="0,0,0,5"
                                              Aspect="AspectFit" />
 
-                                <Label Grid.Row="1"
+                                    <Label Grid.Row="1"
                                        Text="{Binding Definition}"
                                        FontSize="14"
                                        TextColor="DarkGray" />
 
-                                <CollectionView Grid.Row="2"
+                                    <CollectionView Grid.Row="2"
                                                 ItemsSource="{Binding Phrases}"
                                                 Margin="0,10,0,0">
-                                    <CollectionView.ItemTemplate>
-                                        <DataTemplate>
-                                            <Grid Padding="6" Margin="0,5" BackgroundColor="#FFF2E0">
-                                                <Grid.RowDefinitions>
-                                                    <RowDefinition Height="Auto"/>
-                                                    <RowDefinition Height="Auto"/>
-                                                </Grid.RowDefinitions>
-                                                <Label Text="{Binding Content}"
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid Padding="6" Margin="0,5" BackgroundColor="#FFF2E0">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"/>
+                                                        <RowDefinition Height="Auto"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Label Text="{Binding Content}"
                                                        FontSize="13"
                                                        TextColor="#3E2603" />
 
-                                                <Label Grid.Row="1"
+                                                    <Label Grid.Row="1"
                                                        Text="{Binding Definition}"
                                                        FontSize="12"
                                                        TextColor="Gray"
                                                        FontAttributes="Italic"/>
-                                                <ImageButton Source="delete.png"
+                                                    <ImageButton Source="delete.png"
                                                              Command="{Binding RemoveCommand}"
                                                              BackgroundColor="Transparent"
                                                              HorizontalOptions="End"
@@ -161,15 +210,56 @@
                                                              Margin="0,0,0,5"
                                                              Aspect="AspectFit" />
 
-                                            </Grid>
-                                        </DataTemplate>
-                                    </CollectionView.ItemTemplate>
-                                </CollectionView>
-                            </Grid>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </VerticalStackLayout>
+                                                </Grid>
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </Grid>
+        </ScrollView>
+        <!-- === SLIDING CHARACTER PANEL === -->
+        <Grid x:Name="RightPanel"
+              WidthRequest="180"
+              BackgroundColor="#FFF3DC"
+              Padding="10"
+              VerticalOptions="Fill"
+              HorizontalOptions="End"
+              TranslationX="180"
+              ZIndex="2">
+
+            <Grid RowDefinitions="Auto,*">
+                <Button x:Name="ToggleArrowButton"
+                Text="⯇"
+                WidthRequest="40"
+                HeightRequest="60"
+                FontSize="18"
+                BackgroundColor="#EBD8B4"
+                CornerRadius="5"
+                Clicked="OnToggleSpecialCharsClicked"
+                HorizontalOptions="Start"
+                Margin="-30,20,0,0" />
+                <VerticalStackLayout Grid.Row="1" x:Name="SpecialCharButtons" Spacing="4" Padding="4,10">
+                    <Button Text="ď" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="Ď" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="ę" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="Ę" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="í" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="Í" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="ň" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="Ň" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="ǫ" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="Ǫ" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="ó" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="ť" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="Ť" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="ú" Clicked="OnSpecialCharClicked" FontSize="14" />
+                </VerticalStackLayout>
+            </Grid>
         </Grid>
-    </ScrollView>
+
+    </Grid>
 </ContentPage>

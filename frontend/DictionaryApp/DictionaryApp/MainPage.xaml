@@ -53,7 +53,6 @@
     </ContentPage.Resources>
 
     <Grid>
-        <!-- 🌲 Background -->
         <Image Source="rustic_wood_bg.jpg"
                Aspect="AspectFill"
                Opacity="0.25"
@@ -61,7 +60,6 @@
                HorizontalOptions="FillAndExpand"
                ZIndex="0" />
 
-        <!-- 🌿 Foreground UI -->
         <ScrollView x:Name="MainContent" ZIndex="1" Opacity="0">
             <VerticalStackLayout Padding="20" Spacing="20">
                 <Grid x:Name="OfflineBanner"
@@ -87,7 +85,6 @@
 
                 <Label Text="Răsfoiește Vorbele" Style="{StaticResource RusticHeader}" />
 
-                <!-- Search Bar & Loading -->
                 <Grid ColumnDefinitions="*,Auto" Padding="10,5" Margin="0,0,0,10">
                     <SearchBar x:Name="SearchBarInstance"
                                Placeholder="Caută un cuvânt..."
@@ -103,9 +100,9 @@
                                        VerticalOptions="Center"
                                        Color="#8B4513"/>
                 </Grid>
-                <!-- Toggle Alphabet Visibility Button -->
+
                 <Button x:Name="ToggleAlphabetButton"
-                        Text="▼ Afișează butoanele"
+                        Text="▲ Ascunde butoanele"
                         FontSize="16"
                         FontAttributes="Bold"
                         FontFamily="Serif"
@@ -117,15 +114,9 @@
                         WidthRequest="200"
                         Margin="0,10,0,0"/>
 
-                <!-- Collapsible Alphabet Grid -->
-                <StackLayout x:Name="AlphabetContainer" IsVisible="false">
-                    <!-- Alphabet Grid -->
+                <StackLayout x:Name="AlphabetContainer" IsVisible="true" HorizontalOptions="Center">
                     <Grid ColumnSpacing="5" RowSpacing="5" Padding="5">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
@@ -136,73 +127,25 @@
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
-                        <!-- Row 0 -->
-                        <Button Text="A" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="0" Clicked="OnLetterClicked"/>
-                        <Button Text="B" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="1" Clicked="OnLetterClicked"/>
-                        <Button Text="C" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="2" Clicked="OnLetterClicked"/>
-                        <Button Text="D" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="3" Clicked="OnLetterClicked"/>
-                        <Button Text="E" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="4" Clicked="OnLetterClicked"/>
-                        <Button Text="F" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="5" Clicked="OnLetterClicked"/>
-                        <Button Text="G" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="6" Clicked="OnLetterClicked"/>
+                        <!-- Rand 0 -->
+                        <Button Text="ă" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="0" Clicked="OnLetterClicked"/>
+                        <Button Text="â" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="1" Clicked="OnLetterClicked"/>
+                        <Button Text="î" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="2" Clicked="OnLetterClicked"/>
+                        <Button Text="ș" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="3" Clicked="OnLetterClicked"/>
+                        <Button Text="ț" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="4" Clicked="OnLetterClicked"/>
+                        <Button Text="ď" Style="{StaticResource LetterButton}" Grid.Row="0" Grid.Column="5" Clicked="OnLetterClicked"/>
 
-                        <!-- Row 1 -->
-                        <Button Text="H" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="0" Clicked="OnLetterClicked"/>
-                        <Button Text="I" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="1" Clicked="OnLetterClicked"/>
-                        <Button Text="J" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="2" Clicked="OnLetterClicked"/>
-                        <Button Text="K" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="3" Clicked="OnLetterClicked"/>
-                        <Button Text="L" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="4" Clicked="OnLetterClicked"/>
-                        <Button Text="M" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="5" Clicked="OnLetterClicked"/>
-                        <Button Text="N" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="6" Clicked="OnLetterClicked"/>
-
-                        <!-- Row 2 -->
-                        <Button Text="O" Style="{StaticResource LetterButton}" Grid.Row="2" Grid.Column="0" Clicked="OnLetterClicked"/>
-                        <Button Text="P" Style="{StaticResource LetterButton}" Grid.Row="2" Grid.Column="1" Clicked="OnLetterClicked"/>
-                        <Button Text="Q" Style="{StaticResource LetterButton}" Grid.Row="2" Grid.Column="2" Clicked="OnLetterClicked"/>
-                        <Button Text="R" Style="{StaticResource LetterButton}" Grid.Row="2" Grid.Column="3" Clicked="OnLetterClicked"/>
-                        <Button Text="S" Style="{StaticResource LetterButton}" Grid.Row="2" Grid.Column="4" Clicked="OnLetterClicked"/>
-                        <Button Text="T" Style="{StaticResource LetterButton}" Grid.Row="2" Grid.Column="5" Clicked="OnLetterClicked"/>
-                        <Button Text="U" Style="{StaticResource LetterButton}" Grid.Row="2" Grid.Column="6" Clicked="OnLetterClicked"/>
-
-                        <!-- Row 3 -->
-                        <Button Text="V" Style="{StaticResource LetterButton}" Grid.Row="3" Grid.Column="0" Clicked="OnLetterClicked"/>
-                        <Button Text="W" Style="{StaticResource LetterButton}" Grid.Row="3" Grid.Column="1" Clicked="OnLetterClicked"/>
-                        <Button Text="X" Style="{StaticResource LetterButton}" Grid.Row="3" Grid.Column="2" Clicked="OnLetterClicked"/>
-                        <Button Text="Y" Style="{StaticResource LetterButton}" Grid.Row="3" Grid.Column="3" Clicked="OnLetterClicked"/>
-                        <Button Text="Z" Style="{StaticResource LetterButton}" Grid.Row="3" Grid.Column="4" Clicked="OnLetterClicked"/>
-                        <Button Text="ă" Style="{StaticResource LetterButton}" Grid.Row="3" Grid.Column="5" Clicked="OnLetterClicked"/>
-                        <Button Text="â" Style="{StaticResource LetterButton}" Grid.Row="3" Grid.Column="6" Clicked="OnLetterClicked"/>
-
-                        <!-- Row 4 -->
-                        <Button Text="î" Style="{StaticResource LetterButton}" Grid.Row="4" Grid.Column="0" Clicked="OnLetterClicked"/>
-                        <Button Text="ș" Style="{StaticResource LetterButton}" Grid.Row="4" Grid.Column="1" Clicked="OnLetterClicked"/>
-                        <Button Text="ț" Style="{StaticResource LetterButton}" Grid.Row="4" Grid.Column="2" Clicked="OnLetterClicked"/>
-                        <Button Text="ď" Style="{StaticResource LetterButton}" Grid.Row="4" Grid.Column="3" Clicked="OnLetterClicked"/>
-                        <Button Text="ę" Style="{StaticResource LetterButton}" Grid.Row="4" Grid.Column="4" Clicked="OnLetterClicked"/>
-                        <Button Text="ň" Style="{StaticResource LetterButton}" Grid.Row="4" Grid.Column="5" Clicked="OnLetterClicked"/>
-                        <Button Text="ǫ" Style="{StaticResource LetterButton}" Grid.Row="4" Grid.Column="6" Clicked="OnLetterClicked"/>
-
-                        <!-- Row 5 -->
-                        <Button Text="ó" Style="{StaticResource LetterButton}" Grid.Row="5" Grid.Column="0" Clicked="OnLetterClicked"/>
-                        <Button Text="ť" Style="{StaticResource LetterButton}" Grid.Row="5" Grid.Column="1" Clicked="OnLetterClicked"/>
-
-                        <Button Text="SPACE"
-                                Style="{StaticResource LetterButton}"
-                                Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3"
-                                HorizontalOptions="FillAndExpand"
-                                Clicked="OnSpaceClicked"/>
-
-                        <Button Text="⌫"
-                                Style="{StaticResource LetterButton}"
-                                Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="2"
-                                HorizontalOptions="FillAndExpand"
-                                Clicked="OnBackspaceClicked"/>
+                        <!-- Rand 1 -->
+                        <Button Text="ę" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="0" Clicked="OnLetterClicked"/>
+                        <Button Text="ň" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="1" Clicked="OnLetterClicked"/>
+                        <Button Text="ǫ" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="2" Clicked="OnLetterClicked"/>
+                        <Button Text="ó" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="3" Clicked="OnLetterClicked"/>
+                        <Button Text="ť" Style="{StaticResource LetterButton}" Grid.Row="1" Grid.Column="4" Clicked="OnLetterClicked"/>
                     </Grid>
                 </StackLayout>
                 
-                <!-- Search Results -->
                 <CollectionView x:Name="WordListView"
                                 IsVisible="False"
                                 SelectionMode="Single"
@@ -221,13 +164,12 @@
                                 StrokeShape="RoundRectangle 16">
 
                                 <VerticalStackLayout Spacing="4">
-                                    <Label Text="{Binding Root}"
+                                    <Label Text="{Binding wordName}"
                                            FontSize="20"
                                            FontAttributes="Bold"
                                            TextColor="#4B2E06"
                                            FontFamily="RusticSerif"/>
-
-                                    <Label Text="{Binding RootDefinition}"
+                                    <Label Text="{Binding definition}"
                                            FontSize="15"
                                            FontAttributes="Italic"
                                            TextColor="#6E5841"
@@ -246,6 +188,21 @@
                        FontFamily="Serif"
                        HorizontalOptions="Center"
                        IsVisible="False" />
+                <Image x:Name="NoResultsImage"
+                       Source="no_results.png"
+                       WidthRequest="220"
+                       HeightRequest="220"
+                       Margin="0,20,0,0"
+                       IsVisible="False"
+                       HorizontalOptions="Center" />
+                <Label x:Name="NoResultsMessage"
+                   Text="Nicio vorbă găsită. Încearcă o literă sau alt cuvânt."
+                   FontSize="16"
+                   TextColor="#8B4513"
+                   FontFamily="Serif"
+                   HorizontalOptions="Center"
+                   IsVisible="False"
+                   Margin="20,10" />
 
                 <Button Text="Upload Files"
                         Clicked="OnNavigateToUploadPage"

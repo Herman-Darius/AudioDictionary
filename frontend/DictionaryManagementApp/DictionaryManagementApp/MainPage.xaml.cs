@@ -12,7 +12,13 @@ namespace DictionaryManagementApp
         private readonly WordAdminService _wordAdminService;
         private readonly ExcelUploadService _excelUploadService;
         private FileResult _selectedFile;
+        public ObservableCollection<PhraseEditor> PhraseEditors { get; }
+      = new ObservableCollection<PhraseEditor>();
+
         public ObservableCollection<WordPreviewItem> PreviewItems { get; set; } = new();
+
+        private bool _charsVisible = false;
+        private VisualElement? _lastFocusedInput = null;
 
         public MainPage(WordAdminService wordAdminService, ExcelUploadService excelUploadService)
         {
@@ -21,30 +27,80 @@ namespace DictionaryManagementApp
 
             _wordAdminService = wordAdminService;
             _excelUploadService = excelUploadService;
-            
-        }
-        private async void OnAddWordClicked(object sender, EventArgs e)
-        {
-            var word = WordEntry.Text?.Trim();
-            var def = DefinitionEntry.Text?.Trim();
-            var root = RootEntry.Text?.Trim();
 
-            if (string.IsNullOrWhiteSpace(word) || string.IsNullOrWhiteSpace(root))
+            PhraseEditors.Add(new PhraseEditor());
+
+        }
+        void OnAddPhraseClicked(object sender, EventArgs e)
+        => PhraseEditors.Add(new PhraseEditor());
+
+        void OnDeletePhraseClicked(object sender, EventArgs e)
+        {
+            if (sender is ImageButton btn && btn.BindingContext is PhraseEditor pe)
+                PhraseEditors.Remove(pe);
+        }
+        async void OnSaveClicked(object sender, EventArgs e)
+        {
+            // 1) Validate required word fields
+            if (string.IsNullOrWhiteSpace(WordEntry.Text)
+             || string.IsNullOrWhiteSpace(RootEntry.Text)
+             || string.IsNullOrWhiteSpace(DefinitionEntry.Text))
             {
-                await DisplayAlert("Eroare", "Cuvântul și rădăcina sunt obligatorii.", "OK");
+                await DisplayAlert("Eroare",
+                    "Completează Cuvânt, Rădăcină și Definiție.",
+                    "OK");
                 return;
             }
 
-            var newWord = new AddWordRequest
+            // 2) Validate phrase slots: either both empty or both filled
+            foreach (var pe in PhraseEditors)
             {
-                wordName = word,
-                definition = def,
-                rootName = root 
+                bool bothEmpty = string.IsNullOrWhiteSpace(pe.Content)
+                              && string.IsNullOrWhiteSpace(pe.Definition);
+                if (bothEmpty)
+                    continue;
 
+                if (string.IsNullOrWhiteSpace(pe.Content)
+                 || string.IsNullOrWhiteSpace(pe.Definition))
+                {
+                    await DisplayAlert("Eroare",
+                        "Toate frazele trebuie completate cu text și definiție.",
+                        "OK");
+                    return;
+                }
+            }
+
+            // 3) Build wrapper DTO
+            var dto = new AddWordWithPhrasesDTO
+            {
+                WordName = WordEntry.Text.Trim(),
+                RootName = RootEntry.Text.Trim(),
+                Definition = DefinitionEntry.Text.Trim(),
+                Phrases = PhraseEditors
+                    .Where(pe => !string.IsNullOrWhiteSpace(pe.Content))
+                    .Select(pe => new PhraseDto
+                    {
+                        Content = pe.Content!.Trim(),
+                        Definition = pe.Definition!.Trim()
+                    })
+                    .ToList()
             };
 
-            var success = await _wordAdminService.AddWordAsync(newWord);
-            await DisplayAlert(success ? "Succes" : "Eroare", success ? "Cuvânt adăugat!" : "Eroare la salvare", "OK");
+            // 4) Send to server
+            bool ok = await _wordAdminService.AddWordWithPhrasesAsync(dto);
+            if (!ok)
+            {
+                await DisplayAlert("Eroare", "Nu am putut salva cuvântul.", "OK");
+                return;
+            }
+
+            // 5) Success → notify and reset form (no navigation)
+            await DisplayAlert("Succes", "Cuvântul și frazele au fost create.", "OK");
+            WordEntry.Text = "";
+            RootEntry.Text = "";
+            DefinitionEntry.Text = "";
+            PhraseEditors.Clear();
+            PhraseEditors.Add(new PhraseEditor());
         }
 
         private async void OnSelectFileClicked(object sender, EventArgs e)
@@ -64,7 +120,6 @@ namespace DictionaryManagementApp
                 return;
             _selectedFile = result;
 
-            // 🧹 Reset first
             DropLabel.Text = "📎 Trage fișierul aici...";
             PreviewItems.Clear();
             PreviewCollection.IsVisible = false;
@@ -73,6 +128,13 @@ namespace DictionaryManagementApp
 
             try
             {
+                var validationResult = await _excelUploadService.ValidateExcelFileAsync(_selectedFile);
+
+                if (!validationResult.IsValid)
+                {
+                    await DisplayAlert("⚠️ Fișier invalid", validationResult.ErrorMessage, "OK");
+                    return;
+                }
                 DropLabel.Text = $"📎 Selectat: {result.FileName}";
                 using var stream = await result.OpenReadAsync();
 
@@ -85,7 +147,24 @@ namespace DictionaryManagementApp
                 }
 
                 foreach (var item in previewData)
+                {
+                    // 1️⃣ assign the word-level remove command
+                    item.RemoveCommand = new Command(() =>
+                    {
+                        PreviewItems.Remove(item);
+                    });
+
+                    // 2️⃣ assign the phrase-level remove command on each phrase
+                    foreach (var ph in item.Phrases)
+                    {
+                        ph.RemoveCommand = new Command(() =>
+                        {
+                            item.Phrases.Remove(ph);
+                        });
+                    }
+
                     PreviewItems.Add(item);
+                }
 
                 PreviewCollection.IsVisible = true;
             }
@@ -110,7 +189,26 @@ namespace DictionaryManagementApp
             }
 
             var resultMessage = await _excelUploadService.UploadExcelFileAsync(_selectedFile);
-            await DisplayAlert("Rezultat încărcare", resultMessage, "OK");
+            if (!resultMessage.Contains("successfully", StringComparison.OrdinalIgnoreCase))
+            {
+                string title;
+
+                if (resultMessage.Contains("Formula‐injection", StringComparison.OrdinalIgnoreCase))
+                    title = "⚠️ Tentativă de atac: formulă periculoasă";
+                else if (resultMessage.Contains("Invalid MIME type", StringComparison.OrdinalIgnoreCase) ||
+                         resultMessage.Contains("ZIP signature", StringComparison.OrdinalIgnoreCase))
+                    title = "⚠️ Tentativă de atac: fișier falsificat";
+                else
+                    title = "⚠️ Alertă sau eroare";
+
+                await DisplayAlert(title, resultMessage, "Înțeleg");
+                return;
+            }
+
+            else
+            {
+                await DisplayAlert("Rezultat încărcare", resultMessage, "OK");
+            }
 
             if (resultMessage.Contains("successfully", StringComparison.OrdinalIgnoreCase))
             {
@@ -133,6 +231,62 @@ namespace DictionaryManagementApp
         }
 
 
+        private async void OnToggleSpecialCharsClicked(object sender, EventArgs e)
+        {
+            if (_charsVisible)
+            {
+                await RightPanel.TranslateTo(180, 0, 250, Easing.CubicInOut);
+                ToggleArrowButton.Text = "⯇";
+                _charsVisible = false;
+            }
+            else
+            {
+                await RightPanel.TranslateTo(0, 0, 250, Easing.CubicInOut);
+                ToggleArrowButton.Text = "⯈";
+                _charsVisible = true;
+            }
+        }
+
+        private void OnInputFocused(object sender, FocusEventArgs e)
+        {
+            _lastFocusedInput = sender as VisualElement;
+        }
+
+        private void OnSpecialCharClicked(object sender, EventArgs e)
+        {
+            if (sender is Button btn && !string.IsNullOrEmpty(btn.Text) && _lastFocusedInput != null)
+            {
+                string charToInsert = btn.Text;
+
+                if (_lastFocusedInput is Entry entry)
+                {
+                    if (entry.Text == null)
+                        entry.Text = ""; // Prevent null insert
+
+                    int pos = entry.CursorPosition;
+                    entry.Text = entry.Text.Insert(pos, charToInsert);
+                    entry.CursorPosition = pos + charToInsert.Length;
+                }
+                else if (_lastFocusedInput is Editor editor)
+                {
+                    if (editor.Text == null)
+                        editor.Text = "";
+
+                    int pos = editor.CursorPosition;
+                    editor.Text = editor.Text.Insert(pos, charToInsert);
+                    editor.CursorPosition = pos + charToInsert.Length;
+                }
+                else if (_lastFocusedInput is SearchBar search)
+                {
+                    if (search.Text == null)
+                        search.Text = "";
+
+                    int pos = search.CursorPosition;
+                    search.Text = search.Text.Insert(pos, charToInsert);
+                    search.CursorPosition = pos + charToInsert.Length;
+                }
+            }
+        }
 
     }
 

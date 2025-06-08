@@ -12,8 +12,11 @@
           "ClosedXML": "0.104.2",
           "CommunityToolkit.Maui": "11.2.0",
           "Microsoft.Extensions.Http": "9.0.4",
+          "Microsoft.Extensions.Http.Polly": "7.0.0",
           "Microsoft.Extensions.Logging.Debug": "9.0.4",
           "Microsoft.Maui.Controls": "9.0.60",
+          "Polly": "8.5.2",
+          "Polly.Extensions.Http": "3.0.0",
           "Microsoft.Web.WebView2.Core.Projection": "1.0.2903.40",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.57"
         },
@@ -202,6 +205,19 @@
           "lib/net9.0/Microsoft.Extensions.Http.dll": {
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.425.16305"
+          }
+        }
+      },
+      "Microsoft.Extensions.Http.Polly/7.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.4",
+          "Polly": "8.5.2",
+          "Polly.Extensions.Http": "3.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51819"
           }
         }
       },
@@ -589,6 +605,36 @@
           }
         }
       },
+      "Polly/8.5.2": {
+        "dependencies": {
+          "Polly.Core": "8.5.2"
+        },
+        "runtime": {
+          "lib/net6.0/Polly.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.5.2.4319"
+          }
+        }
+      },
+      "Polly.Core/8.5.2": {
+        "runtime": {
+          "lib/net8.0/Polly.Core.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.5.2.4319"
+          }
+        }
+      },
+      "Polly.Extensions.Http/3.0.0": {
+        "dependencies": {
+          "Polly": "8.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
       "RBush/4.0.0": {
         "runtime": {
           "lib/net8.0/RBush.dll": {
@@ -747,6 +793,13 @@
       "path": "microsoft.extensions.http/9.0.4",
       "hashPath": "microsoft.extensions.http.9.0.4.nupkg.sha512"
     },
+    "Microsoft.Extensions.Http.Polly/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HG4hRqde2/3rr34FluxLflD9j197XrI5iV63jyu4O5/Bl4FJlO05bszKTxOYAmX02cGweAiLc4EiLUjZ0CuOKw==",
+      "path": "microsoft.extensions.http.polly/7.0.0",
+      "hashPath": "microsoft.extensions.http.polly.7.0.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Logging/9.0.4": {
       "type": "package",
       "serviceable": true,
@@ -886,6 +939,27 @@
       "sha512": "sha512-j+uQMOfaAR3oKDBv45lyOETnILX1b07yikPBuDRFH4rIpeGHMychYmdu6WOYDdbd3io9NOOs2tUEsrHqO6CXQQ==",
       "path": "microsoft.windowsappsdk/1.6.250228001",
       "hashPath": "microsoft.windowsappsdk.1.6.250228001.nupkg.sha512"
+    },
+    "Polly/8.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vbXsGgkG86nG+TOwY+SmtrGrRHmHH0DQaxtILx//d3Dz/ocJ8izSNYzdvU2gEtWa/LDD8zJLvD3HdjEkdlvkhg==",
+      "path": "polly/8.5.2",
+      "hashPath": "polly.8.5.2.nupkg.sha512"
+    },
+    "Polly.Core/8.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MJKdxv4zwDmiWvYvVN24DsrWUfgQ4F83voH8bhbtLMdPuGy8CfTUzsgQhvyrl1a7hrM6f/ydwLVdVUI0xooUw==",
+      "path": "polly.core/8.5.2",
+      "hashPath": "polly.core.8.5.2.nupkg.sha512"
+    },
+    "Polly.Extensions.Http/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-drrG+hB3pYFY7w1c3BD+lSGYvH2oIclH8GRSehgfyP5kjnFnHKQuuBhuHLv+PWyFuaTDyk/vfRpnxOzd11+J8g==",
+      "path": "polly.extensions.http/3.0.0",
+      "hashPath": "polly.extensions.http.3.0.0.nupkg.sha512"
     },
     "RBush/4.0.0": {
       "type": "package",

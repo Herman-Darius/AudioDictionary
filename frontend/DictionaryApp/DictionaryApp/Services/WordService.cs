@@ -29,11 +29,36 @@ namespace DictionaryApp.Services
                     return new List<Word>();
                 }
 
-                // Log the response content for debugging
                 var jsonResponse = await response.Content.ReadAsStringAsync();
-                Console.WriteLine($"SearchWords Response: {jsonResponse}");
-                
                 return JsonConvert.DeserializeObject<List<Word>>(jsonResponse) ?? new List<Word>();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error fetching words: {ex.Message}");
+                return new List<Word>();
+            }
+        }
+
+        public async Task<Word> GetWordByNameAsync(string wordName)
+        {
+            try
+            {
+                var response = await _httpClient.GetStringAsync($"api/words/name/{wordName}");
+                return JsonConvert.DeserializeObject<Word>(response);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error fetching word details: {ex.Message}");
+                return null;
+            }
+        }
+
+        public async Task<List<Word>> GetAllWordsAsync()
+        {
+            try
+            {
+                var response = await _httpClient.GetStringAsync("api/words/all");
+                return JsonConvert.DeserializeObject<List<Word>>(response);
             }
             catch (Exception ex)
             {
@@ -54,10 +79,7 @@ namespace DictionaryApp.Services
                     return new List<Word>();
                 }
 
-                // Log the response content for debugging
                 var jsonResponse = await response.Content.ReadAsStringAsync();
-                Console.WriteLine($"GetWordsByLetter Response: {jsonResponse}");
-
                 return JsonConvert.DeserializeObject<List<Word>>(jsonResponse) ?? new List<Word>();
             }
             catch (Exception ex)
@@ -66,63 +88,37 @@ namespace DictionaryApp.Services
                 return new List<Word>();
             }
         }
-        public async Task<Word> GetWordByNameAsync(string wordName)
+
+        public async Task<ImageSource> GetWordImageAsync(string imageFileName, string defaultImage = "default_image.png")
         {
+            if (string.IsNullOrWhiteSpace(imageFileName))
+                return defaultImage;
+
             try
             {
-                var response = await _httpClient.GetStringAsync($"/api/words/name/{wordName}");
-                return JsonConvert.DeserializeObject<Word>(response);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error fetching word details: {ex.Message}");
-                return null;
-            }
-        }
+                // build the absolute URI
+                var uri = new Uri(_httpClient.BaseAddress, $"api/media/images/{imageFileName}");
 
-        public async Task<List<Word>> GetAllWordsAsync()
-        {
-            try
-            {
-                var response = await _httpClient.GetStringAsync("api/words/all");
-                return JsonConvert.DeserializeObject<List<Word>>(response);
-
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine($"Error fetching words: {ex.Message}");
-                return new List<Word>();
-            }
-        }
-
-
-       /* public async Task<List<WordRoot>> SearchRootsAsync(string query)
-        {
-            try
-            {
-                var response = await _httpClient.GetAsync($"api/roots/search?query={query}");
-
-                if (!response.IsSuccessStatusCode)
+                // disable both disk & memory caching
+                var source = new UriImageSource
                 {
-                    Console.WriteLine($"Error: {response.StatusCode}");
-                    return new List<WordRoot>();
-                }
+                    Uri = uri,
+                    CachingEnabled = false,
+                    CacheValidity = TimeSpan.Zero
+                };
 
-                var jsonResponse = await response.Content.ReadAsStringAsync();
-                Console.WriteLine($"SearchRoots Response: {jsonResponse}");
-
-                return JsonConvert.DeserializeObject<List<WordRoot>>(jsonResponse) ?? new List<WordRoot>();
+                return source;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error fetching roots: {ex.Message}");
-                return new List<WordRoot>();
+                Console.WriteLine($"[Image Fetch Error] {ex.Message}");
+                return defaultImage;
             }
-        }*/
+        }
 
 
 
-
+        /*
         public async Task<List<RootResult>> SearchRootsAsync(string query)
         {
             var response = await _httpClient.GetAsync($"api/roots/search-root-by-word?query={query}");
@@ -168,7 +164,7 @@ namespace DictionaryApp.Services
                 return null;
             }
         }
-
+        */
     }
 
 }

@@ -6,77 +6,154 @@
     Title="Editare Cuvânt"
     BackgroundColor="#FFF7ED">
 
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="15">
+    <Grid ColumnDefinitions="*,Auto">
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="15">
 
-            <!-- Word fields -->
-            <Label Text="Cuvânt" FontAttributes="Bold" />
-            <Entry x:Name="WordNameEntry" Placeholder="Cuvânt" />
 
-            <Label Text="Rădăcină" FontAttributes="Bold" />
-            <Entry x:Name="RootEntry" Placeholder="Rădăcină" />
+                <!-- Word fields -->
+                <Label Text="Cuvânt" FontAttributes="Bold" />
+                <Entry x:Name="WordNameEntry" Placeholder="Cuvânt" Focused="OnInputFocused"/>
 
-            <Label Text="Definiție" FontAttributes="Bold" />
-            <Editor x:Name="DefinitionEditor" HeightRequest="80" />
+                <Label Text="Rădăcină" FontAttributes="Bold" />
+                <Entry x:Name="RootEntry" Placeholder="Rădăcină" Focused="OnInputFocused"/>
 
-            <!-- Word audio/image -->
-            <HorizontalStackLayout Spacing="10">
-                <Button Text="🎤 Alege Audio"
+                <Label Text="Definiție" FontAttributes="Bold" />
+                <Editor x:Name="DefinitionEditor" HeightRequest="80" Focused="OnInputFocused"/>
+
+                <!-- Word audio/image -->
+                <Label Text="Format audio acceptat: .mp3"
+                   FontSize="12"
+                   TextColor="Gray" />
+                <HorizontalStackLayout Spacing="10">
+                    <Button Text="🎤 Alege Audio"
                 Clicked="OnPickWordAudioClicked" />
-                <Label x:Name="WordAudioLabel" VerticalOptions="Center" />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Spacing="10">
-                <Button Text="🖼️ Alege Imagine"
+                    <Label x:Name="WordAudioLabel" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+                <Label Text="Format imagine acceptat: .jpg, .png (280x280 px sau 300x300 px)"
+                   FontSize="12"
+                   TextColor="Gray" />
+                <HorizontalStackLayout Spacing="10">
+                    <Button Text="🖼️ Alege Imagine"
                 Clicked="OnPickWordImageClicked" />
-                <Label x:Name="WordImageLabel" VerticalOptions="Center" />
-            </HorizontalStackLayout>
+                    <Label x:Name="WordImageLabel" VerticalOptions="Center" />
+                </HorizontalStackLayout>
 
-            <!-- Phrases -->
-            <Label Text="Fraze" FontAttributes="Bold" FontSize="18" />
-            <CollectionView
-        x:Name="PhrasesCollection"
-        ItemsSource="{Binding PhraseEditors}"
-        SelectionMode="None">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid Padding="10"
-                  Margin="0,5"
-                  BackgroundColor="#FAF8F2"
-                  RowSpacing="8">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
+                <!-- Phrases -->
+                <Label Text="Fraze" FontAttributes="Bold" FontSize="18" />
+                
+                <CollectionView
+                x:Name="PhrasesCollection"
+                ItemsSource="{Binding PhraseEditors}"
+                SelectionMode="None">
 
-                            <Entry Grid.Row="0"
-                     Text="{Binding Content}"
-                     Placeholder="Fraza"
-                     HorizontalOptions="FillAndExpand"/>
-                            <Entry Grid.Row="1"
-                     Text="{Binding Definition}"
-                     Placeholder="Definiție frază"
-                     HorizontalOptions="FillAndExpand"/>
-                            <HorizontalStackLayout Grid.Row="2" Spacing="8">
-                                <Button Text="🎤 Alege Audio"
-                        Command="{Binding PickAudioCommand}" />
-                                <Label Text="{Binding AudioFileName}"
-                       VerticalOptions="Center" />
-                            </HorizontalStackLayout>
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+                    <CollectionView.ItemTemplate>
 
-            <Button Text="+ Adaugă încă o frază"
+                        <DataTemplate>
+                            
+                            <Grid Padding="10" Margin="0,5" BackgroundColor="#FAF8F2" RowSpacing="8">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Phrase fields -->
+                                <VerticalStackLayout Grid.Row="0" Grid.Column="0" Spacing="4">
+                                    <Entry Text="{Binding Content}" Placeholder="Frază" Focused="OnInputFocused"/>
+                                    <Entry Text="{Binding Definition}" Placeholder="Definiție frază" Focused="OnInputFocused"/>
+                                    <Label Text="Format audio acceptat: .mp3"
+                                           FontSize="12"
+                                           TextColor="Gray" />
+                                    <HorizontalStackLayout Spacing="8">
+                                        
+                                        <Button
+                                        Text="🎤 Alege Audio"
+                                        Clicked="OnPickPhraseAudioClicked"
+                                        BindingContext="{Binding .}" />
+                                        <Label Text="{Binding AudioFileName}" VerticalOptions="Center" />
+                                    </HorizontalStackLayout>
+                                </VerticalStackLayout>
+
+                                <!-- Trash icon to delete this phrase -->
+                                <ImageButton
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Source="delete.png"
+                                BackgroundColor="Transparent"
+                                Clicked="OnDeletePhraseClicked"
+                                CommandParameter="{Binding Id}"
+                                WidthRequest="24"
+                                HeightRequest="24"
+                                VerticalOptions="Start" />
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+
+                <Button Text="+ Adaugă încă o frază"
               Clicked="OnAddPhraseClicked" />
 
-            <Button Text="Salvează modificările"
+                <Button Text="Salvează modificările"
               BackgroundColor="#4CAF50"
               TextColor="White"
               CornerRadius="8"
               Clicked="OnSaveClicked" />
+                <Button
+                Text="❌ Șterge acest cuvânt"
+                BackgroundColor="#D32F2F"
+                TextColor="White"
+                CornerRadius="8"
+                Clicked="OnDeleteWordClicked" />
 
-        </VerticalStackLayout>
-    </ScrollView>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Grid x:Name="RightPanel"
+              WidthRequest="180"
+              BackgroundColor="#FFF3DC"
+              Padding="10"
+              VerticalOptions="Fill"
+              HorizontalOptions="End"
+              TranslationX="180"   
+            ZIndex="2">
+
+            <Grid RowDefinitions="Auto,*">
+                <!-- Handle Button -->
+                <Button x:Name="ToggleArrowButton"
+                        Text="⯇"
+                        WidthRequest="40"
+                        HeightRequest="60"
+                        FontSize="18"
+                        BackgroundColor="#EBD8B4"
+                        CornerRadius="5"
+                        Clicked="OnToggleSpecialCharsClicked"
+                        HorizontalOptions="Start"
+                        Margin="-30,20,0,0" />
+
+                <!-- Character Buttons -->
+                <VerticalStackLayout Grid.Row="1" x:Name="SpecialCharButtons" Spacing="4" Padding="4,10">
+                    <Button Text="ď" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="Ď" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="ę" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="Ę" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="í" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="Í" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="ň" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="Ň" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="ǫ" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="Ǫ" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="ó" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="ť" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="Ť" Clicked="OnSpecialCharClicked" FontSize="14" />
+                    <Button Text="ú" Clicked="OnSpecialCharClicked" FontSize="14" />
+                </VerticalStackLayout>
+            </Grid>
+        </Grid>
+    </Grid>
 </ContentPage>

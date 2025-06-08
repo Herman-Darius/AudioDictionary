@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IXmDZM85cQA=",
+  "dgSpecHash": "72ylVy4MCIk=",
   "success": true,
   "projectFilePath": "C:\\Users\\Herman Darius-Razvan\\Desktop\\Licenta-Aplicatie-Mobile\\frontend\\DictionaryManagementApp\\DictionaryManagementApp\\DictionaryManagementApp.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\microsoft.extensions.diagnostics\\9.0.4\\microsoft.extensions.diagnostics.9.0.4.nupkg.sha512",
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\9.0.4\\microsoft.extensions.diagnostics.abstractions.9.0.4.nupkg.sha512",
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\microsoft.extensions.http\\9.0.4\\microsoft.extensions.http.9.0.4.nupkg.sha512",
+    "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\microsoft.extensions.http.polly\\7.0.0\\microsoft.extensions.http.polly.7.0.0.nupkg.sha512",
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\microsoft.extensions.logging\\9.0.4\\microsoft.extensions.logging.9.0.4.nupkg.sha512",
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.4\\microsoft.extensions.logging.abstractions.9.0.4.nupkg.sha512",
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\microsoft.extensions.logging.debug\\9.0.4\\microsoft.extensions.logging.debug.9.0.4.nupkg.sha512",
@@ -41,6 +42,9 @@
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\microsoft.web.webview2\\1.0.2903.40\\microsoft.web.webview2.1.0.2903.40.nupkg.sha512",
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.250228001\\microsoft.windowsappsdk.1.6.250228001.nupkg.sha512",
+    "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\polly\\8.5.2\\polly.8.5.2.nupkg.sha512",
+    "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\polly.core\\8.5.2\\polly.core.8.5.2.nupkg.sha512",
+    "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\polly.extensions.http\\3.0.0\\polly.extensions.http.3.0.0.nupkg.sha512",
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\rbush\\4.0.0\\rbush.4.0.0.nupkg.sha512",
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\sixlabors.fonts\\1.0.0\\sixlabors.fonts.1.0.0.nupkg.sha512",
     "C:\\Users\\Herman Darius-Razvan\\.nuget\\packages\\system.io.packaging\\8.0.1\\system.io.packaging.8.0.1.nupkg.sha512",

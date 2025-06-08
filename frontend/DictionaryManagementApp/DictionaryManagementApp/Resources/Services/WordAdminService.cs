@@ -3,21 +3,26 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
+
 namespace DictionaryManagementApp.Resources.Services
 {
     public class WordAdminService
     {
-        private readonly HttpClient _httpClient;
+        private readonly IHttpClientFactory _httpClientFactory;
 
         public WordAdminService(IHttpClientFactory httpClientFactory)
         {
-            _httpClient = httpClientFactory.CreateClient("custom-httpclient");
+            _httpClientFactory = httpClientFactory;
         }
+
+        // helper to get a fresh client each time
+        private HttpClient _httpClient => _httpClientFactory.CreateClient("custom-httpclient");
 
         public async Task<bool> AddWordAsync(AddWordRequest request)
         {
@@ -30,7 +35,7 @@ namespace DictionaryManagementApp.Resources.Services
 
         public async Task<bool> DeleteWordAsync(int wordId)
         {
-            var response = await _httpClient.DeleteAsync($"api/words/delete/{wordId}");
+            var response = await _httpClient.DeleteAsync($"api/words/{wordId}");
             return response.IsSuccessStatusCode;
         }
 
@@ -44,10 +49,16 @@ namespace DictionaryManagementApp.Resources.Services
         /// <summary>Fetches absolutely everything once.</summary>
         public async Task<List<Word>> GetAllWordsAsync()
         {
-            var response = await _httpClient.GetAsync("api/words/all");
-            if (!response.IsSuccessStatusCode) return new List<Word>();
-            return await response.Content.ReadFromJsonAsync<List<Word>>()
-                   ?? new List<Word>();
+            try
+            {
+                return await _httpClient.GetFromJsonAsync<List<Word>>("api/words/all");
+            }
+            catch (IOException)
+            {
+                // force a new handler / client
+                await Task.Delay(50);
+                return await _httpClient.GetFromJsonAsync<List<Word>>("api/words/all");
+            }
         }
 
         /// <summary>Searches only when query is non-empty; otherwise returns empty.</summary>
@@ -98,10 +109,71 @@ namespace DictionaryManagementApp.Resources.Services
             return await resp.Content.ReadFromJsonAsync<List<Phrase>>();
         }
 
-        public async Task<bool> UpdateWordWithPhrasesAsync(UpdateWordRequest wordReq, List<PhraseDto> phrases)
+        /// <summary>
+        /// Sends a PUT to /api/words/update-with-phrases with the word + its phrases.
+        /// </summary>
+        public async Task<bool> UpdateWordWithPhrasesAsync(
+            UpdateWordRequest wordDto,
+            List<PhraseDto> phraseDtos)
         {
-            var payload = new { word = wordReq, phrases };
-            var resp = await _httpClient.PutAsJsonAsync("api/words/update-with-phrases", payload);
+            var payload = new
+            {
+                word = wordDto,
+                phrases = phraseDtos
+            };
+
+            var response = await _httpClient
+                .PutAsJsonAsync("api/words/update-with-phrases", payload);
+
+            return response.IsSuccessStatusCode;
+        }
+        public async Task<bool> DeletePhraseAsync(int phraseId)
+        {
+            var resp = await _httpClient.DeleteAsync($"api/phrases/{phraseId}");
+            return resp.IsSuccessStatusCode;
+        }
+        public async Task<string?> UploadWordAudioAsync(int wordId, FileResult file)
+        {
+            using var stream = await file.OpenReadAsync();
+            using var content = new MultipartFormDataContent();
+            var fileContent = new StreamContent(stream);
+            fileContent.Headers.ContentType = new MediaTypeHeaderValue("audio/mpeg");
+            content.Add(fileContent, "file", file.FileName);
+
+            var resp = await _httpClient.PostAsync($"api/upload/word-audio/{wordId}", content);
+            if (!resp.IsSuccessStatusCode) return null;
+            return await resp.Content.ReadAsStringAsync();
+        }
+
+        public async Task<string?> UploadWordImageAsync(int wordId, FileResult file)
+        {
+            using var stream = await file.OpenReadAsync();
+            using var content = new MultipartFormDataContent();
+            var fileContent = new StreamContent(stream);
+            fileContent.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg");
+            content.Add(fileContent, "file", file.FileName);
+
+            var resp = await _httpClient.PostAsync($"api/upload/word-image/{wordId}", content);
+            if (!resp.IsSuccessStatusCode) return null;
+            return await resp.Content.ReadAsStringAsync();
+        }
+
+        public async Task<string?> UploadPhraseAudioAsync(int phraseId, FileResult file)
+        {
+            using var stream = await file.OpenReadAsync();
+            using var content = new MultipartFormDataContent();
+            var fileContent = new StreamContent(stream);
+            fileContent.Headers.ContentType = new MediaTypeHeaderValue("audio/mpeg");
+            content.Add(fileContent, "file", file.FileName);
+
+            var resp = await _httpClient.PostAsync($"api/upload/phrase-audio/{phraseId}", content);
+            if (!resp.IsSuccessStatusCode) return null;
+            return await resp.Content.ReadAsStringAsync();
+        }
+        public async Task<bool> AddWordWithPhrasesAsync(AddWordWithPhrasesDTO dto)
+        {
+            
+            var resp = await _httpClient.PutAsJsonAsync("api/words/add-with-phrases", dto);
             return resp.IsSuccessStatusCode;
         }
     }

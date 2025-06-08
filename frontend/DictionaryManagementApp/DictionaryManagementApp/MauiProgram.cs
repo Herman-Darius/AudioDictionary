@@ -3,6 +3,8 @@ using DictionaryManagementApp.Resources.Converters;
 using DictionaryManagementApp.Resources.Services;
 using DictionaryManagementApp.Resources.Views;
 using Microsoft.Extensions.Logging;
+using Polly;
+using Polly.Extensions.Http;
 
 namespace DictionaryManagementApp;
 
@@ -24,13 +26,28 @@ public static class MauiProgram
         string baseAddress = DeviceInfo.Platform == DevicePlatform.Android ?
                              "http://10.0.2.2:8080/" : "http://localhost:8080/";
 
-        builder.Services.AddHttpClient("custom-httpclient", client =>
-        {
-            client.BaseAddress = new Uri(baseAddress);
-        });
+        builder.Services
+          .AddHttpClient("custom-httpclient", client =>
+          {
+              client.BaseAddress = new Uri(baseAddress);
+              client.DefaultRequestHeaders.ConnectionClose = true;
+          })
+          
+          // retry once on any transient HTTP error *or* IOException (stale socket)
+          .AddPolicyHandler(HttpPolicyExtensions
+            .HandleTransientHttpError()
+            .Or<IOException>()
+            .RetryAsync(1))
+          // still recycle sockets every 2m so we stay under Tomcat's 5m idle timeout
+          .SetHandlerLifetime(TimeSpan.FromMinutes(2))
+          .ConfigurePrimaryHttpMessageHandler(() => new SocketsHttpHandler
+          {
+              PooledConnectionLifetime = TimeSpan.FromMinutes(2),
+              PooledConnectionIdleTimeout = TimeSpan.FromMinutes(1),
+          });
         //services
         builder.Services.AddSingleton<ExcelUploadService>();
-        builder.Services.AddSingleton<WordAdminService>();
+        builder.Services.AddTransient<WordAdminService>();
         builder.Services.AddSingleton<ZeroToBoolConverter>();
         
 

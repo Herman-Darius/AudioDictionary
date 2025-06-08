@@ -5,6 +5,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <converters:ZeroToBoolConverter x:Key="ZeroToBoolConverter" />
+            <converters:AlternationConverter x:Key="AlternationConverter"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

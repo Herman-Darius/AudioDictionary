@@ -4,6 +4,11 @@
         <name>DictionaryApp</name>
     </assembly>
     <members>
+        <member name="M:DictionaryApp.Converters.NonClosingStream.ReallyDispose">
+            <summary>
+            When you truly want to free the buffer, call this.
+            </summary>
+        </member>
         <member name="T:DictionaryApp.Resource">
             <summary>
             Android Resource Designer class.

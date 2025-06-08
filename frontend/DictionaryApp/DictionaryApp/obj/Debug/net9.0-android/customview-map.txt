@@ -26,6 +26,8 @@ com.google.android.material.appbar.AppBarLayout;D:\Versiunea care merge ok pana 
 com.google.android.material.appbar.AppBarLayout;D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-android\lp\192\jl\res\layout\shellcontent.xml
 com.google.android.material.appbar.AppBarLayout;D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-android\lp\194\jl\res\layout\navigationlayout.xml
 declare-styleable;D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-android\lp\194\jl\res\values\attr.xml
+domain;obj\Debug\net9.0-android\res\xml\network_security_config.xml
+domain-config;obj\Debug\net9.0-android\res\xml\network_security_config.xml
 external-cache-path;D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-android\lp\195\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
 external-path;D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-android\lp\195\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\net9.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
@@ -44,6 +46,7 @@ layer-list;obj\Debug\net9.0-android\resizetizer\sp\drawable-v31\maui_splash_imag
 microsoft.maui.controls.platform.compatibility.ShellFlyoutLayout;D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-android\lp\192\jl\res\layout\flyoutcontent.xml
 monochrome;obj\Debug\net9.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 monochrome;obj\Debug\net9.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
+network-security-config;obj\Debug\net9.0-android\res\xml\network_security_config.xml
 paths;D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-android\lp\195\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
 resources;D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-android\lp\192\jl\res\values\strings.xml
 resources;D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\obj\Debug\net9.0-android\lp\193\jl\res\values\values.xml

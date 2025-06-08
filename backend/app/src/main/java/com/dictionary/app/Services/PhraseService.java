@@ -5,8 +5,11 @@ import com.dictionary.app.Models.Phrase;
 import com.dictionary.app.Models.Word;
 import com.dictionary.app.Repositories.PhraseRepository;
 import com.dictionary.app.Repositories.WordRepository;
+import jakarta.transaction.Transactional;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,6 +28,8 @@ public class PhraseService {
 
     @Autowired
     private WordRepository wordRepository;
+
+    private static final Logger log = LoggerFactory.getLogger(PhraseService.class);
 
     public List<Phrase> getDirectPhrasesForRoot(Integer rootId) {
         return phraseRepository.findByRootId(rootId);
@@ -56,12 +61,10 @@ public class PhraseService {
     }
 
     public List<Phrase> getFilteredRelatedPhrases(List<Phrase> directPhrases, List<Phrase> relatedPhrases) {
-        // Create a set of direct phrase IDs for easy lookup
         Set<Integer> directPhraseIds = directPhrases.stream()
                 .map(Phrase::getId)
                 .collect(Collectors.toSet());
 
-        // Filter out related phrases whose IDs match direct phrase IDs
         return relatedPhrases.stream()
                 .filter(relatedPhrase -> !directPhraseIds.contains(relatedPhrase.getId()))
                 .collect(Collectors.toList());
@@ -111,6 +114,15 @@ public class PhraseService {
     }
 
 
-
-
+    @Transactional
+    public boolean deletePhraseById(Integer id) {
+        if (!phraseRepository.existsById(id)) {
+            log.warn("Delete requested for non-existent Phrase[id={}]", id);
+            return false;
+        }
+        log.info("Deleting Phrase[id={}]", id);
+        phraseRepository.deleteById(id);
+        log.info("Deleted Phrase[id={}]", id);
+        return true;
+    }
 }

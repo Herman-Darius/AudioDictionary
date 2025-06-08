@@ -19,5 +19,9 @@ namespace DictionaryApp
 
         [JsonProperty("root")]
         public WordRoot Root { get; set; }
+
+        [JsonProperty("imageFile")]
+        public string? imageFile { get; set; }
+
     }
 }

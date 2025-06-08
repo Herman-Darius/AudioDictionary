@@ -17,3 +17,13 @@ spring:
     multipart:
       max-file-size: 5MB
       max-request-size: 10MB
+excel:
+  upload:
+    allowed-content-types:
+      - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+      - application/vnd.ms-excel
+clam:
+  scan-command: /usr/bin/clamscan
+logging:
+    level:
+      com.dictionary.app.services.ExcelService: DEBUG

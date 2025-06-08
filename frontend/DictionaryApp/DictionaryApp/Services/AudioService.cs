@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using DictionaryApp.Converters;
+using Newtonsoft.Json;
 using Plugin.Maui.Audio;
 using System;
 using System.Collections.Generic;
@@ -6,6 +7,7 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Maui.Controls;
 
 namespace DictionaryApp.Services
 {
@@ -14,6 +16,10 @@ namespace DictionaryApp.Services
         private readonly HttpClient _httpClient;
         private readonly IAudioManager _audioManager;
         private IAudioPlayer _currentPlayer;
+        private MemoryStream _currentStream;
+
+        private DateTime _lastPlay = DateTime.MinValue;
+        private static readonly TimeSpan _cooldown = TimeSpan.FromSeconds(2);
 
         public AudioService(IHttpClientFactory httpClientFactory, IAudioManager audioManager)
         {
@@ -22,28 +28,120 @@ namespace DictionaryApp.Services
         }
         public async Task PlayWordAudioAsync(string wordName)
         {
-            try
+            // if something is already playing, bail out
+            if (_currentPlayer != null)
             {
-                // 🔹 Request audio file from backend
-                var response = await _httpClient.GetAsync($"api/audio/play?word={wordName}");
-
-                if (!response.IsSuccessStatusCode)
-                {
-                    Console.WriteLine($"Error fetching audio: {response.StatusCode}");
-                    return;
-                }
-
-                // 🔹 Stream audio directly from the server
-                var responseStream = await response.Content.ReadAsStreamAsync();
-                var player = _audioManager.CreatePlayer(responseStream);
-
-                player.Play();
+                // UI alert must run on main thread
+                await MainThread.InvokeOnMainThreadAsync(() =>
+                    Application.Current.MainPage.DisplayAlert(
+                        "Please wait",
+                        "Audio is already playing.",
+                        "OK"));
+                return;
             }
-            catch (Exception ex)
+
+            // tear down any old (shouldn't be any, but just in case)
+            CleanupCurrent();
+
+            // fetch audio from server
+            var resp = await _httpClient.GetAsync(
+                $"api/audio/play?word={Uri.EscapeDataString(wordName)}",
+                HttpCompletionOption.ResponseHeadersRead);
+
+            if (resp.StatusCode == System.Net.HttpStatusCode.NotFound)
             {
-                Console.WriteLine($"Error playing audio: {ex.Message}");
+                await MainThread.InvokeOnMainThreadAsync(() =>
+                    Application.Current.MainPage.DisplayAlert(
+                        "No audio",
+                        "No audio available for this phrase.",
+                        "OK"));
+                return;
+            }
+
+            var netStream = await resp.Content.ReadAsStreamAsync();
+            if (netStream == null)
+                return;
+
+            // copy into a MemoryStream that we keep alive
+            _currentStream = new MemoryStream();
+            await netStream.CopyToAsync(_currentStream);
+            _currentStream.Position = 0;
+
+            // create & play
+            _currentPlayer = _audioManager.CreatePlayer(_currentStream);
+            _currentPlayer.PlaybackEnded += OnPlaybackEnded;
+            _currentPlayer.Play();
+        }
+
+        public async Task PlayPhraseAudioAsync(int phraseId)
+        {
+            if (_currentPlayer != null)
+            {
+                await MainThread.InvokeOnMainThreadAsync(() =>
+                    Application.Current.MainPage.DisplayAlert(
+                        "Please wait",
+                        "Audio is already playing.",
+                        "OK"));
+                return;
+            }
+
+            CleanupCurrent();
+
+            var resp = await _httpClient.GetAsync(
+                $"api/audio/phrases/{phraseId}",
+                HttpCompletionOption.ResponseHeadersRead);
+            if (resp.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                await MainThread.InvokeOnMainThreadAsync(() =>
+                    Application.Current.MainPage.DisplayAlert(
+                        "No audio",
+                        "No audio available for this phrase.",
+                        "OK"));
+                return;
+            }
+
+            resp.EnsureSuccessStatusCode();
+
+            var netStream = await resp.Content.ReadAsStreamAsync();
+            _currentStream = new MemoryStream();
+            await netStream.CopyToAsync(_currentStream);
+            _currentStream.Position = 0;
+
+            _currentPlayer = _audioManager.CreatePlayer(_currentStream);
+            _currentPlayer.PlaybackEnded += OnPlaybackEnded;
+            _currentPlayer.Play();
+        }
+
+        private void OnPlaybackEnded(object sender, EventArgs e)
+        {
+            // only now do we tear everything down
+            if (_currentPlayer != null)
+            {
+                _currentPlayer.PlaybackEnded -= OnPlaybackEnded;
+                _currentPlayer.Dispose();
+            }
+            _currentPlayer = null;
+
+            _currentStream?.Dispose();
+            _currentStream = null;
+        }
+
+        private void CleanupCurrent()
+        {
+            if (_currentPlayer != null)
+            {
+                _currentPlayer.Stop();
+                _currentPlayer.Dispose();
+                _currentPlayer = null;
+            }
+            if (_currentStream != null)
+            {
+                _currentStream.Dispose();
+                _currentStream = null;
             }
         }
+
+
         public async Task<string> UploadAudioAsync(FileResult file)
         {
             try
@@ -93,37 +191,6 @@ namespace DictionaryApp.Services
         }
 
 
-        public async Task PlayPhraseAudioAsync(int phraseId)
-        {
-            try
-            {
-                // 🔇 Stop previous
-                _currentPlayer?.Stop();
-                _currentPlayer?.Dispose();
-                _currentPlayer = null;
-
-                var response = await _httpClient.GetAsync($"api/audio/phrases/{phraseId}");
-                if (!response.IsSuccessStatusCode)
-                {
-                    Console.WriteLine($"Error: Received status code {response.StatusCode}");
-                    return;
-                }
-
-                var responseStream = await response.Content.ReadAsStreamAsync();
-                if (responseStream == null || responseStream.Length == 0)
-                {
-                    Console.WriteLine("Audio stream is null or empty.");
-                    return;
-                }
-
-                _currentPlayer = _audioManager.CreatePlayer(responseStream);
-                _currentPlayer.Play();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error playing audio: {ex.Message}");
-            }
-        }
 
     }
 
