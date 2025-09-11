@@ -16,27 +16,28 @@ The system is divided into two main applications:
 ### Mobile App (End Users)  
 
 - **Loading Screen**  
-  ![Loading Screen](images/Picture1.png)  
+  <img src="images/Picture1.png" alt="Loading Screen" width="400"/>  
 
 - **Main Page**  
-  ![Mobile Main Page](images/Picture2.png)  
+  <img src="images/Picture2.png" alt="Mobile Main Page" width="400"/>  
 
 - **Word Details Page**  
-  ![Word Details Page](images/Picture5.png)  
+  <img src="images/Picture5.png" alt="Word Details Page" width="400"/>  
 
 ### Desktop App (Administrators)  
 
 - **Main Page**  
-  ![Desktop App Main Page](images/Picture6.png)  
+  <img src="images/Picture6.png" alt="Desktop App Main Page" width="400"/>  
 
 - **Excel Import**  
-  ![Excel Import](images/Picture7.png)  
+  <img src="images/Picture7.png" alt="Excel Import" width="400"/>  
 
 - **Search Page**  
-  ![Search Page](images/Picture8.png)  
+  <img src="images/Picture8.png" alt="Search Page" width="400"/>  
 
 - **Edit Page**  
-  ![Edit Page](images/Picture9.png)  
+  <img src="images/Picture9.png" alt="Edit Page" width="400"/>  
+
 
 
 ## Technologies Used  
