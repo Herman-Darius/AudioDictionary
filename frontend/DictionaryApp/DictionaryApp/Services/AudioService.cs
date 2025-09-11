@@ -28,22 +28,20 @@ namespace DictionaryApp.Services
         }
         public async Task PlayWordAudioAsync(string wordName)
         {
-            // if something is already playing, bail out
             if (_currentPlayer != null)
             {
-                // UI alert must run on main thread
                 await MainThread.InvokeOnMainThreadAsync(() =>
                     Application.Current.MainPage.DisplayAlert(
-                        "Please wait",
+                        /*"Please wait",
                         "Audio is already playing.",
+                        "OK"));*/
+                        "Te rog așteaptă",
+                        "Fișierul audio este în proces de redare.",
                         "OK"));
                 return;
             }
-
-            // tear down any old (shouldn't be any, but just in case)
             CleanupCurrent();
 
-            // fetch audio from server
             var resp = await _httpClient.GetAsync(
                 $"api/audio/play?word={Uri.EscapeDataString(wordName)}",
                 HttpCompletionOption.ResponseHeadersRead);
@@ -52,8 +50,11 @@ namespace DictionaryApp.Services
             {
                 await MainThread.InvokeOnMainThreadAsync(() =>
                     Application.Current.MainPage.DisplayAlert(
-                        "No audio",
+                        /*"No audio",
                         "No audio available for this phrase.",
+                        "OK"));*/
+                        "Eroare",
+                        "Nu există un fișier audio!",
                         "OK"));
                 return;
             }
@@ -62,12 +63,10 @@ namespace DictionaryApp.Services
             if (netStream == null)
                 return;
 
-            // copy into a MemoryStream that we keep alive
             _currentStream = new MemoryStream();
             await netStream.CopyToAsync(_currentStream);
             _currentStream.Position = 0;
 
-            // create & play
             _currentPlayer = _audioManager.CreatePlayer(_currentStream);
             _currentPlayer.PlaybackEnded += OnPlaybackEnded;
             _currentPlayer.Play();
@@ -79,9 +78,13 @@ namespace DictionaryApp.Services
             {
                 await MainThread.InvokeOnMainThreadAsync(() =>
                     Application.Current.MainPage.DisplayAlert(
-                        "Please wait",
+                        /*"Please wait",
                         "Audio is already playing.",
+                        "OK"));*/
+                        "Te rog așteaptă",
+                        "Fișierul audio este în proces de redare.",
                         "OK"));
+
                 return;
             }
 
@@ -94,8 +97,11 @@ namespace DictionaryApp.Services
             {
                 await MainThread.InvokeOnMainThreadAsync(() =>
                     Application.Current.MainPage.DisplayAlert(
-                        "No audio",
+                        /*"No audio",
                         "No audio available for this phrase.",
+                        "OK"));*/
+                        "Eroare",
+                        "Nu există un fișier audio!",
                         "OK"));
                 return;
             }
@@ -114,7 +120,6 @@ namespace DictionaryApp.Services
 
         private void OnPlaybackEnded(object sender, EventArgs e)
         {
-            // only now do we tear everything down
             if (_currentPlayer != null)
             {
                 _currentPlayer.PlaybackEnded -= OnPlaybackEnded;

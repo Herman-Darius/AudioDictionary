@@ -12,16 +12,14 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <!-- (Optional) Your logo or title -->
         <Label
             Grid.Row="0"
-            Text="📖 Dictionary Uploader"
+            Text="📖 Administrarea dicționarului"
             FontSize="28"
             HorizontalOptions="Center"
             VerticalOptions="Center"
             TextColor="#4B2E06" />
 
-        <!-- Loading indicator + message -->
         <VerticalStackLayout Grid.Row="1" Spacing="12" HorizontalOptions="Center">
             <ActivityIndicator
                 IsRunning="True"

@@ -138,7 +138,7 @@
                          Margin="10,0,0,0"
                          Aspect="AspectFit"
                          BackgroundColor="#FFF2E0"
-                         Source="default_image.jpg"/>
+                         Source="default_image.png"/>
                 </Grid>
 
 

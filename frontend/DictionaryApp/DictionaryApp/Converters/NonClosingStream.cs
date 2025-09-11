@@ -12,7 +12,6 @@ namespace DictionaryApp.Converters
 
         public NonClosingStream(Stream inner) => _inner = inner;
 
-        // --- Delegate everything else to the inner stream ---
         public override bool CanRead => _inner.CanRead;
         public override bool CanSeek => _inner.CanSeek;
         public override bool CanWrite => _inner.CanWrite;
@@ -29,20 +28,14 @@ namespace DictionaryApp.Converters
         public override void SetLength(long v) => _inner.SetLength(v);
         public override void Write(byte[] buffer, int o, int c) => _inner.Write(buffer, o, c);
 
-        // --- Here’s the trick: suppress disposal of the inner stream ---
         protected override void Dispose(bool disposing)
         {
-            // no-op: do *not* call _inner.Dispose() here
         }
 
         public override void Close()
         {
-            // also no-op
         }
 
-        /// <summary>
-        /// When you truly want to free the buffer, call this.
-        /// </summary>
         public void ReallyDispose()
         {
             _inner.Dispose();

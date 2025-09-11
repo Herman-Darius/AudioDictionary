@@ -21,7 +21,6 @@ namespace DictionaryManagementApp.Resources.Services
             _httpClientFactory = httpClientFactory;
         }
 
-        // helper to get a fresh client each time
         private HttpClient _httpClient => _httpClientFactory.CreateClient("custom-httpclient");
 
         public async Task<bool> AddWordAsync(AddWordRequest request)
@@ -46,7 +45,6 @@ namespace DictionaryManagementApp.Resources.Services
         }
 
 
-        /// <summary>Fetches absolutely everything once.</summary>
         public async Task<List<Word>> GetAllWordsAsync()
         {
             try
@@ -55,13 +53,11 @@ namespace DictionaryManagementApp.Resources.Services
             }
             catch (IOException)
             {
-                // force a new handler / client
                 await Task.Delay(50);
                 return await _httpClient.GetFromJsonAsync<List<Word>>("api/words/all");
             }
         }
 
-        /// <summary>Searches only when query is non-empty; otherwise returns empty.</summary>
         public async Task<List<Word>> SearchWordsAsync(string query)
         {
             var esc = Uri.EscapeDataString(query);
@@ -69,7 +65,6 @@ namespace DictionaryManagementApp.Resources.Services
             if (!response.IsSuccessStatusCode)
                 return new List<Word>();
 
-            // Read it as a string so we can inspect it
             var json = await response.Content.ReadAsStringAsync();
 
             try
@@ -77,7 +72,6 @@ namespace DictionaryManagementApp.Resources.Services
                 using var doc = JsonDocument.Parse(json);
                 if (doc.RootElement.ValueKind == JsonValueKind.Array)
                 {
-                    // It's the expected array of Word
                     return JsonSerializer.Deserialize<List<Word>>(json, new JsonSerializerOptions
                     {
                         PropertyNameCaseInsensitive = true
@@ -85,13 +79,11 @@ namespace DictionaryManagementApp.Resources.Services
                 }
                 else
                 {
-                    // It's an object (e.g. { "message": "No words found…" })
                     return new List<Word>();
                 }
             }
             catch (JsonException)
             {
-                // In case of any weird payload, just return empty
                 return new List<Word>();
             }
         }
@@ -109,9 +101,6 @@ namespace DictionaryManagementApp.Resources.Services
             return await resp.Content.ReadFromJsonAsync<List<Phrase>>();
         }
 
-        /// <summary>
-        /// Sends a PUT to /api/words/update-with-phrases with the word + its phrases.
-        /// </summary>
         public async Task<bool> UpdateWordWithPhrasesAsync(
             UpdateWordRequest wordDto,
             List<PhraseDto> phraseDtos)

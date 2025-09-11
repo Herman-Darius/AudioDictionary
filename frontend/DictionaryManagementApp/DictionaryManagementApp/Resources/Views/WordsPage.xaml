@@ -6,22 +6,15 @@
     Title="Toate cuvintele"
     BackgroundColor="#FFF7ED">
 
-    <!-- Use a Grid so we can give the CV a star‐sized row -->
     <Grid Padding="20" RowSpacing="15">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <!-- search bar -->
             <RowDefinition Height="Auto"/>
-            <!-- sort buttons -->
             <RowDefinition Height="*"/>
-            <!-- results: expand & scroll -->
             <RowDefinition Height="Auto"/>
-            <!-- “no results” message -->
             <RowDefinition Height="Auto"/>
-            <!-- pagination -->
         </Grid.RowDefinitions>
 
-        <!-- 1) Search bar -->
         <SearchBar
           Grid.Row="0"
           x:Name="SearchBar"
@@ -30,7 +23,6 @@
           SearchButtonPressed="SearchBar_SearchButtonPressed"
       />
 
-        <!-- 2) Sort buttons -->
         <HorizontalStackLayout
       Grid.Row="1"
       Spacing="10">
@@ -42,7 +34,6 @@
               BackgroundColor="#BDBDBD" TextColor="White" CornerRadius="6"/>
         </HorizontalStackLayout>
 
-        <!-- 3) Results (star‐sized row makes this take all extra space and scroll) -->
         <CollectionView
              Grid.Row="2"
              x:Name="WordsCollection"
@@ -86,7 +77,6 @@
                         Clicked="OnEditClicked"/>
                     </Grid>
 
-                    <!-- new separator line -->
                     <BoxView
                       Grid.Row="1"
                       HeightRequest="1"
@@ -105,7 +95,6 @@
           TextColor="Gray"
           FontSize="16" />
 
-        <!-- 5) Pagination controls -->
         <HorizontalStackLayout
           Grid.Row="4"
           HorizontalOptions="Center"

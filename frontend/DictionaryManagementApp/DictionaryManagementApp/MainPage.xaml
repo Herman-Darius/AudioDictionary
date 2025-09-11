@@ -14,7 +14,6 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <!-- Manual Word Entry Form (left column) -->
                 <VerticalStackLayout Grid.Column="0" Spacing="15">
 
                     <Label Text="🔤 Adaugă un cuvânt nou"
@@ -53,7 +52,7 @@
                                            Focused="OnInputFocused"/>
                                     <Entry Grid.Row="1"
                                      Text="{Binding Definition}"
-                                     Placeholder="Definiție frază"
+                                     Placeholder="Forma literară a frazei"
                                      HorizontalOptions="FillAndExpand"
                                            Focused="OnInputFocused"/>
                                     <ImageButton Grid.Row="2"
@@ -90,11 +89,8 @@
 
                 </VerticalStackLayout>
 
-
-                <!-- Divider -->
                 <BoxView Grid.Column="1" WidthRequest="1" Color="#DDD" VerticalOptions="FillAndExpand" />
 
-                <!-- 👉 Excel Upload + Preview -->
                 <VerticalStackLayout Grid.Column="2" Spacing="15">
                     <Label Text="📄 Import cu Excel"
                        FontSize="20"
@@ -127,7 +123,6 @@
                                    HeightRequest="40"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center" />
-                    <!-- Confirm Upload Button -->
                     <Button Text="💾 Confirmă salvarea în dicționar"
                         Clicked="OnConfirmUploadClicked"
                         BackgroundColor="#4CAF50"
@@ -221,7 +216,7 @@
                 </VerticalStackLayout>
             </Grid>
         </ScrollView>
-        <!-- === SLIDING CHARACTER PANEL === -->
+        <!-- Bara de caractere-->
         <Grid x:Name="RightPanel"
               WidthRequest="180"
               BackgroundColor="#FFF3DC"

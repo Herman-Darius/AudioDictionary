@@ -22,10 +22,10 @@ namespace DictionaryApp.Services
             {
                 var fileTypes = new FilePickerFileType(new Dictionary<DevicePlatform, IEnumerable<string>>
         {
-            { DevicePlatform.iOS, new[] { "com.microsoft.excel.xlsx", "com.microsoft.excel.xls" } }, // iOS UTI
-            { DevicePlatform.Android, new[] { "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.ms-excel" } }, // Android MIME types
-            { DevicePlatform.WinUI, new[] { ".xlsx", ".xls" } }, // Windows extensions
-            { DevicePlatform.MacCatalyst, new[] { "com.microsoft.excel.xlsx", "com.microsoft.excel.xls" } } // Mac
+            { DevicePlatform.iOS, new[] { "com.microsoft.excel.xlsx", "com.microsoft.excel.xls" } },
+            { DevicePlatform.Android, new[] { "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.ms-excel" } },
+            { DevicePlatform.WinUI, new[] { ".xlsx", ".xls" } },
+            { DevicePlatform.MacCatalyst, new[] { "com.microsoft.excel.xlsx", "com.microsoft.excel.xls" } } 
         });
 
                 var fileResult = await FilePicker.Default.PickAsync(new PickOptions
@@ -78,9 +78,9 @@ namespace DictionaryApp.Services
             {
                 var fileTypes = new FilePickerFileType(new Dictionary<DevicePlatform, IEnumerable<string>>
             {
-                { DevicePlatform.iOS, new[] { "public.audio" } },  // iOS
-                { DevicePlatform.Android, new[] { "audio/*" } },    // Android
-                { DevicePlatform.WinUI, new[] { ".mp3", ".wav" } } // Windows
+                { DevicePlatform.iOS, new[] { "public.audio" } },
+                { DevicePlatform.Android, new[] { "audio/*" } }, 
+                { DevicePlatform.WinUI, new[] { ".mp3", ".wav" } }
             });
 
                 var fileResult = await FilePicker.Default.PickAsync(new PickOptions

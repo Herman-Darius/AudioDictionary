@@ -26,12 +26,10 @@
                FontAttributes="Bold"
                HorizontalOptions="Center"/>
 
-        <!-- Button to trigger file selection -->
         <Button Text="Select Excel File"
                 Clicked="OnSelectFileClicked"
                 Style="{StaticResource PrimaryButton}" />
 
-        <!-- Label to display the file status -->
         <Label x:Name="UploadStatusLabel" 
                Text="No file selected"
                HorizontalOptions="Center"/>

@@ -96,10 +96,10 @@ namespace DictionaryApp.Services
 
             try
             {
-                // build the absolute URI
                 var uri = new Uri(_httpClient.BaseAddress, $"api/media/images/{imageFileName}");
-
-                // disable both disk & memory caching
+                var response = await _httpClient.SendAsync(new HttpRequestMessage(HttpMethod.Head, uri));
+                if (!response.IsSuccessStatusCode)
+                    return defaultImage;
                 var source = new UriImageSource
                 {
                     Uri = uri,

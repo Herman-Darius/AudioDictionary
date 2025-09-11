@@ -41,7 +41,6 @@ namespace DictionaryManagementApp
         }
         async void OnSaveClicked(object sender, EventArgs e)
         {
-            // 1) Validate required word fields
             if (string.IsNullOrWhiteSpace(WordEntry.Text)
              || string.IsNullOrWhiteSpace(RootEntry.Text)
              || string.IsNullOrWhiteSpace(DefinitionEntry.Text))
@@ -52,7 +51,6 @@ namespace DictionaryManagementApp
                 return;
             }
 
-            // 2) Validate phrase slots: either both empty or both filled
             foreach (var pe in PhraseEditors)
             {
                 bool bothEmpty = string.IsNullOrWhiteSpace(pe.Content)
@@ -70,7 +68,6 @@ namespace DictionaryManagementApp
                 }
             }
 
-            // 3) Build wrapper DTO
             var dto = new AddWordWithPhrasesDTO
             {
                 WordName = WordEntry.Text.Trim(),
@@ -86,7 +83,6 @@ namespace DictionaryManagementApp
                     .ToList()
             };
 
-            // 4) Send to server
             bool ok = await _wordAdminService.AddWordWithPhrasesAsync(dto);
             if (!ok)
             {
@@ -94,7 +90,6 @@ namespace DictionaryManagementApp
                 return;
             }
 
-            // 5) Success → notify and reset form (no navigation)
             await DisplayAlert("Succes", "Cuvântul și frazele au fost create.", "OK");
             WordEntry.Text = "";
             RootEntry.Text = "";
@@ -148,13 +143,11 @@ namespace DictionaryManagementApp
 
                 foreach (var item in previewData)
                 {
-                    // 1️⃣ assign the word-level remove command
                     item.RemoveCommand = new Command(() =>
                     {
                         PreviewItems.Remove(item);
                     });
 
-                    // 2️⃣ assign the phrase-level remove command on each phrase
                     foreach (var ph in item.Phrases)
                     {
                         ph.RemoveCommand = new Command(() =>
@@ -261,7 +254,7 @@ namespace DictionaryManagementApp
                 if (_lastFocusedInput is Entry entry)
                 {
                     if (entry.Text == null)
-                        entry.Text = ""; // Prevent null insert
+                        entry.Text = "";
 
                     int pos = entry.CursorPosition;
                     entry.Text = entry.Text.Insert(pos, charToInsert);

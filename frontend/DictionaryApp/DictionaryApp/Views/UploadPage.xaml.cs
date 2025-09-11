@@ -34,14 +34,12 @@ public partial class UploadPage : ContentPage
         await RequestPermissionsAsync();
         try
         {
-            // Use the FileUploadService to select a file
             var selectedFile = await _fileUploadService.SelectFileAsync();
 
             if (selectedFile != null)
             {
                 UploadStatusLabel.Text = $"File selected: {selectedFile}";
 
-                // Use the service to upload the file
                 var fileResult = await FilePicker.Default.PickAsync();
                 if (fileResult != null)
                 {
@@ -82,7 +80,6 @@ public partial class UploadPage : ContentPage
                 UploadStatusLabel.Text = "Uploading audio files...";
                 UploadStatusLabel.TextColor = Colors.Blue;
 
-                // Implement this in the service to handle multiple files
                 string uploadStatus = await _fileUploadService.UploadAudioFilesAsync(filePickerResult);
 
                 UploadStatusLabel.Text = uploadStatus.Contains("successfully")

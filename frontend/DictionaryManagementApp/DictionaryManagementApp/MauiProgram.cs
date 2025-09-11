@@ -32,19 +32,19 @@ public static class MauiProgram
               client.BaseAddress = new Uri(baseAddress);
               client.DefaultRequestHeaders.ConnectionClose = true;
           })
-          
-          // retry once on any transient HTTP error *or* IOException (stale socket)
+
           .AddPolicyHandler(HttpPolicyExtensions
             .HandleTransientHttpError()
             .Or<IOException>()
             .RetryAsync(1))
-          // still recycle sockets every 2m so we stay under Tomcat's 5m idle timeout
+
           .SetHandlerLifetime(TimeSpan.FromMinutes(2))
           .ConfigurePrimaryHttpMessageHandler(() => new SocketsHttpHandler
           {
               PooledConnectionLifetime = TimeSpan.FromMinutes(2),
               PooledConnectionIdleTimeout = TimeSpan.FromMinutes(1),
           });
+
         //services
         builder.Services.AddSingleton<ExcelUploadService>();
         builder.Services.AddTransient<WordAdminService>();

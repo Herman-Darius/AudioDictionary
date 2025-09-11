@@ -23,13 +23,10 @@ public partial class EditWordPage : ContentPage
         _wordService = wordService;
         BindingContext = this;
     }
-
-    // **Make this public so MainPage can call it**
     public async Task LoadWordAsync(int wordId)
     {
         _currentWord = await _wordService.GetWordByIdAsync(wordId);
 
-        // fill all the inputs:
         WordNameEntry.Text = _currentWord.wordName;
         RootEntry.Text = _currentWord.Root.name;
         DefinitionEditor.Text = _currentWord.definition;
@@ -53,19 +50,16 @@ public partial class EditWordPage : ContentPage
         }
     }
 
-    /// <summary>Adds one more blank phrase editor to the list.</summary>
     void OnAddPhraseClicked(object sender, EventArgs e)
     {
         PhraseEditors.Add(new PhraseEditor());
     }
 
-    /// <summary>Pick a new audio file for the word itself.</summary>
     async void OnPickWordAudioClicked(object s, EventArgs e)
     {
         var result = await FilePicker.PickAsync(new PickOptions { /* … */ });
         if (result == null) return;
 
-        // 1) upload immediately
         var newName = await _wordService.UploadWordAudioAsync(_currentWord.id, result);
         if (newName == null)
         {
@@ -73,7 +67,6 @@ public partial class EditWordPage : ContentPage
             return;
         }
 
-        // 2) update UI + local model
         _wordAudioFile = newName;
         WordAudioLabel.Text = newName;
     }
@@ -90,7 +83,7 @@ public partial class EditWordPage : ContentPage
             if (_lastFocusedInput is Entry entry)
             {
                 if (entry.Text == null)
-                    entry.Text = ""; // Prevent null insert
+                    entry.Text = "";
 
                 int pos = entry.CursorPosition;
                 entry.Text = entry.Text.Insert(pos, charToInsert);
@@ -121,14 +114,12 @@ public partial class EditWordPage : ContentPage
     {
         if (_charsVisible)
         {
-            // Slide out (hide)
             await RightPanel.TranslateTo(180, 0, 250, Easing.CubicInOut);
             ToggleArrowButton.Text = "⯇";
             _charsVisible = false;
         }
         else
         {
-            // Slide in (show)
             await RightPanel.TranslateTo(0, 0, 250, Easing.CubicInOut);
             ToggleArrowButton.Text = "⯈";
             _charsVisible = true;
@@ -155,11 +146,9 @@ public partial class EditWordPage : ContentPage
         if (!(s is Button btn && btn.BindingContext is PhraseEditor pe))
             return;
 
-        // pick
         var result = await FilePicker.PickAsync(new PickOptions { /* … */ });
         if (result == null) return;
 
-        // upload
         if (!pe.Id.HasValue)
         {
             await DisplayAlert("Eroare", "Fraza nu are încă un Id.", "OK");
@@ -171,17 +160,10 @@ public partial class EditWordPage : ContentPage
             await DisplayAlert("Eroare", "Nu am putut încărca audio frază.", "OK");
             return;
         }
-
-        // set the new filename
         pe.AudioFileName = newName;
     }
-
-
-
-    /// <summary>Gathers all the current values (word + phrases + media) and calls your update API.</summary>
     async void OnSaveClicked(object sender, EventArgs e)
     {
-        // 1) Validate the main word fields
         if (string.IsNullOrWhiteSpace(WordNameEntry.Text)
          || string.IsNullOrWhiteSpace(RootEntry.Text)
          || string.IsNullOrWhiteSpace(DefinitionEditor.Text))
@@ -193,7 +175,6 @@ public partial class EditWordPage : ContentPage
             return;
         }
 
-        // 2) Validate each phrase editor
         foreach (var pe in PhraseEditors)
         {
             if (string.IsNullOrWhiteSpace(pe.Content)
@@ -207,7 +188,6 @@ public partial class EditWordPage : ContentPage
             }
         }
 
-        // 3) Build the word update DTO
         var updateReq = new UpdateWordRequest
         {
             Id = _currentWord.id,
@@ -216,7 +196,6 @@ public partial class EditWordPage : ContentPage
             RootName = RootEntry.Text!.Trim()
         };
 
-        // 4) Build the phrase DTOs
         var phraseDtos = PhraseEditors
             .Select(pe => new PhraseDto
             {
@@ -227,7 +206,6 @@ public partial class EditWordPage : ContentPage
             })
             .ToList();
 
-        // 5) Call your backend
         bool success = await _wordService
             .UpdateWordWithPhrasesAsync(updateReq, phraseDtos);
 
@@ -271,14 +249,12 @@ public partial class EditWordPage : ContentPage
 
     async void OnDeleteWordClicked(object sender, EventArgs e)
     {
-        // 1) Confirm with the user
         bool ok = await DisplayAlert(
             "Confirmă ștergerea",
             "Sigur vrei să ștergi acest cuvânt și toate frazele lui?",
             "Da", "Nu");
         if (!ok) return;
 
-        // 2) Call the backend
         bool removed = await _wordService.DeleteWordAsync(_currentWord.id);
         if (!removed)
         {
@@ -286,11 +262,8 @@ public partial class EditWordPage : ContentPage
             return;
         }
 
-        // 3) Notify & navigate back
         await DisplayAlert("Șters", "Cuvântul și frazele asociate au fost șterse.", "OK");
         await Navigation.PopAsync();
     }
-
-
 
 }

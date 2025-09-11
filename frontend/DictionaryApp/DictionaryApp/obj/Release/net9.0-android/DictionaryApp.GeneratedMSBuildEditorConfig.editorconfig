@@ -1,0 +1,85 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net9.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DictionaryApp
+build_property.ProjectDir = D:\Versiunea care merge ok pana acum\DictionaryApp\DictionaryApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/Versiunea care merge ok pana acum/DictionaryApp/DictionaryApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DictionaryApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/Versiunea care merge ok pana acum/DictionaryApp/DictionaryApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DictionaryApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/Versiunea care merge ok pana acum/DictionaryApp/DictionaryApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DictionaryApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/Versiunea care merge ok pana acum/DictionaryApp/DictionaryApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DictionaryApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/Versiunea care merge ok pana acum/DictionaryApp/DictionaryApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DictionaryApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/Versiunea care merge ok pana acum/DictionaryApp/DictionaryApp/Views/DictionaryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DictionaryApp.Views.DictionaryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DictionaryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DictionaryPage.xaml
+
+[D:/Versiunea care merge ok pana acum/DictionaryApp/DictionaryApp/Views/InfoPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DictionaryApp.Views.InfoPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\InfoPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\InfoPopup.xaml
+
+[D:/Versiunea care merge ok pana acum/DictionaryApp/DictionaryApp/Views/RootDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DictionaryApp.Views.RootDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RootDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RootDetailsPage.xaml
+
+[D:/Versiunea care merge ok pana acum/DictionaryApp/DictionaryApp/Views/SplashPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DictionaryApp.Views.SplashPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SplashPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SplashPage.xaml
+
+[D:/Versiunea care merge ok pana acum/DictionaryApp/DictionaryApp/Views/UploadPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DictionaryApp.Views.UploadPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\UploadPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\UploadPage.xaml
+
+[D:/Versiunea care merge ok pana acum/DictionaryApp/DictionaryApp/Views/WordDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DictionaryApp.Views.WordDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\WordDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\WordDetailsPage.xaml

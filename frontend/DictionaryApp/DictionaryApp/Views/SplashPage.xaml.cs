@@ -42,14 +42,11 @@ public partial class SplashPage : ContentPage
             {
                 await MainThread.InvokeOnMainThreadAsync(async () =>
                 {
-                    // Fade out
                     await LoadingMessageLabel.FadeTo(0, 250, Easing.CubicOut);
 
-                    // Update text
                     LoadingMessageLabel.Text = rusticMessages[currentMessageIndex];
                     currentMessageIndex = (currentMessageIndex + 1) % rusticMessages.Count;
 
-                    // Fade in
                     await LoadingMessageLabel.FadeTo(1, 250, Easing.CubicIn);
                 });
 

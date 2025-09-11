@@ -13,8 +13,8 @@ namespace DictionaryManagementApp.Resources.Converters
         {
             if (value is int idx)
                 return idx % 2 == 0
-                  ? Color.FromHex("#FAF8F2") // your original “even” color
-                  : Color.FromHex("#E8E4DD"); // a second “odd” color
+                  ? Color.FromHex("#FAF8F2") 
+                  : Color.FromHex("#E8E4DD");
             return Color.FromHex("#fadsfa");
         }
 

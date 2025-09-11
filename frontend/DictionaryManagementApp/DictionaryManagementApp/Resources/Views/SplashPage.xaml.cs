@@ -11,11 +11,7 @@ public partial class SplashPage : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-
         await Task.Delay(2000);
-
-        // once done, replace the MainPage with your actual page
-        // wrap in a NavigationPage if you need a nav bar
         Application.Current.MainPage =
             new NavigationPage(_services.GetRequiredService<MainPage>());
     }

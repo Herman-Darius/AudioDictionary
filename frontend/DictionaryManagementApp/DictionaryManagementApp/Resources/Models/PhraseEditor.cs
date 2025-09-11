@@ -28,7 +28,6 @@ namespace DictionaryManagementApp.Resources.Models
             set { definition = value; OnPropertyChanged(); }
         }
 
-        // only audio now
         string audioFileName;
         public string AudioFileName
         {

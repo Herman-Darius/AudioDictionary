@@ -25,10 +25,10 @@ namespace DictionaryApp
             .UseMauiCommunityToolkitCore();
             
             //Custom URL
-            string baseAddress = DeviceInfo.Platform == DevicePlatform.Android ?
-                                 "http://10.0.2.2:8080/" : "http://localhost:8080/";
-            
-            //string baseAddress = "http://192.168.114.34:8080/";
+            //string baseAddress = DeviceInfo.Platform == DevicePlatform.Android ?
+            //                   "http://10.0.2.2:8080/" : "http://localhost:8080/";
+
+            string baseAddress = "http://192.168.230.34:8080/";
             builder.Services.AddHttpClient("custom-httpclient", client =>
             {
                 client.BaseAddress = new Uri(baseAddress);

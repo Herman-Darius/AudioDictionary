@@ -36,17 +36,14 @@ public partial class WordsPage : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-        // 1 HTTP call
         var all = await _wordAdminService.GetAllWordsAsync();
         _allWordsMaster = new ObservableCollection<Word>(all);
 
-        // init view → full
         _allWordsView = new ObservableCollection<Word>(_allWordsMaster);
         ApplySort();
         RefreshPage();
     }
 
-    // TextChanged and SearchButtonPressed both funnel here:
     private async void SearchBar_TextChanged(object s, TextChangedEventArgs e)
         => await PerformSearch();
 
@@ -60,12 +57,10 @@ public partial class WordsPage : ContentPage
 
         if (string.IsNullOrWhiteSpace(q))
         {
-            // no-network branch
             _allWordsView = new ObservableCollection<Word>(_allWordsMaster);
         }
         else
         {
-            // remote-lookup branch
             var results = await _wordAdminService.SearchWordsAsync(q);
             _allWordsView = new ObservableCollection<Word>(results);
         }
@@ -96,8 +91,6 @@ public partial class WordsPage : ContentPage
         OnPropertyChanged(nameof(PageInfo));
         OnPropertyChanged(nameof(IsEmpty));
     }
-
-    // sort buttons
     private void OnSortAscClicked(object s, EventArgs e)
     {
         _isAsc = true; _currentPage = 1;
@@ -108,8 +101,6 @@ public partial class WordsPage : ContentPage
         _isAsc = false; _currentPage = 1;
         ApplySort(); RefreshPage();
     }
-
-    // paging buttons
     private void OnPrevPageClicked(object s, EventArgs e)
     {
         if (CanGoPrev) _currentPage--;
@@ -128,7 +119,6 @@ public partial class WordsPage : ContentPage
             var services = Application.Current.Handler.MauiContext.Services;
             var editPage = services.GetRequiredService<EditWordPage>();
 
-            // <-- load the data before you push
             await editPage.LoadWordAsync(wordId);
 
             await Navigation.PushAsync(editPage);

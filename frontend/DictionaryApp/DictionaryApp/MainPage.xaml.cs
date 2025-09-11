@@ -154,20 +154,17 @@ namespace DictionaryApp
         {
             try
             {
-                // do your button bounce…
                 System.Diagnostics.Debug.WriteLine("[InfoPopup] OnInfoClicked fired");
                 await InfoButton.ScaleTo(0.9, 75, Easing.CubicOut);
                 await InfoButton.ScaleTo(1.05, 75, Easing.CubicIn);
                 await InfoButton.ScaleTo(1, 50);
 
-                // show your popup
                 var popup = new InfoPopup();
                 await this.ShowPopupAsync(popup);
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine($"[InfoPopup ERROR] {ex}");
-                // show an alert so you’ll _see_ the exception on the device
                 await DisplayAlert("Oops, something went wrong", ex.Message, "OK");
             }
         }
